@@ -1,0 +1,36 @@
+# Site settings
+#baseurl: "/~nashidnoor" # the subpath of your site, e.g. /blog/
+#url: https://ece.ubc.ca # the base hostname & protocol for your site
+
+# User settings
+title: Nashid Noor
+email: nashid@ece.ubc.ca
+group: SALT lab, UBC
+groupweb: http://salt.ece.ubc.ca/
+dept: Electrical and Computer Engineering
+deptweb: https://www.ece.ubc.ca/
+institution: University of British Columbia
+institutionweb: https://www.ubc.ca/
+address: Vancouver, British Columbia, Canada
+twitter: noornashid
+github: nashid
+dblp: Noor:Nashid
+gscholar: 2GW0zXUAAAAJ
+linkedin: noornashid
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+paginate: 3
+paginate_path: /news/page:num/
+excerpt_separator: <!--more-->
+
+# Site-wide variables
+keywords: Software Engineering, Software Testing, Large Language Models, Deep Learning
+copyright: Copyright (c) Nashid Noor
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+#  - jemoji

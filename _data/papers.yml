@@ -1,0 +1,67 @@
+- id: thesis
+  title: "UI driven dynamic analysis and testing of web applications"
+  authors: Rahul krishna Yandrapally
+  year: 2023
+  venue: University of British Columbia (UBC)
+
+- id: apicarv
+  title: "Carving UI Tests to generate API Tests and API Specifications"
+  authors: Rahul Krishna Yandrapally, Saurabh Sinha, Rachel Tzoref-Brill, Ali Mesbah
+  venue: ACM/IEEE International Conference on Software Engineering (ICSE)
+  year: 2023
+  code: https://github.com/apicarve/apicarver
+
+- id: fraggen
+  title: "Fragment-Based Test Generation For Web Apps"
+  authors: Rahul Krishna Yandrapally, Ali Mesbah
+  venue: IEEE Transactions on Software Engineering (TSE)
+  year: 2022
+  code: https://doi.org/10.5281/zenodo.4007539
+
+- id: maewu
+  title: "Mutation Analysis for Assessing End-to-End Web Tests"
+  authors: Rahul Krishna Yandrapally, Ali Mesbah
+  venue: IEEE International Conference on Software Maintenance and Evolution (ICSME)
+  year: 2021
+  code: https://github.com/yrahulkr/maewu
+
+- id: ndstudy
+  title: "Near-Duplicate Detection in Web App Model Inference"
+  authors: Rahul Krishna Yandrapally, Andrea Stocco, and Ali Mesbah
+  venue: ACM/IEEE International Conference on Software Engineering (ICSE)
+  year: 2020
+  code: https://github.com/NDStudyICSE2019
+
+- id: vista
+  title: "Visual web test repair"
+  authors: Andrea Stocco and
+               Rahulkrishna Yandrapally and
+               Ali Mesbah
+  venue: Joint Meeting on European Software Engineering
+               Conference and Symposium on the Foundations of Software Engineering,
+               (ESEC/FSE)
+  year: 2018
+  code: https://github.com/saltlab/vista
+
+- id: modularization
+  title: "Automated Modularization of {GUI} Test Cases"
+  authors: Rahulkrishna Yandrapally and
+               Giriprasad Sridhara and
+               Saurabh Sinha
+  venue: International Conference on Software Engineering (ICSE)
+  year: 2015
+  doi: https://doi.org/10.1109/ICSE.2015.27
+  #code: https://github.com/saltlab/vista
+
+
+
+- id: ataqv
+  title: "Robust test automation using contextual clues"
+  authors: Rahulkrishna Yandrapally and
+               Suresh Thummalapenta and
+               Saurabh Sinha and
+               Satish Chandra
+  venue: International Symposium on Software Testing and Analysis (ISSTA)
+  year: 2014
+  doi: https://dl.acm.org/doi/abs/10.1145/2610384.2610390
+  #code: https://github.com/saltlab/vista

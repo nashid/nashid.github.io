@@ -1,0 +1,16 @@
+{% assign pic = "/resources/images/maplers/anon.png" | prepend: site.baseurl %}
+{% assign key = "/resources/images/maplers/" | append: include.mapler.id %}
+
+{% for file in site.static_files %}
+    {% if file.path contains key %}
+      {% assign pic = file.path %}
+      {% break %}
+    {% endif %}
+{% endfor %}
+
+{% assign pic = pic | strip_newlines | replace: " ", "" %}
+{% if include.class %}
+  <img class="{{ include.class }}" alt="{{ mapler.name }}" title="{{ mapler.name }}" src="{{ pic }}" />
+{% else %}
+  <img alt="{{ mapler.name }}" src="{{ pic }}" />
+{% endif %}
