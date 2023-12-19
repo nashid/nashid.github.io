@@ -4,6 +4,12 @@
   year: 2024
   website: https://conf.researchr.org/home/icse-2024/deeptest-2024
 
+# 2024
+- name: LLM4Code 2024, Co-located with ICSE
+  role: Co-Reviewer
+  year: 2024
+  website: https://llm4code.github.io/
+
 # 2023
 - name: Reliable and Secure AI for Software Engineering (ReSAISE), Co-located with ISSRE
   role: PC Member
