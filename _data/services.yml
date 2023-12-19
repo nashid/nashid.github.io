@@ -3,7 +3,7 @@
   role: PC Member
   year: 2024
   website: https://conf.researchr.org/home/icse-2024/deeptest-2024
-  
+
 # 2023
 - name: Reliable and Secure AI for Software Engineering (ReSAISE), Co-located with ISSRE
   role: PC Member
@@ -22,15 +22,20 @@
   year: 2021
   website: https://2021.esec-fse.org/
 
+# 2021
+- name: International Conference on Software Engineering (ICSE)
+  role: Co-Reviewer
+  year: 2021
+  website: https://conf.researchr.org/home/icse-2021
+
 # 2020
 - name: International Conference on Software Engineering (ICSE)
   role: Co-Reviewer
   year: 2020
   website: https://conf.researchr.org/home/icse-2021
 
-# 2021
+# 2020
 - name: International Symposium on Software Testing and Analysis (ISSTA)
   role: Co-Reviewer
   year: 2020
   website: https://conf.researchr.org/home/issta-2020
-
