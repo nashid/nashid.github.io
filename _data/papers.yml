@@ -21,7 +21,7 @@
 
 - id: reptory
   title: "A Controlled Experiment of Different Code Representations for Learning-Based Program Repair"
-  authors: * Namavar Marjane, * Noor Nashid, and Ali Mesbah (* Both authors contributed equally)
+  authors: Namavar Marjane, Noor Nashid, and Ali Mesbah (Both authors contributed equally)
   venue: Empirical Software Engineering Journal (EMSE)
   year: 2022
   # code: https://github.com/saltlab/vista
