@@ -4,5 +4,9 @@ title: About
 weight: 1
 group: about
 ---
-I obtained my Ph.D. in Computer Software Engineering from University of British Columbia, under the supervision of Dr. Ali Mesbah.
- My research aims to improve web application testing. My research interests include Software Engineering, Software Testing, Web Testing and Mobile Testing. 
+I am a Ph.D. candiddte in Computer Software Engineering from University of British Columbia, under the supervision of Dr. Ali Mesbah.
+My research is in software engineering, with emphasis on software analysis and testing, code repair, test code generation, and ML4SE.
+My research aims to understand the role of context for code-related tasks with large language models.
+
+
+
