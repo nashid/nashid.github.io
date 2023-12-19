@@ -22,10 +22,17 @@
 - name: Foundations of Software Engineering (ESEC/FSE)
   role: Co-Reviewer
   year: 2021
-  website: https://conf.researchr.org/home/issta-2023
+  website: https://2021.esec-fse.org/
 
-# 2021
+# 2020
 - name: International Conference on Software Engineering (ICSE)
   role: Co-Reviewer
-  year: 2021
+  year: 2020
   website: https://conf.researchr.org/home/icse-2021
+
+# 2021
+- name: International Symposium on Software Testing and Analysis (ISSTA)
+  role: Co-Reviewer
+  year: 2020
+  website: https://conf.researchr.org/home/issta-2020
+
