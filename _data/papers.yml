@@ -1,25 +1,25 @@
-- id: cedar
+- id: cedar-icse23
   title: "Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning"
   authors: Nashid Noor, Mifta Santaha, and Ali Mesbah
   venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
   year: 2023
   # code: https://github.com/apicarve/apicarver
 
-- id: katana
+- id: katana-tosem23
   title: "Katana: Dual Slicing-Based Context for Learning Bug Fixes"
   authors: Mifta Sintaha, Nashid Noor, and Ali Mesbah
   venue: ACM Transactions on Software Engineering and Methodology (TOSEM)
   year: 2023
   # code: https://doi.org/10.5281/zenodo.4007539
 
-- id: glance
+- id: glance-icst23
   title: "Embedding Context as Code Dependencies for Neural Program Repair"
   authors: Nashid Noor, Mifta Santaha, and Ali Mesbah
   venue: IEEE International Conference on Software Testing, Verification and Validation (ICST), 12 pages
   year: 2023
   # code: https://github.com/NDStudyICSE2019
 
-- id: reptory
+- id: reptory-emse22
   title: "A Controlled Experiment of Different Code Representations for Learning-Based Program Repair"
   authors: Namavar Marjane, Noor Nashid, and Ali Mesbah (Both authors contributed equally)
   venue: Empirical Software Engineering Journal (EMSE)
