@@ -9,8 +9,9 @@ I am a Ph.D. candidate in Computer Software Engineering from University of Briti
 I am fortunate to be part of the [SALT lab](https://people.ece.ubc.ca/amesbah/salt/).
 My research is in software engineering, with emphasis on software analysis and testing, code repair, test code generation, large language models, and ML4SE. 
 My research aims to understand the role of context for code-related tasks with large language models.
+
 ---
-News 
+**News** 
 
 |||
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
