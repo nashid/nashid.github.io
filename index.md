@@ -20,8 +20,6 @@ News
 | May,&nbsp;2023      | <img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at [ICSE 2023](https://conf.researchr.org/home/icse-2023) on [Different Code Representations for Learning-Based Program Repair](https://nashid.github.io/resources/papers/reptory-emse22.pdf).  |
 | April,&nbsp;2023    | <img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at [ICST 2023](https://conf.researchr.org/home/icst-2023) on [Neural Program Repair](https://nashid.github.io/resources/papers/glance-icst23.pdf).                                              |
 
----
-
 
 ---
 
