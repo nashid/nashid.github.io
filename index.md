@@ -31,35 +31,36 @@ My research aims to understand the role of context for code-related tasks with l
     <th>&nbsp;</th>
   </tr>
   <tr>
-    <td>December,&nbsp;2023</td>
+    <td style="vertical-align: top;">December,&nbsp;2023</td>
     <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/katana-tosem23.pdf">Katana</a> is accepted in the journal first track of <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a>.</td>
   </tr>
   <tr>
-    <td>December,&nbsp;2023</td>
+    <td style="vertical-align: top;">December,&nbsp;2023</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024">DeepTest 2024</a>.</td>
   </tr>
   <tr>
-    <td>August,&nbsp;2023</td>
+    <td style="vertical-align: top;">August,&nbsp;2023</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://resaise.github.io/2023/committee.html">ReSAISE 2023</a>.</td>
   </tr>
   <tr>
-    <td>June,&nbsp;2023</td>
+    <td style="vertical-align: top;">June,&nbsp;2023</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave an invited talk at UBER programming system group about reducing hallucinations for code related tasks with LLMs.</td>
   </tr>
   <tr>
-    <td>May,&nbsp;2023</td>
+    <td style="vertical-align: top;">May,&nbsp;2023</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/home/icse-2023">ICSE 2023</a> on <a href="https://nashid.github.io/resources/papers/cedar-icse23.pdf">Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning</a>.</td>
   </tr>
   <tr>
-    <td>May,&nbsp;2023</td>
+    <td style="vertical-align: top;">May,&nbsp;2023</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/home/icse-2023">ICSE 2023</a> on <a href="https://nashid.github.io/resources/papers/reptory-emse22.pdf">Different Code Representations for Learning-Based Program Repair</a>.</td>
   </tr>
   <tr>
-    <td>April,&nbsp;2023</td>
+    <td style="vertical-align: top;">April,&nbsp;2023</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/home/icst-2023">ICST 2023</a> on <a href="https://nashid.github.io/resources/papers/glance-icst23.pdf">Neural Program Repair</a>.</td>
   </tr>
   <tr>
-    <td>January,&nbsp;2023</td>
+    <td style="vertical-align: top;">January,&nbsp;2023</td>
     <td><img src="./resources/images/icon-pray.png" width="20" height="20"> I successfully passed my PhD qualifying exam. Thanks to my advisor Dr. Ali Mesbah for everything.</td>
   </tr>
 </table>
+
