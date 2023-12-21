@@ -13,11 +13,7 @@ My research aims to understand the role of context for code-related tasks with l
 ---
 **News**
 
-
----
-**News**
-
-|||
+|&nbsp;|&nbsp;|
 |---|---|
 | December,&nbsp;2023 | <img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper [Katana](https://nashid.github.io/resources/papers/katana-tosem23.pdf) is accepted in the journal first track of [ICSE 2024](https://conf.researchr.org/home/icse-2024).                             |
 | December,&nbsp;2023 | <img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for [DeepTest 2024](https://conf.researchr.org/home/icse-2024/deeptest-2024).                                                                                             |
