@@ -11,6 +11,13 @@ My research aims to understand the role of context for code-related tasks with l
 ---
 News
 
+| Date           | News |
+|----------------|------|
+| December, 2023 | ![DeepTest 2024](./resources/images/icon-paper-review.png) **December, 2023:** I am serving as a PC member for [DeepTest 2024](https://conf.researchr.org/home/icse-2024/deeptest-2024). |
+| August, 2023   | ![ReSAISE 2023](./resources/images/icon-paper-review.png) **August, 2023:** I am serving as a PC member for [ReSAISE 2023](https://resaise.github.io/2023/committee.html). |
+| June, 2023     | ![Talks 2023](./resources/images/icon-talk.png) **June, 2023:** I gave an invited talk at UBER programming system group about retrieval based code prompt selection for code-related tasks. |
+
+
 | Date       | News |
 |------------|------|
 | 2023-12    | ![DeepTest 2024](./resources/images/icon-paper-review.png) **[2023-12]** I am serving as a PC member for [DeepTest 2024](https://conf.researchr.org/home/icse-2024/deeptest-2024). |
