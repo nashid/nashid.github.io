@@ -10,9 +10,6 @@ I am fortunate to be part of the [SALT lab](https://people.ece.ubc.ca/amesbah/sa
 My research is in software engineering, with emphasis on software analysis and testing, code repair, test code generation, large language models, and ML4SE. 
 My research aims to understand the role of context for code-related tasks with large language models.
 
----
-**News**
-
 |||
 |---|---|
 | December,&nbsp;2023 | <img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper [Katana](https://nashid.github.io/resources/papers/katana-tosem23.pdf) is accepted in the journal first track of [ICSE 2024](https://conf.researchr.org/home/icse-2024).                             |
