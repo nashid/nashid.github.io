@@ -11,7 +11,7 @@ My research is in software engineering, with emphasis on software analysis and t
 My research aims to understand the role of context for code-related tasks with large language models.
 
 ---
-**News**
+<p style="margin-bottom: 5px;"><strong>News</strong></p>
 
 |&nbsp;|&nbsp;|
 |---|---|
