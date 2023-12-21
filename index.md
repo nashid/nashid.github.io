@@ -22,15 +22,6 @@ News
 
 ---
 
-|                |                                                                                                                                                                                                                                                                                                                                                                                                              |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| December, 2023 | ![DeepTest 2024](./resources/images/icon-paper-review.png) **December, 2023:** Serving as a PC member for [DeepTest 2024](https://conf.researchr.org/home/icse-2024/deeptest-2024).                                                                                                                                                                                                                          |
-| August, 2023   | ![ReSAISE 2023](./resources/images/icon-paper-review.png) **August, 2023:** Serving as a PC member for [ReSAISE 2023](https://resaise.github.io/2023/committee.html).                                                                                                                                                                                                                                        |
-| May, 2023      | ![Talks 2023](./resources/images/icon-talk.png) **May, 2023:** Gave an invited talk at UBER. Also spoke at [ICSE 2023](https://conf.researchr.org/home/icse-2023) about [Retrieval-Based Prompt Selection](https://nashid.github.io/resources/papers/cedar-icse23.pdf) and [Different Code Representations for Learning-Based Program Repair](https://nashid.github.io/resources/papers/reptory-emse22.pdf). |
-| April, 2023    | ![ICST 2023](./resources/images/icon-talk.png) **April, 2023:** Presented at [ICST 2023](https://conf.researchr.org/home/icst-2023) on [Neural Program Repair](https://nashid.github.io/resources/papers/glance-icst23.pdf).                                                                                                                                                                                 |
-
-
-
 - [2023-12] I am serving as a PC member for [DeepTest 2024](https://conf.researchr.org/home/icse-2024/deeptest-2024).
 - [2023-08] I am serving as a PC member for [ReSAISE 2023](https://resaise.github.io/2023/committee.html).
 - [2023-05] I gave a invited talk at UBER programming system group about retrieval based code prompt selection for code-related tasks.
