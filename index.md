@@ -27,7 +27,7 @@ My research aims to understand the role of context for code-related tasks with l
 
 <table>
   <tr>
-    <th style="vertical-align: top;">**News**</th>
+    <th style="vertical-align: top;">News</th>
     <th>&nbsp;</th>
   </tr>
   <tr>
