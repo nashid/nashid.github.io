@@ -18,6 +18,10 @@ My research aims to understand the role of context for code-related tasks with l
     <th>&nbsp;</th>
   </tr>
   <tr>
+    <td style="vertical-align: top;">January,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/home/forge-2024">Forge 2024</a>.</td>
+  </tr>
+  <tr>
     <td style="vertical-align: top;">December,&nbsp;2023</td>
     <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/katana-tosem23.pdf">Katana</a> is accepted in the journal first track of <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a>.</td>
   </tr>
