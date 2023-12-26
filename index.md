@@ -19,7 +19,7 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
   <tr>
     <td style="vertical-align: top;">January,&nbsp;2024</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/home/forge-2024">Forge 2024</a>.</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/committee/forge-2024/forge-2024-papers-program-committee">Forge 2024</a>.</td>
   </tr>
   <tr>
     <td style="vertical-align: top;">December,&nbsp;2023</td>
