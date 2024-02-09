@@ -1,3 +1,10 @@
+- id: formnexus-under-submission
+  title: "Bridging Semantics for Automated Web Form Testing"
+  authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Ali Mesbah
+  venue: Under submission, 12 pages
+  year: 2024
+  # code: https://github.com/apicarve/apicarver
+
 - id: cedar-icse23
   title: "Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning"
   authors: Nashid Noor, Mifta Santaha, and Ali Mesbah
