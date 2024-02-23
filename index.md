@@ -13,6 +13,11 @@ My research aims to understand the role of context for code-related tasks with l
 ---
 
 <table>
+  <tr>
+    <td style="vertical-align: top;">February,&nbsp;2024</td>
+    <a><img src="./resources/images/icon-talk.png" width="20" height="20"> I received an invitation to give a talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024#program">DeepTest 2024</a> on understanding the role of code representations in learning code repair.</td>
+  </tr>
+  <tr>
   <tr> 
     <th style="vertical-align: top; text-align: left;">News</th>
     <th>&nbsp;</th>
