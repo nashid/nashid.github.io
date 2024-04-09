@@ -15,7 +15,7 @@
 - id: katana-tosem23
   title: "Katana: Dual Slicing-Based Context for Learning Bug Fixes"
   authors: Mifta Sintaha, Nashid Noor, and Ali Mesbah
-  venue: ACM Transactions on Software Engineering and Methodology (TOSEM) [ICSE 2024 - Journal-First Track]
+  venue: ACM Transactions on Software Engineering and Methodology (TOSEM)   [ICSE 2024 - Journal-First Track]
   year: 2023
   # code: https://doi.org/10.5281/zenodo.4007539
 
@@ -29,6 +29,6 @@
 - id: reptory-emse22
   title: "A Controlled Experiment of Different Code Representations for Learning-Based Program Repair"
   authors: Namavar Marjane, Noor Nashid, and Ali Mesbah (Both authors contributed equally)
-  venue: Empirical Software Engineering Journal (EMSE) [ICSE 2023 - Journal-First Track]
+  venue: Empirical Software Engineering Journal (EMSE)    [ICSE 2023 - Journal-First Track]
   year: 2022
   # code: https://github.com/saltlab/vista
