@@ -30,7 +30,7 @@ My research aims to understand the role of context for code-related tasks with l
 
  <tr>
     <td style="vertical-align: top;">April,&nbsp;2024</td>
-    <td><img src="./resources/images/icon-fire.png" width="20" height="20"> Vancouver ✈️ Lisboa ➡️ ICSE 🎉👨‍🏫</td>
+    <td><img src="./resources/images/icon-boom.png" width="20" height="20"> Vancouver ✈️ Lisboa ➡️ ICSE 🎉👨‍🏫</td>
   </tr>
 
   <tr>
