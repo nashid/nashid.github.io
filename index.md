@@ -17,6 +17,14 @@ My research aims to understand the role of context for code-related tasks with l
     <th style="vertical-align: top; text-align: left;">News</th>
     <th>&nbsp;</th>
   </tr>
+    <tr>
+    <td style="vertical-align: top;">March,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I will give a invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024#program">DeepTest 2024</a> on understanding the role of context for code-related tasks.</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: top;">February,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-trophy.png" width="20" height="20"> Received ACM SIGSOFT CAPS travel grant for <a href="https://conf.researchr.org/profile/icse-2024/noornashid">ICSE 2024</a>.</td>
+  </tr>
   <tr>
     <td style="vertical-align: top;">January,&nbsp;2024</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/committee/forge-2024/forge-2024-papers-program-committee">Forge 2024</a>.</td>
