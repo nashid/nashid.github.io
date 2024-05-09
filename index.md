@@ -17,10 +17,22 @@ My research aims to understand the role of context for code-related tasks with l
     <th style="vertical-align: top; text-align: left;">News</th>
     <th>&nbsp;</th>
   </tr>
-    <tr>
+
+  <tr>
+    <td style="vertical-align: top;">April,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024">DeepTest 2024</a> on "The Role of Context in AI-Driven Code Generation".</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">April,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a> on <a href="https://nashid.github.io/resources/papers/katana-tosem23.pdf">Katana: Dual Slicing Based Context for Learning Bug Fixes</a>.</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">March,&nbsp;2024</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I will give a invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024#program">DeepTest 2024</a> on understanding the role of context for code-related tasks.</td>
   </tr>
+
   <tr>
     <td style="vertical-align: top;">February,&nbsp;2024</td>
     <td><img src="./resources/images/icon-trophy.png" width="20" height="20"> Received ACM SIGSOFT CAPS travel grant for <a href="https://conf.researchr.org/profile/icse-2024/noornashid">ICSE 2024</a>.</td>
