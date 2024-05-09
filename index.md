@@ -19,6 +19,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">May,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a journal article <a href="https://onlinelibrary.wiley.com/page/journal/20477481/homepage/editorialboard.html">Journal of Software: Evolution and Process</a>. Thanks Dr. Andrea Stocco!</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">April,&nbsp;2024</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024">DeepTest 2024</a> on "The Role of Context in AI-Driven Code Generation".</td>
   </tr>
@@ -42,10 +47,12 @@ My research aims to understand the role of context for code-related tasks with l
     <td style="vertical-align: top;">February,&nbsp;2024</td>
     <td><img src="./resources/images/icon-trophy.png" width="20" height="20"> Received ACM SIGSOFT CAPS travel grant for <a href="https://conf.researchr.org/profile/icse-2024/noornashid">ICSE 2024</a>.</td>
   </tr>
+  
   <tr>
     <td style="vertical-align: top;">January,&nbsp;2024</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/committee/forge-2024/forge-2024-papers-program-committee">Forge 2024</a>.</td>
   </tr>
+
   <tr>
     <td style="vertical-align: top;">December,&nbsp;2023</td>
     <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/katana-tosem23.pdf">Katana</a> is accepted in the journal first track of <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a>.</td>
