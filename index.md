@@ -20,7 +20,7 @@ My research aims to understand the role of context for code-related tasks with l
 
   <tr>
     <td style="vertical-align: top;">May,&nbsp;2024</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a journal article <a href="https://onlinelibrary.wiley.com/page/journal/20477481/homepage/editorialboard.html">Journal of Software: Evolution and Process</a>. Thanks Dr. Andrea Stocco!</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review a journal article for <a href="https://onlinelibrary.wiley.com/journal/20477481">Journal of Software: Evolution and Process</a>. Thanks Dr. Andrea Stocco!</td>
   </tr>
 
   <tr>
