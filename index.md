@@ -20,7 +20,7 @@ My research aims to understand the role of context for code-related tasks with l
 
   <tr>
     <td style="vertical-align: top;">May,&nbsp;2024</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a https://conf.researchr.org/track/ase-2024/ase-2024-industry-showcase">ASE 2024 Industry Showcase</a>.</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/track/ase-2024/ase-2024-industry-showcase">ASE 2024 Industry Showcase</a>.</td>
   </tr>
 
   <tr>
