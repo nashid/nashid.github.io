@@ -19,6 +19,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">August,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a invited talk at <a href="https://dosu.dev/">Dosu</a> on "The Role of Context in AI-Driven Code Generation".</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">June,&nbsp;2024</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://resaise.github.io/2024/committee.html">ReSAISE 2024</a>.</td>
   </tr>
