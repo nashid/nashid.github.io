@@ -1,7 +1,7 @@
-- id: formnexus-under-submission
-  title: "Bridging Semantics for Automated Web Form Testing"
+- id: formnexus-issta24
+  title: "Semantic Constraint Inference for Web Form Test Generation"
   authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Ali Mesbah
-  venue: ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), 12 pages
+  venue: ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), 13 pages
   year: 2024
   # code: https://github.com/apicarve/apicarver
 
