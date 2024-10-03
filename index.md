@@ -19,6 +19,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">November,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://2025.msrconf.org/track/msr-2025-industry-track">Mining Software Repositories (MSR) Industry Track</a>.</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">October,&nbsp;2024</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a Junior PC member for <a href="https://2025.msrconf.org/">MSR 2025 - Technical Papers</a>.</td>
   </tr>
