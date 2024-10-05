@@ -1,4 +1,9 @@
 # 2025
+- name: International Conference on Software Engineering (ICSE) Artifact Evaluation Track
+  role: PC Member
+  year: 2025
+  website: https://conf.researchr.org/track/icse-2025/icse-2025-artifact-evaluation
+
 - name: DeepTest 2025, Co-located with ICSE
   role: PC Member
   year: 2025
@@ -14,12 +19,11 @@
   year: 2025
   website: https://2025.msrconf.org/
 
-- name: International Conference on Software Engineering (ICSE) Artifact Evaluation Track
-  role: PC Member
+- name: International Conference on Technical Debt (TechDebt) 2025
+  role: Junior PC Member
   year: 2025
-  website: https://conf.researchr.org/track/icse-2025/icse-2025-artifact-evaluation
-
-# 2025
+  website: https://conf.researchr.org/home/TechDebt-2025
+  
 - name: International Conference on Software Engineering (ICSE)
   role: Co-Reviewer
   year: 2025

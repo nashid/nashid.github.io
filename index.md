@@ -18,13 +18,18 @@ My research aims to understand the role of context for code-related tasks with l
     <th>&nbsp;</th>
   </tr>
 
+  <tr>
+    <td style="vertical-align: top;">October,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-medal.png" width="20" height="20"> Delighted to be selected as 1 of 13 Junior PC members out of 34 nominations for <a href="https://conf.researchr.org/home/TechDebt-2025">TechDebt 2025</a>.</td>
+  </tr>
+
 <tr>
-    <td style="vertical-align: top;">November,&nbsp;2024</td>
+    <td style="vertical-align: top;">October,&nbsp;2024</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/home/icse-2024/deeptest-2025">DeepTest 2025</a>.</td>
   </tr>
 
   <tr>
-    <td style="vertical-align: top;">November,&nbsp;2024</td>
+    <td style="vertical-align: top;">October,&nbsp;2024</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://2025.msrconf.org/track/msr-2025-industry-track">Mining Software Repositories (MSR) Industry Track</a>.</td>
   </tr>
 
