@@ -1,3 +1,29 @@
+
+- id: naviqate-arxiv24
+  title: "NaviQAte: Functionality-Guided Web Application Navigation"
+  authors: Mobina Shahbandeh, Parsa Alian, Nashid Noor, Ali Mesbah
+  venue: Under Submission
+  year: 2024
+
+- id: flakidock-arxiv24
+  title: "Temporal Analysis and Repair of Flaky Dockerfiles"
+  authors: Taha Shabani, Nashid Noor, Parsa Alian, Ali Mesbah
+  venue: Under Submission
+  year: 2024
+
+- id: autoe2e-arxiv24
+  title: "A Feature-Based Approach to Generating Comprehensive End-to-End Tests"
+  authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Taha Shabani, Ali Mesbah
+  venue: Under Submission
+  year: 2024
+
+- id: lance-arxiv24
+  title: "Contextual API Completion for Unseen Repositories Using LLMs"
+  authors: Nashid Noor, Taha Shabani, Parsa Alian, and Ali Mesbah
+  venue: Under Submission
+  year: 2024
+  # code: https://github.com/apicarve/apicarver
+
 - id: formnexus-issta24
   title: "Semantic Constraint Inference for Web Form Test Generation"
   authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Ali Mesbah
