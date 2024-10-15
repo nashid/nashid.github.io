@@ -20,6 +20,11 @@ My research aims to understand the role of context for code-related tasks with l
 
   <tr>
     <td style="vertical-align: top;">October,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review a journal article for <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems & Software (Special Issue)</a>. Thanks Dr. Andrea Stocco!</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">October,&nbsp;2024</td>
     <td><img src="./resources/images/icon-medal.png" width="20" height="20"> Delighted to be selected as 1 of 13 Junior PC members out of 34 nominations for <a href="https://conf.researchr.org/home/TechDebt-2025">TechDebt 2025</a>.</td>
   </tr>
 
