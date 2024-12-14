@@ -19,6 +19,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">December,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review a journal article for <a href="https://dl.acm.org/journal/tosem">ACM Transactions on Software Engineering and Methodology (TOSEM)</a>. Thanks Dr. Iftekhar Ahmed!</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">November,&nbsp;2024</td>
     <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf">AUTOE2E</a> is accepted at <a href="https://conf.researchr.org/home/icse-2025">ICSE 2025</a>.</td>
   </tr>
