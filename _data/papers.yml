@@ -1,21 +1,20 @@
+- id: flakidock-icse25
+  title: "Dockerfile Flakiness: Characterization and Repair"
+  authors: Taha Shabani, Nashid Noor, Parsa Alian, Ali Mesbah
+  venue: IEEE/ACM International Conference on Software Engineering (ICSE), 13 pages
+  year: 2025
+  
+- id: autoe2e-arxiv24
+  title: "A Feature-Based Approach to Generating Comprehensive End-to-End Tests"
+  authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Taha Shabani, Ali Mesbah
+  venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
+  year: 2025
 
 - id: naviqate-arxiv24
   title: "NaviQAte: Functionality-Guided Web Application Navigation"
   authors: Mobina Shahbandeh, Parsa Alian, Nashid Noor, Ali Mesbah
   venue: Under Submission
   year: 2024
-
-- id: flakidock-icse25
-  title: "Dockerfile Flakiness: Characterization and Repair"
-  authors: Taha Shabani, Nashid Noor, Parsa Alian, Ali Mesbah
-  venue: IEEE/ACM International Conference on Software Engineering (ICSE), 13 pages
-  year: 2025
-
-- id: autoe2e-arxiv24
-  title: "A Feature-Based Approach to Generating Comprehensive End-to-End Tests"
-  authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Taha Shabani, Ali Mesbah
-  venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
-  year: 2025
 
 - id: lance-arxiv24
   title: "Contextual API Completion for Unseen Repositories Using LLMs"
