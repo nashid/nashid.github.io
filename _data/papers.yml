@@ -8,8 +8,8 @@
 - id: flakidock-icse25
   title: "Dockerfile Flakiness: Characterization and Repair"
   authors: Taha Shabani, Nashid Noor, Parsa Alian, Ali Mesbah
-  venue: Under Submission
-  year: 2024
+  venue: IEEE/ACM International Conference on Software Engineering (ICSE), 13 pages
+  year: 2025
 
 - id: autoe2e-arxiv24
   title: "A Feature-Based Approach to Generating Comprehensive End-to-End Tests"
