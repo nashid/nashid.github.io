@@ -19,6 +19,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">February,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/track/internetware-2025/internetware-2025-research-track">Internetware 2025</a>.</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">January,&nbsp;2025</td>
     <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/flakidock-icse25.pdf">FLAKIDOCK</a> is accepted at <a href="https://conf.researchr.org/home/icse-2025">ICSE 2025</a>.</td>
   </tr>
