@@ -20,6 +20,11 @@ My research aims to understand the role of context for code-related tasks with l
 
   <tr>
     <td style="vertical-align: top;">February,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://open-foundation-model.github.io/">Open Science for Foundation Models (SCI-FM), ICLR 2025 Workshop</a>.</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">February,&nbsp;2025</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://dl4c.github.io/">Deep Learning for Code (DL4C), ICLR 2025</a>.</td>
   </tr>
 
