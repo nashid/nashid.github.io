@@ -20,6 +20,16 @@ My research aims to understand the role of context for code-related tasks with l
 
   <tr>
     <td style="vertical-align: top;">February,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-talk.png" width="20" height="20">I gave a talk at UBC on retrieval-augmented code generation with large language models. Thanks Dr. Ali Mesbah.</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">February,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-talk.png" width="20" height="20">I gave a talk at UBC on program repair using large language models. Thanks to Dr. Ali Mesbah.</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">February,&nbsp;2025</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://open-foundation-model.github.io/">Open Science for Foundation Models (SCI-FM), ICLR 2025 Workshop</a>.</td>
   </tr>
 
@@ -142,10 +152,12 @@ My research aims to understand the role of context for code-related tasks with l
     <td style="vertical-align: top;">August,&nbsp;2023</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://resaise.github.io/2023/committee.html">ReSAISE 2023</a>.</td>
   </tr>
+
   <tr>
     <td style="vertical-align: top;">June,&nbsp;2023</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave an invited talk at UBER programming system group about reducing hallucinations for code related tasks with LLMs.</td>
   </tr>
+
   <tr>
     <td style="vertical-align: top;">May,&nbsp;2023</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/home/icse-2023">ICSE 2023</a> on <a href="https://nashid.github.io/resources/papers/cedar-icse23.pdf">Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning</a>.</td>
