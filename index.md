@@ -19,6 +19,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">March,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/science-of-computer-programming">Science of Computer Programming | Journal</a>.</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">February,&nbsp;2025</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20">I gave a talk at UBC on retrieval-augmented code generation with large language models. Thanks Dr. Ali Mesbah.</td>
   </tr>
