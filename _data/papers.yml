@@ -1,3 +1,9 @@
+- id: panta-arxiv25
+  title: "LLM Test Generation via Iterative Hybrid Program Analysis"
+  authors: Sijia Gu, Noor Nashid, Ali Mesbah
+  venue: Under Submission
+  year: 2025
+
 - id: flakidock-icse25
   title: "Dockerfile Flakiness: Characterization and Repair"
   authors: Taha Shabani, Nashid Noor, Parsa Alian, Ali Mesbah
