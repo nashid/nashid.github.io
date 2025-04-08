@@ -19,6 +19,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">April,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems & Software</a>.</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">March,&nbsp;2025</td>
     <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/science-of-computer-programming">Science of Computer Programming.</a>.</td>
   </tr>
