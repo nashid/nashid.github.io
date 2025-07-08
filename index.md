@@ -24,6 +24,11 @@ My research aims to understand the role of context for code-related tasks with l
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">June,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/information-and-software-technology">Information and Software Technology</a>.</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">May,&nbsp;2025</td>
     <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/details/icse-2025/icse-2025-research-track/226/Dockerfile-Flakiness-Characterization-and-Repair">ICSE 2025</a> on <a href="https://nashid.github.io/resources/papers/flakidock-icse25.pdf">Dockerfile Flakiness: Characterization and Repair</a>.</td>
   </tr>
