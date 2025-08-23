@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 weight: 6
 ---
-I am a final-year PhD candidate at the University of British Columbia specializing in software engineering, program analysis, and large language models (LLMs). My research investigates how contextual and structural program information can be leveraged to advance LLM-based software engineering tasks and agentic AI systems that can plan, code, test, and deploy with minimal human intervention. This work has resulted in publications at premier venues including ICSE, ASE, and TOSEM. I have introduced novel techniques for unit test generation, automated program repair, and code completion, each demonstrating substantial improvements over state-of-the-art baselines.
+I am a final-year PhD candidate at the University of British Columbia specializing in software engineering, program analysis, and large language models (LLMs). My research investigates how contextual and structural program information can be leveraged to advance LLM-based software engineering tasks and agentic AI systems that can plan, code, test, and deploy with minimal human intervention. This work has resulted in publications at premier venues including ICSE, ASE, and TOSEM.
 
 In addition to my academic research, I gained experience in industry R&D at Walmart Labs, Kaspersky, and IBM, where I designed and deployed large-scale production systems in distributed computing, application performance management, and cybersecurity. 
 
