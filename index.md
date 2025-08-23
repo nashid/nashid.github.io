@@ -18,6 +18,11 @@ My research aims to understand the role of context for code-related tasks with l
     <th>&nbsp;</th>
   </tr>
 
+  <tr>
+    <td style="vertical-align: top;">July,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/panta-arxiv25.pdf">on multi-hunk code divergence</a> is accepted at <a href="https://conf.researchr.org/track/ase-2025/ase-2025-papers">ASE 2025</a>.</td>
+  </tr>
+
 
   <tr>
     <td style="vertical-align: top;">July,&nbsp;2025</td>
