@@ -10,7 +10,7 @@ In addition to my academic research, I gained experience in industry R&D at Walm
 
 Earlier in my career, I contributed to the first-ever Voter ID and National ID system for Bangladesh, developed in collaboration with the United Nations Development Programme (UNDP) and the Bangladesh Election Commission at a time when no such infrastructure existed. This project of national importance established the foundation for transparent electoral processes and now serves millions of citizens.
 
-I aspire to work at the intersection of academia and industry to build novel solutions, tools, and techniques that directly benefit software practitioners. I believe the boundary between academic research and industrial practice in software engineering will continue to blur, and I want to play an active role in fostering this bidirectional flow of knowledge to ensure both scientific advancement and practical impact. I am interested in how technology might shape the trajectory of our civilization and in advancing AI research that aligns with societal benefit.
+I aspire to work at the intersection of academia and industry to build novel solutions, tools, and techniques that directly benefit software practitioners. I believe the boundary between academic research and industrial practice in software engineering will continue to blur, and I want to play an active role in fostering this bidirectional flow of knowledge to ensure both scientific advancement and practical impact. I am also interested in how technology might shape the trajectory of our civilization and in advancing AI research that aligns with societal benefit.
 
 <a href="/resources/docs/resume_nashid.pdf" target="_blank">
         Full CV <span class="icon"><svg><use xlink:href="#icon-pdf"/></svg></span>
