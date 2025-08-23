@@ -7,7 +7,7 @@ group: about
 
 I am a Ph.D. candidate in Computer Software Engineering from University of British Columbia under the supervision of Dr. Ali Mesbah. 
 I am fortunate to be part of the [SALT lab](https://people.ece.ubc.ca/amesbah/salt/).
-My research is in software engineering, with emphasis on software analysis and testing, code repair, test code generation, large language models, and ML4SE. 
+My research is in software engineering, with emphasis on software analysis and testing, code repair, test code generation, agentic AI, large language models, and ML4SE. 
 My research aims to understand the role of context for code-related tasks with large language models.
 
 ---

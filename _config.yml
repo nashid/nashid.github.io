@@ -5,7 +5,7 @@
 # User settings
 title: Nashid Noor
 email: nashid@ece.ubc.ca
-group: SALT lab, UBC
+group: UBC
 groupweb: http://salt.ece.ubc.ca/
 dept: Electrical and Computer Engineering
 deptweb: https://www.ece.ubc.ca/
@@ -26,7 +26,7 @@ paginate_path: /news/page:num/
 excerpt_separator: <!--more-->
 
 # Site-wide variables
-keywords: Software Engineering, Software Testing, Large Language Models, Deep Learning
+keywords: Software Engineering, Software Testing, Agentic AI, Large Language Models, Deep Learning
 copyright: Copyright (c) Nashid Noor
 
 # Plugins
