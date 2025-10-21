@@ -22,7 +22,7 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
   <tr>
     <td style="vertical-align: top;">September,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://dl.acm.org/journal/tosem">Empirical Software Engineering (EMSE)</a>.</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://link.springer.com/journal/10664">Empirical Software Engineering (EMSE)</a>.</td>
   </tr>
 
   <tr>
