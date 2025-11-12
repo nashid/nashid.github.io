@@ -25,7 +25,7 @@ I aspire to work at the intersection of academia and industry to build novel sol
   <tr>
     <td style="vertical-align: top;">November,&nbsp;2025</td>
     <td>
-      <img src="./resources/images/icon-laurel.png" width="20" height="20">
+      <img src="./resources/images/icon-laurel.png" width="28" height="28">
       I am honored to receive the <strong>ACM SIGSOFT Distinguished Paper Award</strong> at the 
       40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)!
   </td>
