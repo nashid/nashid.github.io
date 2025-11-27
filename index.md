@@ -23,6 +23,11 @@ I aspire to work at the intersection of academia and industry to build novel sol
   </tr>
 
   <tr>
+    <td style="vertical-align: top;">December,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/track/saner-2026/saner-2026-tool-demo-track">IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) Tool Demo Track</a>.</td>
+  </tr>
+
+  <tr>
     <td style="vertical-align: top;">November,&nbsp;2025</td>
     <td>
       <img src="./resources/images/icon-laurel.png" width="28" height="28">
