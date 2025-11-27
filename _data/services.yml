@@ -4,6 +4,11 @@
   year: 2026
   website: https://2026.msrconf.org/track/msr-2026-industry-track
 
+- name: IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) Tool Demo Track
+  role: PC Member
+  year: 2026
+  website: https://conf.researchr.org/track/saner-2026/saner-2026-tool-demo-track
+
 # 2025
 - name:  Empirical Software Engineering (EMSE)
   role: Invited Reviewer
