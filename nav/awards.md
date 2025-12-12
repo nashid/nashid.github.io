@@ -30,8 +30,13 @@ group: awards
 
 {% assign sorted_talks = site.data.talks | sort: "year" | reverse %}
 {% for talk in sorted_talks %}
-<div class="row service" style="margin-bottom: 1.2em;">
-  <div class="left">
+<div class="row service" style="margin-bottom: 1.2em; display: flex;">
+  {% if talk.award %}
+  <div style="margin-right: 0.8em; display: flex; align-items: center;">
+    <img src="{{ "/resources/images/acm_sigsoft_award.jpeg" | prepend: site.baseurl }}" alt="{{ talk.award }}" title="{{ talk.award }}" style="height: 60px; width: auto;" />
+  </div>
+  {% endif %}
+  <div class="left" style="flex: 1;">
     <a href="{{ talk.website }}" target="_blank"><strong>{{ talk.title }}</strong></a>{% if talk.location %} &mdash; {{ talk.location }}{% endif %}
     <br/>
     {{ talk.description }}
