@@ -25,5 +25,3 @@ I aspire to work at the intersection of academia and industry to build novel sol
 - [AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests](https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf), ICSE 2025
 - [CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning](https://nashid.github.io/resources/papers/cedar-icse23.pdf), ICSE 2023
 
-[All publications]({{ site.baseurl }}/papers/) • [All news]({{ site.baseurl }}/news/)
-
