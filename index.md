@@ -18,9 +18,9 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
 <img src="./resources/images/icon-trophy-new.svg" width="20" height="20"> **ACM SIGSOFT Distinguished Paper Award** at ASE 2025
 
-<img src="./resources/images/icon-fire-new.svg" width="20" height="20"> Issue2Test: Generating Reproducing Test Cases from Issue Reports, ICSE 2026
+<img src="./resources/images/icon-rocket.svg" width="20" height="20"> Issue2Test: Generating Reproducing Test Cases from Issue Reports, ICSE 2026
 
-<img src="./resources/images/icon-fire-new.svg" width="20" height="20"> Panta: LLM Test Generation via Iterative Hybrid Program Analysis, ICSE 2026
+<img src="./resources/images/icon-glowing-star.svg" width="20" height="20"> Panta: LLM Test Generation via Iterative Hybrid Program Analysis, ICSE 2026
 
 <img src="./resources/images/icon-star.svg" width="20" height="20"> Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair, ASE 2025
 
