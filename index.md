@@ -14,13 +14,9 @@ My work has been recognized by the <strong>ACM SIGSOFT Distinguished Paper Award
 
 I aspire to work at the intersection of academia and industry to build novel solutions, tools, and techniques that directly benefit software practitioners. I believe the boundary between academic research and industrial practice in software engineering will continue to blur, and I want to play an active role in fostering this bidirectional flow of knowledge to ensure both scientific advancement and practical impact. I am also interested in how technology might shape the trajectory of our civilization and in advancing AI research that aligns with societal benefit.
 
----
-
-### Highlight
+### Highlights & Selected Publications
 
 **ACM SIGSOFT Distinguished Paper Award** at ASE 2025
-
-### Selected Publications
 
 - [Issue2Test: Generating Reproducing Test Cases from Issue Reports](https://nashid.github.io/resources/papers/issue2test-icse26.pdf), ICSE 2026
 - [Panta: LLM Test Generation via Iterative Hybrid Program Analysis](https://nashid.github.io/resources/papers/panta-arxiv25.pdf), ICSE 2026
