@@ -58,6 +58,7 @@
             <div class="trigger">
             	  {% assign pages = site.pages | sort:'weight', 'last'  %}
                 {% for node in pages %}
+                	{% unless node.url contains '/CLAUDE' %}
                 	{% if node.title and node.url == page.url %}
                 		<a class="page-link-active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
                 	{% elsif node.title and page.group and node.group == page.group %}
@@ -65,6 +66,7 @@
                 	{% elsif node.title %}
                     	<a class="page-link" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
                 	{% endif %}
+                	{% endunless %}
                 {% endfor %}
             </div>
         </nav>
