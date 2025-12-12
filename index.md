@@ -16,73 +16,38 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
 ---
 
-<div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 1.5em; border-radius: 8px; border-left: 4px solid #d4af37; margin-bottom: 2em;">
-  <div style="display: flex; align-items: center; gap: 1em;">
-    <img src="./resources/images/icon-laurel.png" width="48" height="48">
-    <div>
-      <div style="font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 0.3em;">Distinguished Recognition</div>
-      <div style="font-size: 1.2em; font-weight: bold; color: #2c3e50;">ACM SIGSOFT Distinguished Paper Award</div>
-      <div style="font-size: 0.95em; color: #555; margin-top: 0.2em;">40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)</div>
-    </div>
-  </div>
-</div>
-
-### Recent Publications
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2em; margin-bottom: 2em;">
-
-  <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1.2em; background: #ffffff; transition: box-shadow 0.2s;">
-    <div style="color: #0366d6; font-weight: 600; margin-bottom: 0.5em;">ICSE 2026</div>
-    <div style="font-size: 1.05em; font-weight: 500; margin-bottom: 0.8em; line-height: 1.4;">
-      <a href="https://nashid.github.io/resources/papers/issue2test-icse26.pdf" style="color: #24292e; text-decoration: none;">Issue2Test: Generating Reproducing Test Cases from Issue Reports</a>
-    </div>
-    <div style="font-size: 0.85em; color: #586069;">Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah</div>
-  </div>
-
-  <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1.2em; background: #ffffff; transition: box-shadow 0.2s;">
-    <div style="color: #0366d6; font-weight: 600; margin-bottom: 0.5em;">ICSE 2026</div>
-    <div style="font-size: 1.05em; font-weight: 500; margin-bottom: 0.8em; line-height: 1.4;">
-      <a href="https://nashid.github.io/resources/papers/panta-arxiv25.pdf" style="color: #24292e; text-decoration: none;">Panta: LLM Test Generation via Iterative Hybrid Program Analysis</a>
-    </div>
-    <div style="font-size: 0.85em; color: #586069;">Sijia Gu, Noor Nashid, Ali Mesbah</div>
-  </div>
-
-  <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1.2em; background: #ffffff; transition: box-shadow 0.2s;">
-    <div style="color: #6f42c1; font-weight: 600; margin-bottom: 0.5em;">ASE 2025</div>
-    <div style="font-size: 1.05em; font-weight: 500; margin-bottom: 0.8em; line-height: 1.4;">
-      <a href="https://nashid.github.io/resources/papers/hunk-divergence-ase25.pdf" style="color: #24292e; text-decoration: none;">Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair</a>
-    </div>
-    <div style="font-size: 0.85em; color: #586069;">Noor Nashid, Daniel Ding, Keheliya Gallaba, Ahmed E Hassan, Ali Mesbah</div>
-  </div>
-
-  <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1.2em; background: #ffffff; transition: box-shadow 0.2s;">
-    <div style="color: #0366d6; font-weight: 600; margin-bottom: 0.5em;">ICSE 2025</div>
-    <div style="font-size: 1.05em; font-weight: 500; margin-bottom: 0.8em; line-height: 1.4;">
-      <a href="https://nashid.github.io/resources/papers/flakidock-icse25.pdf" style="color: #24292e; text-decoration: none;">FLAKIDOCK: Dockerfile Flakiness Characterization and Repair</a>
-    </div>
-    <div style="font-size: 0.85em; color: #586069;">Taha Shabani, Noor Nashid, Parsa Alian, Ali Mesbah</div>
-  </div>
-
-  <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1.2em; background: #ffffff; transition: box-shadow 0.2s;">
-    <div style="color: #0366d6; font-weight: 600; margin-bottom: 0.5em;">ICSE 2025</div>
-    <div style="font-size: 1.05em; font-weight: 500; margin-bottom: 0.8em; line-height: 1.4;">
-      <a href="https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf" style="color: #24292e; text-decoration: none;">AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests</a>
-    </div>
-    <div style="font-size: 0.85em; color: #586069;">Parsa Alian, Noor Nashid, Mobina Shahbandeh, Taha Shabani, Ali Mesbah</div>
-  </div>
-
-  <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1.2em; background: #ffffff; transition: box-shadow 0.2s;">
-    <div style="color: #28a745; font-weight: 600; margin-bottom: 0.5em;">ICSE 2023</div>
-    <div style="font-size: 1.05em; font-weight: 500; margin-bottom: 0.8em; line-height: 1.4;">
-      <a href="https://nashid.github.io/resources/papers/cedar-icse23.pdf" style="color: #24292e; text-decoration: none;">CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning</a>
-    </div>
-    <div style="font-size: 0.85em; color: #586069;">Noor Nashid, Mifta Santaha, Ali Mesbah</div>
-  </div>
-
-</div>
-
-<div style="text-align: right;">
-  <a href="{{ site.baseurl }}/papers/" style="font-weight: 500;">View all publications →</a> &nbsp;&nbsp;
-  <a href="{{ site.baseurl }}/news/" style="font-weight: 500;">View all news →</a>
+<div style="background: #1e1e1e; color: #d4d4d4; padding: 1.5em; border-radius: 4px; font-family: 'Consolas', 'Monaco', 'Courier New', monospace; font-size: 0.95em; line-height: 1.6; margin-bottom: 2em;">
+<span style="color: #569cd6;">const</span> research <span style="color: #d4d4d4;">=</span> {<br>
+&nbsp;&nbsp;<span style="color: #9cdcfe;">awards</span>: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">title</span>: <span style="color: #ce9178;">"ACM SIGSOFT Distinguished Paper"</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">venue</span>: <span style="color: #ce9178;">"ASE 2025"</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">highlight</span>: <span style="color: #569cd6;">true</span> <span style="color: #6a9955;">// ⭐</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;],<br>
+<br>
+&nbsp;&nbsp;<span style="color: #9cdcfe;">publications</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">ICSE_2026</span>: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span style="color: #9cdcfe;">title</span>: <span style="color: #ce9178;">"<a href="https://nashid.github.io/resources/papers/issue2test-icse26.pdf" style="color: #ce9178; text-decoration: none;">Issue2Test</a>"</span>, <span style="color: #9cdcfe;">topic</span>: <span style="color: #ce9178;">"test generation"</span> },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span style="color: #9cdcfe;">title</span>: <span style="color: #ce9178;">"<a href="https://nashid.github.io/resources/papers/panta-arxiv25.pdf" style="color: #ce9178; text-decoration: none;">Panta</a>"</span>, <span style="color: #9cdcfe;">topic</span>: <span style="color: #ce9178;">"LLM testing"</span> }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;],<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">ASE_2025</span>: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span style="color: #9cdcfe;">title</span>: <span style="color: #ce9178;">"<a href="https://nashid.github.io/resources/papers/hunk-divergence-ase25.pdf" style="color: #ce9178; text-decoration: none;">Multi-Hunk Divergence</a>"</span>, <span style="color: #9cdcfe;">topic</span>: <span style="color: #ce9178;">"program repair"</span> }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;],<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">ICSE_2025</span>: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span style="color: #9cdcfe;">title</span>: <span style="color: #ce9178;">"<a href="https://nashid.github.io/resources/papers/flakidock-icse25.pdf" style="color: #ce9178; text-decoration: none;">FLAKIDOCK</a>"</span>, <span style="color: #9cdcfe;">topic</span>: <span style="color: #ce9178;">"dockerfile repair"</span> },<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span style="color: #9cdcfe;">title</span>: <span style="color: #ce9178;">"<a href="https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf" style="color: #ce9178; text-decoration: none;">AUTOE2E</a>"</span>, <span style="color: #9cdcfe;">topic</span>: <span style="color: #ce9178;">"E2E testing"</span> }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;],<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #9cdcfe;">ICSE_2023</span>: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span style="color: #9cdcfe;">title</span>: <span style="color: #ce9178;">"<a href="https://nashid.github.io/resources/papers/cedar-icse23.pdf" style="color: #ce9178; text-decoration: none;">CEDAR</a>"</span>, <span style="color: #9cdcfe;">topic</span>: <span style="color: #ce9178;">"few-shot learning"</span> }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;&nbsp;}<br>
+};<br>
+<br>
+<span style="color: #6a9955;">// <a href="{{ site.baseurl }}/papers/" style="color: #6a9955; text-decoration: none;">view all publications →</a></span><br>
+<span style="color: #6a9955;">// <a href="{{ site.baseurl }}/news/" style="color: #6a9955; text-decoration: none;">view all news →</a></span>
 </div>
 
