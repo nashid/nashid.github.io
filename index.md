@@ -20,7 +20,7 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
 **ACM SIGSOFT Distinguished Paper Award** at ASE 2025
 
-### Recent Publications
+### Selected Publications
 
 - [Issue2Test: Generating Reproducing Test Cases from Issue Reports](https://nashid.github.io/resources/papers/issue2test-icse26.pdf), ICSE 2026
 - [Panta: LLM Test Generation via Iterative Hybrid Program Analysis](https://nashid.github.io/resources/papers/panta-arxiv25.pdf), ICSE 2026
