@@ -6,6 +6,7 @@
   location: Seoul, South Korea
   description: Talk on "Multi-Hunk Code Divergence"
   type: conference
+  award: ACM SIGSOFT Distinguished Paper Award
   website: https://conf.researchr.org/details/ase-2025/ase-2025-papers/64/Characterizing-Multi-Hunk-Patches-Divergence-Proximity-and-LLM-Repair-Challenges
 
 - year: 2025
