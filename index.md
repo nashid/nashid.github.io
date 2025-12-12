@@ -24,9 +24,9 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
 <img src="./resources/images/icon-glowing-star.svg" width="20" height="20"> Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair, ASE 2025
 
-<img src="./resources/images/icon-sparkles.svg" width="20" height="20"> FLAKIDOCK: Dockerfile Flakiness Characterization and Repair, ICSE 2025
+<img src="./resources/images/icon-gem.svg" width="20" height="20"> FLAKIDOCK: Dockerfile Flakiness Characterization and Repair, ICSE 2025
 
-<img src="./resources/images/icon-sparkles.svg" width="20" height="20"> AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests, ICSE 2025
+<img src="./resources/images/icon-bulb.svg" width="20" height="20"> AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests, ICSE 2025
 
 <img src="./resources/images/icon-fire-new.svg" width="20" height="20"> CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning, ICSE 2023
 
