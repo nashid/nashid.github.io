@@ -1,3 +1,10 @@
+- id: agentic-repair-arxiv24
+  title: "Beyond Accuracy: Behavioral Dynamics of Agentic Multi-Hunk Repair"
+  authors: Noor Nashid, Daniel Ding, Keheliya Gallaba, Ahmed E. Hassan, Ali Mesbah
+  venue: Under Submission
+  year: 2025
+  arxiv: https://arxiv.org/abs/2511.11012
+
 - id: issue2test-icse26
   title: "Issue2Test: Generating Reproducing Test Cases from Issue Reports"
   authors: Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah
