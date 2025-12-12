@@ -28,5 +28,5 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
 <img src="./resources/images/icon-sparkles.svg" width="20" height="20"> [AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests](https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf), ICSE 2025
 
-<img src="./resources/images/icon-scroll.svg" width="20" height="20"> [CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning](https://nashid.github.io/resources/papers/cedar-icse23.pdf), ICSE 2023
+<img src="./resources/images/icon-fire-new.svg" width="20" height="20"> [CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning](https://nashid.github.io/resources/papers/cedar-icse23.pdf), ICSE 2023
 
