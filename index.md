@@ -23,23 +23,22 @@ I aspire to work at the intersection of academia and industry to build novel sol
   </tr>
 
   <tr>
-    <td style="vertical-align: top;">December,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/track/saner-2026/saner-2026-tool-demo-track">IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) Tool Demo Track</a>.</td>
+    <td style="vertical-align: top;">July,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/issue2test-icse26.pdf">Issue2Test</a> is accepted at <a href="https://conf.researchr.org/track/icse-2026/icse-2026-research-track">ICSE 2026</a>.</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">July,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/panta-arxiv25.pdf">Panta</a> is accepted at <a href="https://conf.researchr.org/track/icse-2026/icse-2026-research-track">ICSE 2026</a>.</td>
   </tr>
 
   <tr>
     <td style="vertical-align: top;">November,&nbsp;2025</td>
     <td>
       <img src="./resources/images/icon-laurel.png" width="28" height="28">
-      I am honored to receive the <strong>ACM SIGSOFT Distinguished Paper Award</strong> at the 
+      I am honored to receive the <strong>ACM SIGSOFT Distinguished Paper Award</strong> at the
       40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)!
   </td>
-  </tr>
-
-
-  <tr>
-    <td style="vertical-align: top;">September,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://link.springer.com/journal/10664">Empirical Software Engineering (EMSE)</a>.</td>
   </tr>
 
   <tr>
@@ -47,10 +46,19 @@ I aspire to work at the intersection of academia and industry to build novel sol
     <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/hunk-divergence-ase25.pdf">on multi-hunk code divergence</a> is accepted at <a href="https://conf.researchr.org/track/ase-2025/ase-2025-papers">ASE 2025</a>.</td>
   </tr>
 
+  <tr>
+    <td style="vertical-align: top;">January,&nbsp;2025</td>
+    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/flakidock-icse25.pdf">FLAKIDOCK</a> is accepted at <a href="https://conf.researchr.org/home/icse-2025">ICSE 2025</a>.</td>
+  </tr>
 
   <tr>
-    <td style="vertical-align: top;">July,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/panta-arxiv25.pdf">Panta</a> is accepted at <a href="https://conf.researchr.org/track/icse-2026/icse-2026-research-track">ICSE 2026</a>.</td>
+    <td style="vertical-align: top;">November,&nbsp;2024</td>
+    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf">AUTOE2E</a> is accepted at <a href="https://conf.researchr.org/home/icse-2025">ICSE 2025</a>.</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">May,&nbsp;2023</td>
+    <td><img src="./resources/images/icon-talk.png" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/home/icse-2023">ICSE 2023</a> on <a href="https://nashid.github.io/resources/papers/cedar-icse23.pdf">Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning</a>.</td>
   </tr>
 
   <tr>
