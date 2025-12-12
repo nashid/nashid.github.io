@@ -18,15 +18,15 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
 <img src="./resources/images/icon-laurel.png" width="20" height="20"> **ACM SIGSOFT Distinguished Paper Award** at ASE 2025
 
-<img src="./resources/images/icon-pin.png" width="20" height="20"> [Issue2Test: Generating Reproducing Test Cases from Issue Reports](https://nashid.github.io/resources/papers/issue2test-icse26.pdf), ICSE 2026
+<img src="./resources/images/icon-fire.png" width="20" height="20"> [Issue2Test: Generating Reproducing Test Cases from Issue Reports](https://nashid.github.io/resources/papers/issue2test-icse26.pdf), ICSE 2026
 
-<img src="./resources/images/icon-pin.png" width="20" height="20"> [Panta: LLM Test Generation via Iterative Hybrid Program Analysis](https://nashid.github.io/resources/papers/panta-arxiv25.pdf), ICSE 2026
+<img src="./resources/images/icon-fire.png" width="20" height="20"> [Panta: LLM Test Generation via Iterative Hybrid Program Analysis](https://nashid.github.io/resources/papers/panta-arxiv25.pdf), ICSE 2026
 
-<img src="./resources/images/icon-pin.png" width="20" height="20"> [Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair](https://nashid.github.io/resources/papers/hunk-divergence-ase25.pdf), ASE 2025
+<img src="./resources/images/icon-boom.png" width="20" height="20"> [Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair](https://nashid.github.io/resources/papers/hunk-divergence-ase25.pdf), ASE 2025
 
-<img src="./resources/images/icon-pin.png" width="20" height="20"> [FLAKIDOCK: Dockerfile Flakiness Characterization and Repair](https://nashid.github.io/resources/papers/flakidock-icse25.pdf), ICSE 2025
+<img src="./resources/images/icon-paper-accepted.png" width="20" height="20"> [FLAKIDOCK: Dockerfile Flakiness Characterization and Repair](https://nashid.github.io/resources/papers/flakidock-icse25.pdf), ICSE 2025
 
-<img src="./resources/images/icon-pin.png" width="20" height="20"> [AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests](https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf), ICSE 2025
+<img src="./resources/images/icon-paper-accepted.png" width="20" height="20"> [AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests](https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf), ICSE 2025
 
 <img src="./resources/images/icon-pin.png" width="20" height="20"> [CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning](https://nashid.github.io/resources/papers/cedar-icse23.pdf), ICSE 2023
 
