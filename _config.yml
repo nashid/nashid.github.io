@@ -34,3 +34,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 #  - jemoji
+
+# Exclude files from processing
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - preview.sh
