@@ -52,5 +52,11 @@ I aspire to work at the intersection of academia and industry to build novel sol
     <td style="vertical-align: top;">July,&nbsp;2025</td>
     <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/panta-arxiv25.pdf">Panta</a> is accepted at <a href="https://conf.researchr.org/track/icse-2026/icse-2026-research-track">ICSE 2026</a>.</td>
   </tr>
+
+  <tr>
+    <td colspan="2" style="text-align: right; padding-top: 1em;">
+      <a href="{{ site.baseurl }}/news/">View all news →</a>
+    </td>
+  </tr>
 </table>
 
