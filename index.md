@@ -14,49 +14,19 @@ My work has been recognized by the <strong>ACM SIGSOFT Distinguished Paper Award
 
 I aspire to work at the intersection of academia and industry to build novel solutions, tools, and techniques that directly benefit software practitioners. I believe the boundary between academic research and industrial practice in software engineering will continue to blur, and I want to play an active role in fostering this bidirectional flow of knowledge to ensure both scientific advancement and practical impact. I am also interested in how technology might shape the trajectory of our civilization and in advancing AI research that aligns with societal benefit.
 
----
+### Highlights & Selected Publications
 
-<table> 
-  <tr> 
-    <th style="vertical-align: top; text-align: left;">News</th>
-    <th>&nbsp;</th>
-  </tr>
+<img src="./resources/images/icon-trophy-new.svg" width="20" height="20"> **ACM SIGSOFT Distinguished Paper Award** at ASE 2025
 
-  <tr>
-    <td style="vertical-align: top;">December,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/track/saner-2026/saner-2026-tool-demo-track">IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) Tool Demo Track</a>.</td>
-  </tr>
+<img src="./resources/images/icon-green-circle.svg" width="20" height="20"> Issue2Test: Generating Reproducing Test Cases from Issue Reports, ICSE 2026
 
-  <tr>
-    <td style="vertical-align: top;">November,&nbsp;2025</td>
-    <td>
-      <img src="./resources/images/icon-laurel.png" width="28" height="28">
-      I am honored to receive the <strong>ACM SIGSOFT Distinguished Paper Award</strong> at the 
-      40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)!
-  </td>
-  </tr>
+<img src="./resources/images/icon-green-circle.svg" width="20" height="20"> Panta: LLM Test Generation via Iterative Hybrid Program Analysis, ICSE 2026
 
+<img src="./resources/images/icon-glowing-star.svg" width="20" height="20"> Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair, ASE 2025
 
-  <tr>
-    <td style="vertical-align: top;">September,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-paper-review.png" width="20" height="20"> I am invited to a review journal articles for <a href="https://link.springer.com/journal/10664">Empirical Software Engineering (EMSE)</a>.</td>
-  </tr>
+<img src="./resources/images/icon-gem.svg" width="20" height="20"> FLAKIDOCK: Dockerfile Flakiness Characterization and Repair, ICSE 2025
 
-  <tr>
-    <td style="vertical-align: top;">August,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/hunk-divergence-ase25.pdf">on multi-hunk code divergence</a> is accepted at <a href="https://conf.researchr.org/track/ase-2025/ase-2025-papers">ASE 2025</a>.</td>
-  </tr>
+<img src="./resources/images/icon-gem.svg" width="20" height="20"> AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests, ICSE 2025
 
-
-  <tr>
-    <td style="vertical-align: top;">July,&nbsp;2025</td>
-    <td><img src="./resources/images/icon-pin.png" width="20" height="20"> Our paper <a href="https://nashid.github.io/resources/papers/panta-arxiv25.pdf">Panta</a> is accepted at <a href="https://conf.researchr.org/track/icse-2026/icse-2026-research-track">ICSE 2026</a>.</td>
-  </tr>
-
-  <tr>
-    <td colspan="2" style="text-align: right; padding-top: 1em;">
-      <a href="{{ site.baseurl }}/news/">View all news →</a>
-    </td>
-  </tr>
-</table>
+<img src="./resources/images/icon-fire-new.svg" width="20" height="20"> CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning, ICSE 2023
 
