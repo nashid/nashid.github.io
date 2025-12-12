@@ -1,0 +1,65 @@
+# Invited Talks, Visits, and Events
+
+# 2025
+- year: 2025
+  title: ASE 2025
+  location: Seoul, South Korea
+  description: Talk on "Multi-Hunk Code Divergence"
+  type: conference
+  website: https://conf.researchr.org/track/ase-2025/ase-2025-papers
+
+- year: 2025
+  title: ICSE 2025
+  location: Ottawa, Ontario, Canada
+  description: Talk on "Dockerfile Flakiness - Characterization and Repair (FLAKIDOCK)"
+  type: conference
+  website: https://conf.researchr.org/home/icse-2025
+
+# 2024
+- year: 2024
+  title: ICSE 2024
+  location: Lisboa, Portugal
+  description: Talk on "Katana - Dual Slicing Based Context for Learning Bug Fixes"
+  type: conference
+  website: https://conf.researchr.org/home/icse-2024
+
+- year: 2024
+  title: DeepTest 2024
+  location: Lisboa, Portugal
+  description: Invited talk on "The Role of Context in AI-Driven Code Generation"
+  type: invited
+  website: https://conf.researchr.org/home/icse-2024/deeptest-2024
+
+- year: 2024
+  title: Dosu
+  description: Invited talk on "The Role of Context in AI-Driven Code Generation"
+  type: invited
+  website: https://dosu.dev/
+
+# 2023
+- year: 2023
+  title: ICSE 2023
+  location: Melbourne, Australia
+  description: Talk on "Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning (CEDAR)"
+  type: conference
+  website: https://conf.researchr.org/home/icse-2023
+
+- year: 2023
+  title: ICSE 2023
+  location: Melbourne, Australia
+  description: Talk on "Different Code Representations for Learning-Based Program Repair (REPTORY)"
+  type: conference
+  website: https://conf.researchr.org/home/icse-2023
+
+- year: 2023
+  title: ICST 2023
+  location: Dublin, Ireland
+  description: Talk on "Neural Program Repair (GLANCE)"
+  type: conference
+  website: https://conf.researchr.org/home/icst-2023
+
+- year: 2023
+  title: UBER Programming System Group
+  description: Invited talk on reducing hallucinations for code related tasks with LLMs
+  type: invited
+  website: "#"
