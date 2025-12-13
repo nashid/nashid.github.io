@@ -61,6 +61,8 @@
   authors: Noor Nashid, Mifta Santaha, and Ali Mesbah
   venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
   year: 2023
+  featured: Featured by IBM on few-shot prompting
+  featured_url: https://www.ibm.com/think/topics/few-shot-prompting#1003835713
   # code: https://github.com/apicarve/apicarver
 
 - id: katana-tosem23
