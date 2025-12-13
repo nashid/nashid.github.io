@@ -22,6 +22,7 @@
   authors: Noor Nashid, Daniel Ding, Keheliya Gallaba, Ahmed E Hassan, Ali Mesbah
   venue: IEEE/ACM International Conference on Automated Software Engineering (ASE), 13 pages
   year: 2025
+  award: ACM SIGSOFT Distinguished Paper Award
 
 - id: flakidock-icse25
   title: "Dockerfile Flakiness: Characterization and Repair"
