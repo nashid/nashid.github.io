@@ -62,7 +62,7 @@ The website follows Jekyll's convention-based architecture:
   - `svg.html`: Icon definitions
   - `functions/`: Liquid template helper functions
 - **`_sass/`**: SCSS stylesheets for site styling
-- **`nav/`**: Navigation pages (awards, papers, service, CV)
+- **`nav/`**: Navigation pages (awards, papers, teaching, service, CV, news)
 - **`resources/`**: Static assets (PDFs, images)
 - **`preview.sh`**: Local development helper script with auto-reload
 
@@ -81,8 +81,10 @@ The website follows Jekyll's convention-based architecture:
   - About (weight: 1)
   - Awards (weight: 2)
   - Papers (weight: 3)
-  - Service (weight: 4)
-  - CV (weight: 5)
+  - Teaching (weight: 4)
+  - Service (weight: 5)
+  - CV (weight: 6)
+  - News (weight: 7)
 - PDF files are stored in `resources/papers/` and referenced by paper ID from `papers.yml`
 - Images are stored in `resources/images/`
 
@@ -110,6 +112,11 @@ Edit `index.md` and add a new `<tr>` entry to the news table with date, icon, an
 
 ### Adding Service Roles
 Edit `_data/services.yml` with: `name`, `role`, `year`, `website`
+
+### Updating Teaching/Mentoring
+Edit `nav/teaching.md` to add:
+- Teaching Assistant experience (course code, name, institution, description)
+- Research mentoring (student name, degree/role, year, advisor link)
 
 ### Updating Personal Information
 Edit `_config.yml` to update contact info, affiliations, or social media links.
