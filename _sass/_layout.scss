@@ -517,20 +517,20 @@ html {
     top: 0;
     z-index: 100;
     text-align: center;
-    padding: 20px 0;
-    margin-bottom: 50px;
+    padding: 12px 0;
+    margin-bottom: 40px;
     background: linear-gradient(180deg,
         rgba($background-color, 0.98) 70%,
         rgba($background-color, 0.95) 100%);
-    border-bottom: 3px solid rgba($brand-color, 0.15);
+    border-bottom: 2px solid rgba($brand-color, 0.12);
     backdrop-filter: blur(15px) saturate(180%);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .year-link {
     display: inline-block;
-    padding: 16px 36px;
-    margin: 0 12px;
+    padding: 12px 28px;
+    margin: 0 10px;
     background: linear-gradient(135deg,
         lighten($brand-color, 10%),
         $brand-color);
@@ -538,19 +538,26 @@ html {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 15px rgba($brand-color, 0.3);
+    box-shadow: 0 3px 12px rgba($brand-color, 0.3);
     position: relative;
     overflow: hidden;
 }
 
 .year-link::before {
-    content: '📅';
-    margin-right: 10px;
-    font-size: 18px;
-    animation: pulse 2s ease-in-out infinite;
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    background-image: url('/resources/images/icon-calendar-simple.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
 }
 
 .year-link::after {
@@ -590,13 +597,13 @@ html {
 
 @include media-query($on-palm) {
     .year-nav {
-        padding: 15px 0;
+        padding: 10px 0;
     }
 
     .year-link {
-        padding: 12px 24px;
+        padding: 10px 20px;
         margin: 0 6px;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -810,9 +817,17 @@ html {
     border-color: #FFD700;
 }
 
+.timeline-item.award .timeline-content {
+    border-left: 4px solid #D4AF37;
+}
+
 .timeline-item.paper .timeline-icon {
     background: linear-gradient(135deg, #4CAF50, #45a049);
     border-color: #4CAF50;
+}
+
+.timeline-item.paper .timeline-content {
+    border-left: 4px solid #43A047;
 }
 
 .timeline-item.talk .timeline-icon {
@@ -820,14 +835,26 @@ html {
     border-color: #2196F3;
 }
 
+.timeline-item.talk .timeline-content {
+    border-left: 4px solid #1976D2;
+}
+
 .timeline-item.service .timeline-icon {
     background: linear-gradient(135deg, #9C27B0, #7B1FA2);
     border-color: #9C27B0;
 }
 
+.timeline-item.service .timeline-content {
+    border-left: 4px solid #7B1FA2;
+}
+
 .timeline-item.travel .timeline-icon {
     background: linear-gradient(135deg, #FF5722, #E64A19);
     border-color: #FF5722;
+}
+
+.timeline-item.travel .timeline-content {
+    border-left: 4px solid #E64A19;
 }
 
 @include media-query($on-palm) {
