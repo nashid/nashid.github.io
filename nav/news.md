@@ -47,6 +47,16 @@ group: news
   </div>
 </div>
 
+<div class="timeline-item award">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-trophy-modern.svg" | prepend: site.baseurl }}" alt="Recognition">
+  </div>
+  <div class="timeline-date">November 2025</div>
+  <div class="timeline-content">
+    Excited to see my ICSE 2023 paper <a href="https://nashid.github.io/resources/papers/cedar-icse23.pdf">Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning</a> featured in <a href="https://www.ibm.com/think/topics/few-shot-prompting#1003835713">IBM's article on few-shot prompting to demonstrate techniques for code-related tasks</a>. The paper has been cited nearly 300 times, demonstrating significant impact in both academia and industry for advancing prompt engineering for code generation.
+  </div>
+</div>
+
 <div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
