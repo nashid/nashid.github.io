@@ -2,7 +2,7 @@
 layout: default
 title: CV
 permalink: /cv/
-weight: 5
+weight: 6
 ---
 I am a final-year PhD candidate at the University of British Columbia specializing in software engineering, program analysis, and large language models (LLMs). My research investigates how contextual and structural program information can be leveraged to advance LLM-based software engineering tasks and agentic AI systems that can plan, code, test, and deploy with minimal human intervention. This work has resulted in publications at premier venues including ICSE, ASE, and TOSEM.
 
