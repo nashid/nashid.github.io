@@ -62,7 +62,7 @@ The website follows Jekyll's convention-based architecture:
   - `svg.html`: Icon definitions
   - `functions/`: Liquid template helper functions
 - **`_sass/`**: SCSS stylesheets for site styling
-- **`nav/`**: Navigation pages (awards, papers, service, CV)
+- **`nav/`**: Navigation pages (awards, papers, teaching, service, CV, news)
 - **`resources/`**: Static assets (PDFs, images)
 - **`preview.sh`**: Local development helper script with auto-reload
 
@@ -81,8 +81,10 @@ The website follows Jekyll's convention-based architecture:
   - About (weight: 1)
   - Awards (weight: 2)
   - Papers (weight: 3)
-  - Service (weight: 4)
-  - CV (weight: 5)
+  - Teaching (weight: 4)
+  - Service (weight: 5)
+  - CV (weight: 6)
+  - News (weight: 7)
 - PDF files are stored in `resources/papers/` and referenced by paper ID from `papers.yml`
 - Images are stored in `resources/images/`
 
@@ -111,6 +113,11 @@ Edit `index.md` and add a new `<tr>` entry to the news table with date, icon, an
 ### Adding Service Roles
 Edit `_data/services.yml` with: `name`, `role`, `year`, `website`
 
+### Updating Teaching/Mentoring
+Edit `nav/teaching.md` to add:
+- Teaching Assistant experience (course code, name, institution, description)
+- Research mentoring (student name, degree/role, year, advisor link)
+
 ### Updating Personal Information
 Edit `_config.yml` to update contact info, affiliations, or social media links.
 
@@ -120,3 +127,51 @@ Edit `_config.yml` to update contact info, affiliations, or social media links.
 - Changes to `_config.yml` require a full site rebuild (restart `jekyll serve`)
 - The site uses Liquid templating for dynamic content generation
 - News items on the home page are manually curated in HTML format within `index.md`
+
+## Future Improvements for Academic Job Hunting
+
+### High Priority
+
+- [ ] **Research Statement/Vision** - Add a dedicated section or expand research description with:
+  - Clear research vision and future directions
+  - What problems to solve in the next 5-10 years
+  - How work fits into the broader SE landscape
+
+- [ ] **Research Artifacts** - Add links to:
+  - GitHub repositories for tools/frameworks
+  - Datasets, benchmarks, or artifacts
+  - Shows reproducibility and impact beyond papers
+
+- [ ] **Talks/Presentations** - Add a section listing:
+  - Conference presentations
+  - Invited talks at other universities
+  - Workshop presentations
+  - Shows visibility and communication skills
+
+### Medium Priority
+
+- [ ] **Teaching Philosophy** - Expand the teaching page with:
+  - Brief teaching statement or philosophy
+  - More detail about TA responsibilities (e.g., "Led lab sections for 50+ students")
+  - Any innovative teaching approaches or materials
+
+- [ ] **Featured Projects** - Highlight 2-3 key research projects with:
+  - Brief description
+  - Impact/outcomes
+  - Links to papers, code, demos
+
+- [ ] **Contact Information** - Make it very prominent:
+  - Email clearly visible on every page (header/footer?)
+  - Links to Twitter/X, GitHub, Google Scholar
+  - Currently might be buried in CV
+
+### Lower Priority
+
+- [ ] **Collaborators/Network** - Mention key collaborators or research group
+- [ ] **Students Supervised** - Expand with thesis topics or outcomes
+- [ ] **Grants/Funding** - If involved in any grant proposals
+- [ ] **Diversity Statement** - Some positions require this (can be separate PDF)
+- [ ] **Professional Photo** - Consider adding if comfortable
+- [ ] **Research Highlights** - Add section on home page
+- [ ] **Google Scholar Profile** - Link prominently
+- [ ] **Citation Metrics** - Add h-index/citation count if strong
