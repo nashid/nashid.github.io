@@ -38,6 +38,7 @@ plugins:
 # Exclude files from processing
 exclude:
   - CLAUDE.md
+  - TODO.md
   - README.md
   - Gemfile
   - Gemfile.lock
