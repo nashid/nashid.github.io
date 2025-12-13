@@ -107,7 +107,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="Review">
   </div>
@@ -117,7 +117,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="Review">
   </div>
@@ -127,7 +127,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -137,7 +137,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item travel">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-party.svg" | prepend: site.baseurl }}" alt="Travel">
   </div>
@@ -147,7 +147,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="Review">
   </div>
@@ -157,7 +157,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="Review">
   </div>
@@ -167,7 +167,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -177,7 +177,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -187,7 +187,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -197,7 +197,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -207,7 +207,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -229,7 +229,7 @@ group: news
 
 <div class="timeline-year" id="year-2024">2024</div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="Review">
   </div>
@@ -249,7 +249,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="Review">
   </div>
@@ -259,7 +259,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item award">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-trophy-modern.svg" | prepend: site.baseurl }}" alt="Award">
   </div>
@@ -269,7 +269,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -279,7 +279,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -289,7 +289,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -299,7 +299,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -309,7 +309,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -319,7 +319,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -329,7 +329,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -339,7 +339,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="Review">
   </div>
@@ -349,7 +349,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -359,7 +359,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -369,7 +369,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item travel">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-party.svg" | prepend: site.baseurl }}" alt="Travel">
   </div>
@@ -379,7 +379,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -389,7 +389,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item award">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-trophy-modern.svg" | prepend: site.baseurl }}" alt="Award">
   </div>
@@ -399,7 +399,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -421,7 +421,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -431,7 +431,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
@@ -441,7 +441,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -451,7 +451,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -461,7 +461,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -471,7 +471,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
   </div>
@@ -481,7 +481,7 @@ group: news
   </div>
 </div>
 
-<div class="timeline-item paper">
+<div class="timeline-item award">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-grad-cap.svg" | prepend: site.baseurl }}" alt="Achievement">
   </div>
