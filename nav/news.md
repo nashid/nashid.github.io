@@ -53,7 +53,7 @@ group: news
   </div>
   <div class="timeline-date">November 2025</div>
   <div class="timeline-content">
-    My CEDAR work on few-shot prompting is featured in <a href="https://www.ibm.com/think/topics/few-shot-prompting#1003835713">IBM's article on few-shot prompting</a>, demonstrating industry recognition and practical impact.
+    My paper <a href="https://nashid.github.io/resources/papers/cedar-icse23.pdf">Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning</a> is featured in <a href="https://www.ibm.com/think/topics/few-shot-prompting#1003835713">IBM's article on few-shot prompting</a>.
   </div>
 </div>
 
