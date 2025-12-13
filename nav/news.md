@@ -47,6 +47,16 @@ group: news
   </div>
 </div>
 
+<div class="timeline-item award">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-trophy-modern.svg" | prepend: site.baseurl }}" alt="Recognition">
+  </div>
+  <div class="timeline-date">November 2025</div>
+  <div class="timeline-content">
+    My CEDAR work on few-shot prompting is featured in <a href="https://www.ibm.com/think/topics/few-shot-prompting#1003835713">IBM's article on few-shot prompting</a>, demonstrating industry recognition and practical impact.
+  </div>
+</div>
+
 <div class="timeline-item talk">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-microphone.svg" | prepend: site.baseurl }}" alt="Talk">
