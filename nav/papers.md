@@ -19,6 +19,12 @@ group: pubs
         <b>{{ paper.award }}</b>
       </span>
       {% endif %}
+      {% if paper.featured %}
+      <br/><span class="icon" style="margin-top: 3px; display: inline-block;">
+        <svg><use xlink:href="#icon-star"/></svg>
+        <a href="{{ paper.featured_url }}" target="_blank"><b>{{ paper.featured }}</b></a>
+      </span>
+      {% endif %}
     </div>
     <div class="right">
       {% if paper.arxiv %}
