@@ -21,7 +21,11 @@ group: pubs
       {{ paper.authors }}. {{ paper.title }}. {{ paper.venue }}{% if paper.pages %}, {{ paper.pages }}{% endif %}.
     </div>
     <div class="right">
-      {% if paper.doi %}
+      {% if paper.arxiv %}
+      <a href="{{ paper.arxiv }}" target="_blank">
+        <span class="icon"><svg><use xlink:href="#icon-pdf"/></svg></span>
+      </a>
+      {% elsif paper.doi %}
       <a href="{{ paper.doi }}" target="_blank">
         <span class="icon"><svg><use xlink:href="#icon-pdf"/></svg></span>
       </a>
@@ -35,7 +39,7 @@ group: pubs
         <span class="icon"><svg><use xlink:href="#icon-github"/></svg></span>
       </a>
       {% endif %}
-      
+
       {% if paper.video %}
       <a href="{{ paper.video }}" target="_blank">
         <span class="icon"><svg><use xlink:href="#icon-youtube"/></svg></span>
