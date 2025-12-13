@@ -73,7 +73,7 @@ group: news
   </div>
   <div class="timeline-date">September 2025</div>
   <div class="timeline-content">
-    I am invited to a review journal articles for <a href="https://link.springer.com/journal/10664">Empirical Software Engineering (EMSE)</a>.
+    I am invited to review journal articles for <a href="https://link.springer.com/journal/10664">Empirical Software Engineering (EMSE)</a>.
   </div>
 </div>
 
@@ -113,7 +113,7 @@ group: news
   </div>
   <div class="timeline-date">July 2025</div>
   <div class="timeline-content">
-    I am invited to a review journal articles for <a href="https://dl.acm.org/journal/tosem">ACM Transactions on Software Engineering and Methodology (TOSEM)</a>. Thanks Dr. Song Wang!
+    I am invited to review journal articles for <a href="https://dl.acm.org/journal/tosem">ACM Transactions on Software Engineering and Methodology (TOSEM)</a>. Thanks to Dr. Song Wang!
   </div>
 </div>
 
@@ -123,7 +123,7 @@ group: news
   </div>
   <div class="timeline-date">June 2025</div>
   <div class="timeline-content">
-    I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/information-and-software-technology">Information and Software Technology</a>.
+    I am invited to review journal articles for <a href="https://www.sciencedirect.com/journal/information-and-software-technology">Information and Software Technology</a>.
   </div>
 </div>
 
@@ -153,7 +153,7 @@ group: news
   </div>
   <div class="timeline-date">April 2025</div>
   <div class="timeline-content">
-    I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems & Software</a>.
+    I am invited to review journal articles for <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems & Software</a>.
   </div>
 </div>
 
@@ -163,7 +163,7 @@ group: news
   </div>
   <div class="timeline-date">March 2025</div>
   <div class="timeline-content">
-    I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/science-of-computer-programming">Science of Computer Programming.</a>.
+    I am invited to review journal articles for <a href="https://www.sciencedirect.com/journal/science-of-computer-programming">Science of Computer Programming</a>.
   </div>
 </div>
 
@@ -173,7 +173,7 @@ group: news
   </div>
   <div class="timeline-date">February 2025</div>
   <div class="timeline-content">
-    I gave a talk at UBC on retrieval-augmented code generation with large language models. Thanks Dr. Ali Mesbah.
+    I gave a talk at UBC on retrieval-augmented code generation with large language models. Thanks to Dr. Ali Mesbah.
   </div>
 </div>
 
@@ -235,7 +235,7 @@ group: news
   </div>
   <div class="timeline-date">December 2024</div>
   <div class="timeline-content">
-    I am invited to a review journal articles for <a href="https://dl.acm.org/journal/tosem">ACM Transactions on Software Engineering and Methodology (TOSEM)</a>. Thanks Dr. Iftekhar Ahmed!
+    I am invited to review journal articles for <a href="https://dl.acm.org/journal/tosem">ACM Transactions on Software Engineering and Methodology (TOSEM)</a>. Thanks to Dr. Iftekhar Ahmed!
   </div>
 </div>
 
@@ -255,7 +255,7 @@ group: news
   </div>
   <div class="timeline-date">October 2024</div>
   <div class="timeline-content">
-    I am invited to a review journal articles for <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems & Software (Special Issue)</a>. Thanks Dr. Andrea Stocco!
+    I am invited to review journal articles for <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">Journal of Systems & Software (Special Issue)</a>. Thanks to Dr. Andrea Stocco!
   </div>
 </div>
 
@@ -315,7 +315,7 @@ group: news
   </div>
   <div class="timeline-date">August 2024</div>
   <div class="timeline-content">
-    I gave a invited talk at <a href="https://dosu.dev/">Dosu</a> on "The Role of Context in AI-Driven Code Generation".
+    I gave an invited talk at <a href="https://dosu.dev/">Dosu</a> on "The Role of Context in AI-Driven Code Generation".
   </div>
 </div>
 
@@ -345,7 +345,7 @@ group: news
   </div>
   <div class="timeline-date">May 2024</div>
   <div class="timeline-content">
-    I am invited to a review a journal article for <a href="https://onlinelibrary.wiley.com/journal/20477481">Journal of Software: Evolution and Process</a>. Thanks Dr. Andrea Stocco!
+    I am invited to review a journal article for <a href="https://onlinelibrary.wiley.com/journal/20477481">Journal of Software: Evolution and Process</a>. Thanks to Dr. Andrea Stocco!
   </div>
 </div>
 
@@ -355,7 +355,7 @@ group: news
   </div>
   <div class="timeline-date">April 2024</div>
   <div class="timeline-content">
-    I gave a invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024">DeepTest 2024</a> on "The Role of Context in AI-Driven Code Generation".
+    I gave an invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024">DeepTest 2024</a> on "The Role of Context in AI-Driven Code Generation".
   </div>
 </div>
 
@@ -385,7 +385,7 @@ group: news
   </div>
   <div class="timeline-date">March 2024</div>
   <div class="timeline-content">
-    I will give a invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024#program">DeepTest 2024</a> on understanding the role of context for code-related tasks.
+    I will give an invited talk at <a href="https://conf.researchr.org/home/icse-2024/deeptest-2024#program">DeepTest 2024</a> on understanding the role of context for code-related tasks.
   </div>
 </div>
 
@@ -447,7 +447,7 @@ group: news
   </div>
   <div class="timeline-date">June 2023</div>
   <div class="timeline-content">
-    I gave an invited talk at UBER programming system group about reducing hallucinations for code related tasks with LLMs.
+    I gave an invited talk at UBER programming systems group about reducing hallucinations for code-related tasks with LLMs.
   </div>
 </div>
 
