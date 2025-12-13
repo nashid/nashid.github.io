@@ -25,53 +25,53 @@
 
 - id: flakidock-icse25
   title: "Dockerfile Flakiness: Characterization and Repair"
-  authors: Taha Shabani, Nashid Noor, Parsa Alian, Ali Mesbah
+  authors: Taha Shabani, Noor Nashid, Parsa Alian, Ali Mesbah
   venue: IEEE/ACM International Conference on Software Engineering (ICSE), 13 pages
   year: 2025
 
 - id: autoe2e-arxiv24
   title: "A Feature-Based Approach to Generating Comprehensive End-to-End Tests"
-  authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Taha Shabani, Ali Mesbah
+  authors: Parsa Alian, Noor Nashid, Mobina Shahbandeh, Taha Shabani, Ali Mesbah
   venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
   year: 2025
 
 - id: naviqate-arxiv24
   title: "NaviQAte: Functionality-Guided Web Application Navigation"
-  authors: Mobina Shahbandeh, Parsa Alian, Nashid Noor, Ali Mesbah
+  authors: Mobina Shahbandeh, Parsa Alian, Noor Nashid, Ali Mesbah
   venue: Under Submission
   year: 2024
 
 - id: lance-arxiv24
   title: "Contextual API Completion for Unseen Repositories Using LLMs"
-  authors: Nashid Noor, Taha Shabani, Parsa Alian, and Ali Mesbah
+  authors: Noor Nashid, Taha Shabani, Parsa Alian, and Ali Mesbah
   venue: Under Submission
   year: 2024
   # code: https://github.com/apicarve/apicarver
 
 - id: formnexus-issta24
   title: "Semantic Constraint Inference for Web Form Test Generation"
-  authors: Parsa Alian, Nashid Noor, Mobina Shahbandeh, Ali Mesbah
+  authors: Parsa Alian, Noor Nashid, Mobina Shahbandeh, Ali Mesbah
   venue: ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), 13 pages
   year: 2024
   # code: https://github.com/apicarve/apicarver
 
 - id: cedar-icse23
   title: "Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning"
-  authors: Nashid Noor, Mifta Santaha, and Ali Mesbah
+  authors: Noor Nashid, Mifta Santaha, and Ali Mesbah
   venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
   year: 2023
   # code: https://github.com/apicarve/apicarver
 
 - id: katana-tosem23
   title: "Katana: Dual Slicing-Based Context for Learning Bug Fixes"
-  authors: Mifta Sintaha, Nashid Noor, and Ali Mesbah
+  authors: Mifta Sintaha, Noor Nashid, and Ali Mesbah
   venue: ACM Transactions on Software Engineering and Methodology (TOSEM)   [ICSE 2024 - Journal-First Track]
   year: 2023
   # code: https://doi.org/10.5281/zenodo.4007539
 
 - id: glance-icst23
   title: "Embedding Context as Code Dependencies for Neural Program Repair"
-  authors: Nashid Noor, Mifta Santaha, and Ali Mesbah
+  authors: Noor Nashid, Mifta Santaha, and Ali Mesbah
   venue: IEEE International Conference on Software Testing, Verification and Validation (ICST), 12 pages
   year: 2023
   # code: https://github.com/NDStudyICSE2019
