@@ -15,6 +15,11 @@ group: news
 
   <tr>
     <td style="vertical-align: top;">December,&nbsp;2025</td>
+    <td><img src="{{ "/resources/images/icon-paper-review.png" | prepend: site.baseurl }}" width="20" height="20"> I am serving as a PC member for <a href="https://2026.msrconf.org/track/msr-2026-industry-track">Mining Software Repositories (MSR) Industry Track 2026</a>.</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">December,&nbsp;2025</td>
     <td><img src="{{ "/resources/images/icon-paper-review.png" | prepend: site.baseurl }}" width="20" height="20"> I am serving as a PC member for <a href="https://conf.researchr.org/track/saner-2026/saner-2026-tool-demo-track">IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER) Tool Demo Track</a>.</td>
   </tr>
 
@@ -25,6 +30,16 @@ group: news
       I am honored to receive the <strong>ACM SIGSOFT Distinguished Paper Award</strong> at the
       40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)!
   </td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">November,&nbsp;2025</td>
+    <td><img src="{{ "/resources/images/icon-talk.png" | prepend: site.baseurl }}" width="20" height="20"> I gave a talk at <a href="https://conf.researchr.org/details/ase-2025/ase-2025-papers/64/Characterizing-Multi-Hunk-Patches-Divergence-Proximity-and-LLM-Repair-Challenges">ASE 2025</a> on <a href="https://nashid.github.io/resources/papers/hunk-divergence-ase25.pdf">Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair Challenges</a>.</td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">November,&nbsp;2025</td>
+    <td><img src="{{ "/resources/images/icon-canada-flag.svg" | prepend: site.baseurl }}" width="20" height="20"> Vancouver ✈️ <img src="{{ "/resources/images/icon-korea-flag.svg" | prepend: site.baseurl }}" width="20" height="20"> Seoul ➡️ ASE 2025 🎉👨‍🏫</td>
   </tr>
 
   <tr>
