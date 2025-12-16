@@ -10,6 +10,7 @@
   authors: Noor Nashid, Islem Bouzenia, Michael Pradel, Ali Mesbah
   venue: IEEE/ACM International Conference on Software Engineering (ICSE), 13 pages
   year: 2026
+  arxiv: https://arxiv.org/abs/2503.16320
 
 - id: panta-arxiv25
   title: "LLM Test Generation via Iterative Hybrid Program Analysis"
