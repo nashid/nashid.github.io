@@ -28,6 +28,16 @@ group: news
   </div>
 </div>
 
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
+  <div class="timeline-date">January 2026</div>
+  <div class="timeline-content">
+    I am serving as a PC member for <a href="https://conf.researchr.org/track/icse-2026/icse-2026-artifact-evaluation">International Conference on Software Engineering (ICSE) Artifact Evaluation Track</a>.
+  </div>
+</div>
+
 <div class="timeline-year" id="year-2025">2025</div>
 
 <div class="timeline-item service">
