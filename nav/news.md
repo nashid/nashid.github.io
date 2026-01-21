@@ -8,12 +8,25 @@ group: news
 ---
 
 <div class="year-nav">
+  <a href="#year-2026" class="year-link">2026</a>
   <a href="#year-2025" class="year-link">2025</a>
   <a href="#year-2024" class="year-link">2024</a>
   <a href="#year-2023" class="year-link">2023</a>
 </div>
 
 <div class="timeline">
+
+<div class="timeline-year" id="year-2026">2026</div>
+
+<div class="timeline-item award">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-trophy-modern.svg" | prepend: site.baseurl }}" alt="Achievement">
+  </div>
+  <div class="timeline-date">January 2026</div>
+  <div class="timeline-content">
+    I successfully passed my PhD departmental defense. Grateful to my advisor Dr. Ali Mesbah and my committee for their guidance and support.
+  </div>
+</div>
 
 <div class="timeline-year" id="year-2025">2025</div>
 
