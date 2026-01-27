@@ -19,6 +19,11 @@
   year: 2026
   website: https://conf.researchr.org/track/icse-2026/icse-2026-artifact-evaluation
 
+- name: 3rd ACM International Conference on AI-powered Software (AIware 2026)
+  role: PC Member
+  year: 2026
+  website: https://2026.aiwareconf.org/track/aiware-2026-papers
+
 # 2025
 - name:  Empirical Software Engineering (EMSE)
   role: Invited Reviewer
