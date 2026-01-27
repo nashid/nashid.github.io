@@ -32,6 +32,16 @@ group: news
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
+  <div class="timeline-date">February 2026</div>
+  <div class="timeline-content">
+    I joined the PC of <a href="https://2026.aiwareconf.org/track/aiware-2026-papers">AIware 2026 (Main Track)</a>. Have a look at the CfP and consider submitting your research!
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
   <div class="timeline-date">January 2026</div>
   <div class="timeline-content">
     I am serving as a PC member for <a href="https://conf.researchr.org/track/icse-2026/icse-2026-artifact-evaluation">International Conference on Software Engineering (ICSE) Artifact Evaluation Track</a>.
