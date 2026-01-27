@@ -18,16 +18,6 @@ group: news
 
 <div class="timeline-year" id="year-2026">2026</div>
 
-<div class="timeline-item award">
-  <div class="timeline-icon">
-    <img src="{{ "/resources/images/icon-trophy-modern.svg" | prepend: site.baseurl }}" alt="Achievement">
-  </div>
-  <div class="timeline-date">January 2026</div>
-  <div class="timeline-content">
-    I successfully passed my PhD departmental defense. Grateful to my advisor Dr. Ali Mesbah and my committee for their guidance and support.
-  </div>
-</div>
-
 <div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
@@ -35,6 +25,16 @@ group: news
   <div class="timeline-date">February 2026</div>
   <div class="timeline-content">
     I joined the PC of <a href="https://2026.aiwareconf.org/track/aiware-2026-papers">AIware 2026 (Main Track)</a>. Have a look at the CfP and consider submitting your research!
+  </div>
+</div>
+
+<div class="timeline-item award">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-trophy-modern.svg" | prepend: site.baseurl }}" alt="Achievement">
+  </div>
+  <div class="timeline-date">January 2026</div>
+  <div class="timeline-content">
+    I successfully passed my PhD departmental defense. Grateful to my advisor Dr. Ali Mesbah and my committee for their guidance and support.
   </div>
 </div>
 
