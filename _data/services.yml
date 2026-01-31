@@ -29,6 +29,11 @@
   year: 2026
   website: https://2026.aiwareconf.org/track/aiware-2026-papers
 
+- name: Foundations of Software Engineering (FSE) Ideas, Visions and Reflections
+  role: PC Member
+  year: 2026
+  website: https://conf.researchr.org/track/fse-2026/fse-2026-ideas-visions-and-reflections
+
 # 2025
 - name:  Empirical Software Engineering (EMSE)
   role: Invited Reviewer
