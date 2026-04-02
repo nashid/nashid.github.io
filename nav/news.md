@@ -22,6 +22,16 @@ group: news
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
+  <div class="timeline-date">March 2026</div>
+  <div class="timeline-content">
+    I am serving as a PC member for <a href="https://conf.researchr.org/track/internetware-2026/internetware-2026-research-track">Internetware 2026 Research Track</a>.
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
   <div class="timeline-date">February 2026</div>
   <div class="timeline-content">
     I joined the PC of <a href="https://2026.aiwareconf.org/track/aiware-2026-papers">AIware 2026 (Main Track)</a>. Have a look at the CfP and consider submitting your research!
