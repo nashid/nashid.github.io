@@ -1,4 +1,14 @@
 # 2026
+- name: Automated Software Engineering (ASE) Tools and Datasets Track
+  role: PC Member
+  year: 2026
+  website: https://conf.researchr.org/track/ase-2026/ase-2026-tools-and-data-sets
+
+- name: Foundations of Software Engineering (FSE) Ideas, Visions and Reflections
+  role: PC Member
+  year: 2026
+  website: https://conf.researchr.org/track/fse-2026/fse-2026-ideas-visions-and-reflections
+
 - name:  Empirical Software Engineering (EMSE)
   role: Invited Reviewer
   year: 2026
@@ -29,11 +39,6 @@
   year: 2026
   website: https://onlinelibrary.wiley.com/journal/10990542
 
-- name: Automated Software Engineering (ASE) Tools and Datasets Track
-  role: PC Member
-  year: 2026
-  website: https://conf.researchr.org/track/ase-2026/ase-2026-tools-and-data-sets
-
 - name: Mining Software Repositories (MSR) Industry Track 2026
   role: PC Member
   year: 2026
@@ -54,10 +59,6 @@
   year: 2026
   website: https://2026.aiwareconf.org/track/aiware-2026-papers
 
-- name: Foundations of Software Engineering (FSE) Ideas, Visions and Reflections
-  role: PC Member
-  year: 2026
-  website: https://conf.researchr.org/track/fse-2026/fse-2026-ideas-visions-and-reflections
 
 - name: 17th International Conference on Internetware 2026
   role: PC Member
