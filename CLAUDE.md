@@ -121,6 +121,36 @@ Edit `nav/teaching.md` to add:
 ### Updating Personal Information
 Edit `_config.yml` to update contact info, affiliations, or social media links.
 
+## Claude Code Automation Skills
+
+The repository includes custom Claude Code skills to automate repetitive tasks. Skills are located in `.claude/skills/`.
+
+### Available Skills
+
+#### `/add-service` - Automate Service Role Addition
+Streamlines adding academic service roles (PC memberships, reviewerships) to both the services page and news timeline.
+
+**Usage**: Type `/add-service` and answer the interactive prompts.
+
+**Features**:
+- Automatically updates both `_data/services.yml` and `nav/news.md`
+- Smart filtering: Adds news for conferences only, skips journals
+- Prestigious venue detection: Special emphasis for ASE, ICSE, FSE
+- Creative variations: 10+ templates to keep announcements fresh
+- Never guesses dates: Always asks for confirmation
+- Maintains proper ordering (prestigious venues first)
+
+**Documentation**: See `ADD-SERVICE-SKILL-GUIDE.md` for detailed usage instructions.
+
+### Creating New Skills
+To add a new automation skill:
+1. Create a directory in `.claude/skills/` (e.g., `skill-name/`)
+2. Add a `SKILL.md` file with YAML frontmatter and skill instructions
+3. Test with `/skill-name` command
+4. Document in this file and create a user guide
+
+For detailed skill creation instructions, see [Claude Code Skills Documentation](https://code.claude.com/docs/en/skills)
+
 ## Important Notes
 
 - The site is deployed via GitHub Pages, so only GitHub Pages-compatible plugins work
