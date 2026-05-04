@@ -22,6 +22,16 @@ group: news
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
+  <div class="timeline-date">May 2026</div>
+  <div class="timeline-content">
+    I am serving as a PC member for <a href="https://conf.researchr.org/track/ase-2026/ase-2026-tools-and-data-sets">ASE 2026 Tools and Datasets Track</a>, one of the premier venues in software engineering.
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
   <div class="timeline-date">March 2026</div>
   <div class="timeline-content">
     I am serving as a PC member for <a href="https://conf.researchr.org/track/internetware-2026/internetware-2026-research-track">Internetware 2026 Research Track</a>.
