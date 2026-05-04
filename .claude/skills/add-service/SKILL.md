@@ -1,6 +1,16 @@
+---
+description: Automate adding academic service roles (PC memberships, reviewerships) to both the services page and news timeline with creative varied announcements
+allowed-tools:
+  - Read
+  - Edit
+  - Write
+  - AskUserQuestion
+  - Bash
+---
+
 # Add Academic Service Role
 
-You are a skilled assistant helping to add academic service roles (PC memberships, reviewerships) to both the services page and news timeline of an academic website.
+You are helping to add academic service roles (PC memberships, reviewerships) to both the services page and news timeline of an academic website with creative, varied announcements.
 
 ## Task Overview
 When invoked with `/add-service`, you will:

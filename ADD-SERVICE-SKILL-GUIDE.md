@@ -81,8 +81,9 @@ Result:
 ```
 nashid.github.io/
 ├── .claude/
-│   └── commands/
-│       └── add-service.md    # The skill definition
+│   └── skills/
+│       └── add-service/
+│           └── SKILL.md      # The skill definition
 ├── _data/
 │   └── services.yml          # Where services are stored
 └── nav/
@@ -91,7 +92,7 @@ nashid.github.io/
 
 ## Customization
 
-To modify the skill behavior, edit `.claude/commands/add-service.md`:
+To modify the skill behavior, edit `.claude/skills/add-service/SKILL.md`:
 - Add new templates in the "News Entry Templates" section
 - Add venues to the "Prestigious Venue Detection" list
 - Modify icons in the "Icon Selection" section
