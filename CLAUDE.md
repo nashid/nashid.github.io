@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll-based academic personal website hosted on GitHub Pages for Nashid Noor, a Ph.D. candidate at UBC. The site showcases research publications, academic services, CV, and professional information.
+This is a Jekyll-based academic personal website hosted on GitHub Pages for Nashid Noor, a Postdoctoral Fellow in Software Engineering at UBC. The site showcases research publications, academic services, CV, and professional information.
 
 ## Git Conventions
 
@@ -75,13 +75,26 @@ The website follows Jekyll's convention-based architecture:
 - **`resources/`**: Static assets (PDFs, images)
 - **`preview.sh`**: Local development helper script with auto-reload
 
+### Site Header
+
+The site header (`_includes/header.html`) displays:
+- **Name**: `{{ site.title }}, Ph.D.` (displays as "Nashid Noor, Ph.D." in bold)
+- **Position**: "Postdoctoral Fellow in Software Engineering"
+- **Department**: Electrical and Computer Engineering
+- **Institution**: University of British Columbia (linked)
+- **Contact**: Email and location
+- **Social Links**: LinkedIn, GitHub, Twitter, DBLP, Google Scholar
+
+The `.large-name` class in `_sass/_layout.scss` makes the name bold and larger.
+
 ### Content Flow
 
 1. **Publications**: Defined in `_data/papers.yml` and rendered via `nav/papers.md` using Liquid loops
 2. **Awards & Talks**: Defined in `_data/awards.yml` and `_data/talks.yml`, rendered via `nav/awards.md` with two sections
 3. **Services**: Defined in `_data/services.yml` and rendered similarly
-4. **Home Page**: `index.md` contains the about section and news timeline with direct HTML/Markdown content
-5. **Navigation**: Pages in `nav/` directory are linked via the header and use YAML front matter for layout and metadata
+4. **News**: Timeline format in `nav/news.md` with divs for different event types
+5. **Home Page**: `index.md` contains the about section with bio and selected publications
+6. **Navigation**: Pages in `nav/` directory are linked via the header and use YAML front matter for layout and metadata
 
 ### Key Conventions
 
@@ -106,7 +119,19 @@ The website follows Jekyll's convention-based architecture:
 4. Place the PDF in `resources/papers/{id}.pdf`
 
 ### Adding News Items
-Edit `index.md` and add a new `<tr>` entry to the news table with date, icon, and description.
+Edit `nav/news.md` and add a new timeline item div with appropriate class (service, award, paper, talk, travel), date, icon, and content. Structure:
+```html
+<div class="timeline-item [type]">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-[name].svg" | prepend: site.baseurl }}" alt="[Alt]">
+  </div>
+  <div class="timeline-date">[Month Year]</div>
+  <div class="timeline-content">
+    [Content here...]
+  </div>
+</div>
+```
+Available timeline item types: `service`, `award`, `paper`, `talk`, `travel`, `position`
 
 ### Adding Awards
 1. Edit `_data/awards.yml`
@@ -165,4 +190,10 @@ For detailed skill creation instructions, see [Claude Code Skills Documentation]
 - The site is deployed via GitHub Pages, so only GitHub Pages-compatible plugins work
 - Changes to `_config.yml` require a full site rebuild (restart `jekyll serve`)
 - The site uses Liquid templating for dynamic content generation
-- News items on the home page are manually curated in HTML format within `index.md`
+- **Site Keywords**: Software Engineering, Software Testing, Program Analysis, Agentic AI, Large Language Models, Deep Learning
+- **Excluded Files**: The following files are excluded from Jekyll processing via `_config.yml`:
+  - `CLAUDE.md` - Claude Code instructions
+  - `TODO.md` - Personal task list
+  - `README.md` - Repository readme
+  - `ADD-SERVICE-SKILL-GUIDE.md` - Skill documentation (internal use only)
+  - Development files (Gemfile, vendor/, .bundle/, preview.sh)
