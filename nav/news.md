@@ -28,6 +28,16 @@ group: news
   </div>
 </div>
 
+<div class="timeline-item award">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-sparkles-modern.svg" | prepend: site.baseurl }}" alt="Achievement">
+  </div>
+  <div class="timeline-date">April 2026</div>
+  <div class="timeline-content">
+    I successfully defended my PhD dissertation and passed my Final Oral Defence. Grateful to my supervisor Prof. Ali Mesbah and my committee members Prof. Karthik Pattabiraman, Dr. Xiaoxiao Li, Dr. Prashant Nair, Dr. Ning Nan, and external examiner Prof. Foutse Khomh for their invaluable guidance and support throughout this journey.
+  </div>
+</div>
+
 <div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
