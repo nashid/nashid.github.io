@@ -10,6 +10,15 @@ This is a Jekyll-based academic personal website hosted on GitHub Pages for Nash
 
 **CRITICAL**: Never add "Generated with Claude Code" or "Co-Authored-By: Claude" attribution in commit messages or pull requests.
 
+## GitHub Issues and Pull Requests
+
+**CRITICAL**: Do NOT automatically close GitHub issues in commit messages or PR descriptions unless the user explicitly asks you to.
+
+- **Never add** "Closes #XX" or "Fixes #XX" to commits or PRs unless specifically requested
+- The user wants to examine changes on the live site before closing issues
+- Let the user manually close issues after they verify the changes
+- If unsure, ask the user if they want the issue auto-closed before adding the reference
+
 ## Technology Stack
 
 - **Static Site Generator**: Jekyll (GitHub Pages)
