@@ -5,7 +5,7 @@ weight: 1
 group: about
 ---
 
-I am a Postdoctoral Fellow in Software Engineering at the University of British Columbia under the supervision of Dr. Ali Mesbah.
+I am a Postdoctoral Fellow in Software Engineering at the University of British Columbia under the supervision of Prof. Ali Mesbah.
 I am fortunate to be part of the [SALT lab](https://people.ece.ubc.ca/amesbah/salt/).
 My research is in software engineering, with emphasis on AI-driven software analysis, code repair, and software testing. 
 My research aims to understand the role of context for code-related tasks with large language models.
