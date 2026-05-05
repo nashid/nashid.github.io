@@ -14,6 +14,12 @@ My work has been recognized by the ACM SIGSOFT Distinguished Paper Award at ASE 
 
 I aspire to work at the intersection of academia and industry to build novel solutions, tools, and techniques that directly benefit software practitioners. I believe the boundary between academic research and industrial practice in software engineering will continue to blur, and I want to play an active role in fostering this bidirectional flow of knowledge to ensure both scientific advancement and practical impact. I am also interested in how technology might shape the trajectory of our civilization and in advancing AI research that aligns with societal benefit.
 
+### Mentorship and community
+
+I aim to broaden access to research training in computer science, especially for students from the Global South and other underrepresented groups. My academic path from BUET in Bangladesh to University College Cork in Ireland and then to UBC has shaped this goal. I have seen that a major barrier for many aspiring researchers is often not ability but access. This includes access to mentorship, professional networks, and the tacit norms that shape academic research.
+
+My goal as a mentor is to make these tacit norms explicit. I help students identify meaningful research problems. I guide them in developing and revising scholarly writing. I support them in engaging with peer review. I also help them navigate the academic career path. I currently mentor pre-doctoral fellows through the Fatima Fellowship, a non-profit initiative that supports researchers from developing countries preparing for graduate study in AI and computer science.
+
 ### Highlights & Selected Publications
 
 <img src="./resources/images/icon-trophy-new.svg" width="20" height="20"> **ACM SIGSOFT Distinguished Paper Award** at ASE 2025
