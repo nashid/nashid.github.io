@@ -28,6 +28,16 @@ group: news
   </div>
 </div>
 
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-globe-asia.svg" | prepend: site.baseurl }}" alt="Mentorship">
+  </div>
+  <div class="timeline-date">May 2026</div>
+  <div class="timeline-content">
+    I am mentoring pre-doctoral fellows through the <a href="https://fatima.institute/">Fatima Fellowship</a>, a non-profit initiative supporting researchers from developing countries in their preparation for graduate study in AI and computer science. This aligns with my commitment to broadening access to research training for students from underrepresented groups.
+  </div>
+</div>
+
 <div class="timeline-item award">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-sparkles-modern.svg" | prepend: site.baseurl }}" alt="Achievement">
