@@ -12,9 +12,9 @@ My research aims to understand the role of context for code-related tasks with l
 
 My work has been recognized by the ACM SIGSOFT Distinguished Paper Award at ASE 2025, reflecting the broader impact and rigor of my research contributions. My research has received over 500 citations (h-index: 11), including CEDAR which has been cited more than 300 times and featured in [an article by IBM](https://www.ibm.com/think/topics/few-shot-prompting#1003835713) on few-shot prompting.
 
-**Beyond research:** I aspire to work at the intersection of academia and industry to build novel solutions, tools, and techniques that directly benefit software practitioners. I believe the boundary between academic research and industrial practice in software engineering will continue to blur, and I want to play an active role in fostering this bidirectional flow of knowledge to ensure both scientific advancement and practical impact. I am also interested in how technology might shape the trajectory of our civilization and in advancing AI research that aligns with societal benefit.
+**Beyond research:** I aspire to work at the intersection of academia and industry to build novel solutions, tools, and techniques that directly benefit software practitioners. I believe the boundary between academic research and industrial practice in software engineering will continue to *blur*, and I want to play an active role in fostering this bidirectional flow of knowledge to ensure both scientific advancement and practical impact. I am also interested in how technology might shape the trajectory of our civilization and in advancing AI research that aligns with societal benefit.
 
-**Broadening access:** A major barrier for aspiring researchers from the Global South is often not ability but access. Access to mentorship, networks, and the tacit norms that shape academic research. My goal as a mentor is to make these tacit norms explicit. I currently mentor
+**Broadening access:** A major barrier for aspiring researchers from the Global South is often not ability but *access*. Access to mentorship, networks, and the tacit norms that shape academic research. My goal as a mentor is to make these *tacit norms* explicit. I currently mentor
 pre-doctoral fellows through the [Fatima Fellowship](https://fatima.institute/).
 
 
