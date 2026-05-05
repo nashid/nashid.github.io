@@ -64,7 +64,7 @@ group: news
   </div>
   <div class="timeline-date">January 2026</div>
   <div class="timeline-content">
-    I successfully passed my PhD departmental defense. Grateful to my advisor Dr. Ali Mesbah and my committee for their guidance and support.
+    I successfully passed my PhD departmental defense. Grateful to my advisor Prof. Ali Mesbah and my committee for their guidance and support.
   </div>
 </div>
 
@@ -256,7 +256,7 @@ group: news
   </div>
   <div class="timeline-date">February 2025</div>
   <div class="timeline-content">
-    I gave a talk at UBC on retrieval-augmented code generation with large language models. Thanks to Dr. Ali Mesbah.
+    I gave a talk at UBC on retrieval-augmented code generation with large language models. Thanks to Prof. Ali Mesbah.
   </div>
 </div>
 
@@ -266,7 +266,7 @@ group: news
   </div>
   <div class="timeline-date">February 2025</div>
   <div class="timeline-content">
-    I gave a talk at UBC on program repair using large language models. Thanks to Dr. Ali Mesbah.
+    I gave a talk at UBC on program repair using large language models. Thanks to Prof. Ali Mesbah.
   </div>
 </div>
 
@@ -570,7 +570,7 @@ group: news
   </div>
   <div class="timeline-date">January 2023</div>
   <div class="timeline-content">
-    I successfully passed my PhD qualifying exam. Thanks to my advisor Dr. Ali Mesbah for everything.
+    I successfully passed my PhD qualifying exam. Thanks to my advisor Prof. Ali Mesbah for everything.
   </div>
 </div>
 
