@@ -3,7 +3,7 @@ layout: default
 title: News
 navtitle: News
 permalink: /news/
-weight: 7
+weight: 8
 group: news
 ---
 
