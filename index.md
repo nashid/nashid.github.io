@@ -16,9 +16,10 @@ I aspire to work at the intersection of academia and industry to build novel sol
 
 ### Mentorship and community
 
-I aim to broaden access to research training in computer science, especially for students from the Global South and other underrepresented groups. My academic path from BUET in Bangladesh to University College Cork in Ireland and then to UBC has shaped this goal. I have seen that a major barrier for many aspiring researchers is often not ability but access. This includes access to mentorship, professional networks, and the tacit norms that shape academic research.
+A major barrier for aspiring researchers from the Global South is often not ability but access. Access to mentorship, networks, and
+the tacit norms that shape academic research. My goal as a mentor is to make these tacit norms explicit. I currently mentor
+pre-doctoral fellows through the [Fatima Fellowship](https://fatima.institute/).
 
-My goal as a mentor is to make these tacit norms explicit. I help students identify meaningful research problems. I guide them in developing and revising scholarly writing. I support them in engaging with peer review. I also help them navigate the academic career path. I currently mentor pre-doctoral fellows through the Fatima Fellowship, a non-profit initiative that supports researchers from developing countries preparing for graduate study in AI and computer science.
 
 ### Highlights & Selected Publications
 
