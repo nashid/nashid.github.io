@@ -22,6 +22,16 @@ group: news
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
+  <div class="timeline-date">June 2026</div>
+  <div class="timeline-content">
+    Excited to serve on the program committee for the <a href="https://dl4c.github.io/">5th Deep Learning for Code (DL4C) Workshop</a> at ICML 2026.
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
   <div class="timeline-date">May 2026</div>
   <div class="timeline-content">
     I am serving as a PC member for <a href="https://conf.researchr.org/track/ase-2026/ase-2026-tools-and-data-sets">ASE 2026 Tools and Datasets Track</a>, one of the premier venues in software engineering.

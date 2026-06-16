@@ -65,6 +65,11 @@
   year: 2026
   website: https://conf.researchr.org/track/internetware-2026/internetware-2026-research-track
 
+- name: Deep Learning for Code (DL4C), ICML 2026
+  role: PC Member
+  year: 2026
+  website: https://dl4c.github.io/
+
 # 2025
 - name:  Empirical Software Engineering (EMSE)
   role: Invited Reviewer
