@@ -29,6 +29,19 @@ excerpt_separator: <!--more-->
 keywords: Software Engineering, Software Testing, Program Analysis, Agentic AI, Large Language Models, Deep Learning
 copyright: Copyright (c) Nashid Noor
 
+# Collections
+collections:
+  writings:
+    output: true
+    permalink: /writings/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: writings
+    values:
+      layout: post
+
 # Plugins
 plugins:
   - jekyll-sitemap

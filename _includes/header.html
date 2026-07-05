@@ -57,8 +57,11 @@
 
             <div class="trigger">
             	  {% assign pages = site.pages | sort:'weight', 'last'  %}
+                {% assign writings_count = site.writings | size %}
                 {% for node in pages %}
                 	{% unless node.url contains '/CLAUDE' %}
+                	{% comment %} Writings tab stays hidden until there are at least 3 writings {% endcomment %}
+                	{% if node.group == 'writings' and writings_count < 3 %}{% continue %}{% endif %}
                 	{% if node.title %}
                 		{% if node.url == page.url %}
                 			<a class="page-link-active" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>

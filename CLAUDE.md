@@ -71,7 +71,8 @@ The website follows Jekyll's convention-based architecture:
   - `svg.html`: Icon definitions
   - `functions/`: Liquid template helper functions
 - **`_sass/`**: SCSS stylesheets for site styling
-- **`nav/`**: Navigation pages (awards, papers, teaching, service, CV, news)
+- **`_writings/`**: Long-form essays/blog posts (Jekyll collection, rendered at `/writings/<filename>/` with the `post` layout)
+- **`nav/`**: Navigation pages (awards, papers, teaching, mentorship, service, CV, writings, news)
 - **`resources/`**: Static assets (PDFs, images)
 - **`preview.sh`**: Local development helper script with auto-reload
 
@@ -104,9 +105,11 @@ The `.large-name` class in `_sass/_layout.scss` makes the name bold and larger.
   - Awards (weight: 2)
   - Papers (weight: 3)
   - Teaching (weight: 4)
-  - Service (weight: 5)
-  - CV (weight: 6)
-  - News (weight: 7)
+  - Mentorship (weight: 5)
+  - Service (weight: 6)
+  - CV (weight: 7)
+  - Writings (weight: 8) — tab hidden until `_writings/` has at least 3 entries (see below)
+  - News (weight: 9)
 - PDF files are stored in `resources/papers/` and referenced by paper ID from `papers.yml`
 - Images are stored in `resources/images/`
 
@@ -132,6 +135,14 @@ Edit `nav/news.md` and add a new timeline item div with appropriate class (servi
 </div>
 ```
 Available timeline item types: `service`, `award`, `paper`, `talk`, `travel`, `position`
+
+### Adding a Writing (Essay/Blog Post)
+1. Create `_writings/<slug>.md` with front matter: `title`, `date` (YYYY-MM-DD), `summary` (one-two sentences, shown on the listing page)
+2. Write the body in Markdown; it renders with the `post` layout at `/writings/<slug>/`
+3. The `/writings/` listing page (`nav/writings.md`) picks it up automatically, sorted newest first
+4. Content guidelines: evergreen over timely; never include confidential details (e.g., external examiner names or committee deliberations); add a "last verified" note to process-dependent posts
+
+**Writings nav tab visibility**: The Writings tab is hidden from the header nav until `_writings/` contains at least 3 posts (threshold check in `_includes/header.html`). Individual post URLs and `/writings/` remain live and shareable regardless — only the nav tab is affected. The tab appears automatically when the 3rd post is added; no other change is needed.
 
 ### Adding Awards
 1. Edit `_data/awards.yml`
