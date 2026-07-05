@@ -31,7 +31,11 @@ The single most useful planning fact: G+PS wants the **external examiner nominat
 
 ## Step 0: Write in the right template from the start
 
-UBC does **not** provide an official thesis template — only [formatting requirements](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation), which are checked strictly at final submission. There are community-maintained templates, offered without guarantees:
+UBC does **not** provide an official thesis template — only [formatting requirements](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation), which are checked strictly at final submission.
+
+**Start from mine.** I maintain the [LaTeX template I wrote my own dissertation in](https://github.com/nashid/ubc-dissertation-template). It builds on Brian de Alwis' public-domain `ubcdiss.cls`, follows the G+PS structure and formatting requirements, and is organized for a **manuscript-based dissertation** — each research chapter corresponding to a published or submitted paper. It has been through the entire pipeline described in this guide, G+PS formatting review included, so you inherit a structure that is known to pass.
+
+Other community-maintained templates, offered without guarantees:
 
 - **LaTeX**: [Michael Forbes' `ubcthesis` class](https://alum.mit.edu/www/mforbes/projects/ubcthesis/), an [updated Overleaf version by Jeremy Wong](https://www.overleaf.com/read/zxbgknhvbsts), and [Brian de Alwis' `ubcdiss`](https://github.com/briandealwis/ubcdiss)
 - **Word**: the Koerner Library Research Commons template (linked from the [style guides and tools page](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation/style-guides-computer-tools))
