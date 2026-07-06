@@ -7,7 +7,7 @@ weight: 8
 group: writings
 ---
 
-Occasional long-form writing about the tacit side of research — the processes, norms, and decisions that shape an academic career but rarely get written down. These pieces exist because I found myself explaining the same things over and over; making them public is part of my broader goal of [broadening access to research training](/mentorship/).
+The biggest barriers in academia are often not ability but *access*, including access to the tacit knowledge that nobody writes down. These writings are my attempt to write it down: the processes, norms, and decisions that shape a research career but rarely appear in any handbook. Doing so in public is part of my broader commitment to [broadening access to research training](/mentorship/).
 
 <ul class="post-list">
 {% assign sorted_writings = site.writings | sort: "date" | reverse %}
