@@ -407,12 +407,6 @@
         color: $brand-color;
     }
 
-    // Small-caps first line, completing the book opening
-    > p:first-of-type::first-line {
-        font-variant-caps: small-caps;
-        letter-spacing: 0.5px;
-    }
-
     // End-of-article tombstone
     > p:last-of-type::after {
         content: "\2002\220E";

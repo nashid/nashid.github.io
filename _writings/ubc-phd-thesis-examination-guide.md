@@ -8,7 +8,6 @@ version: 1
 
 <figure class="writing-hero">
 <img src="{{ "/resources/images/ubc-road-to-thesis.jpg" | prepend: site.baseurl }}" alt="Illustration of a winding road climbing a mountain past crimson research milestones toward a doctoral cap at the sunlit summit, with the UBC clock tower and campus below." />
-<figcaption>The road this guide walks: four gates between a finished draft and convocation.</figcaption>
 </figure>
 
 Every few months a labmate or colleague asks me how the final stretch of the UBC PhD actually works, and every time I find myself reconstructing the same timeline from memory and old emails. I defended in April 2026, so the process is still fresh. This post writes it down once, properly.
