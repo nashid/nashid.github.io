@@ -20,10 +20,6 @@ The thesis endgame is full of the tacit knowledge that nobody writes down: unwri
 <p>Policies change and programs differ. This reflects my experience as a PhD student in Electrical and Computer Engineering (ECE), checked against the <a href="https://www.grad.ubc.ca/current-students/final-doctoral-exam">Faculty of Graduate and Postdoctoral Studies (G+PS) pages</a> as of July 2026. The G+PS pages and your program assistant are authoritative; when in doubt, trust them over this post.</p>
 </div>
 
-<div class="stage-picker">
-<span class="stage-picker-label">Where are you?</span><button type="button" data-stage="0" data-node="-1" data-section="step-0-write-in-the-right-template-from-the-start">Writing up</button><button type="button" data-stage="1" data-node="-1" data-section="step-1-the-departmental-exam">Departmental exam</button><button type="button" data-stage="2" data-node="0" data-section="step-2-the-external-examiner-start-earlier-than-feels-necessary">Form submitted</button><button type="button" data-stage="3" data-node="1" data-section="step-3-the-dissertation-goes-out">Dissertation out</button><button type="button" data-stage="4" data-node="2" data-section="step-4-the-final-oral-defence">Defence ahead</button><button type="button" data-stage="5" data-node="3" data-section="step-5-final-submission-to-circle">After the defence</button>
-</div>
-
 ## The big picture
 
 Between "my thesis is mostly written" and "I am officially done" there are four gates:
@@ -35,7 +31,7 @@ Between "my thesis is mostly written" and "I am officially done" there are four 
 
 The single most useful planning fact: G+PS wants the **external examiner nomination roughly 8 weeks before** you submit the dissertation for external examination, and everything else stacks up behind that. G+PS publishes [suggested deadlines for each graduation cycle](https://www.grad.ubc.ca/current-students/final-doctoral-exam/doctoral-deadlines); find your target cycle and work backwards from it on day one.
 
-Once the nomination form is in, the exam office's own interval chain takes over. These numbers come straight from the welcome packet G+PS sends candidates: <span class="mn">G+PS doctoral exam welcome packet (December 2025), p. 1</span>
+Once the nomination form is in, the exam office's own interval chain takes over. These numbers come straight from the welcome packet G+PS sends candidates: <span class="mn">G+PS welcome packet, p. 1</span>
 
 <ul class="exam-timeline">
 <li>
@@ -108,7 +104,7 @@ This is the step with the longest invisible lead time and the strictest rules, s
 <p>&ldquo;Graduate and Postdoctoral Studies has received your Nominations for External Examiner (Doctoral Dissertation) form and will proceed to confirm an External Examiner for early February <b>as noted on the form</b>. Please let us know <b>immediately</b> if you will not be submitting your dissertation for external examination at that time. [&hellip;] More information about next steps will be provided once an External Examiner has been confirmed.&rdquo;</p>
 </div>
 
-Read that email the way G+PS means it: the anticipated submission date you wrote on the form is now the spine of your exam timeline. The exams office is explicit about the tolerances: **a few days late is fine; more than two weeks late** and they may have to go back to your examiner to check they are still available, and every downstream date moves with you. If you know you will slip, say so immediately rather than going quiet. <span class="mn">welcome packet (December 2025), p. 2, &ldquo;Submission Date&rdquo;</span>
+Read that email the way G+PS means it: the anticipated submission date you wrote on the form is now the spine of your exam timeline. The exams office is explicit about the tolerances: **a few days late is fine; more than two weeks late** and they may have to go back to your examiner to check they are still available, and every downstream date moves with you. If you know you will slip, say so immediately rather than going quiet. <span class="mn">welcome packet, p. 2</span>
 
 Second, G+PS sends a **doctoral exam welcome packet**, which, in the best tradition of bureaucracies with soul, introduces the doc exams team alongside photographs of their corgis. Behind the corgis it is genuinely load-bearing: the interval chain in the timeline above is theirs, and it warns you that everything from here on arrives from **graduate.doctoral@ubc.ca** and contains instructions, not just updates. Whitelist that address and read every message carefully. I have archived [the edition I received (December 2025)](/resources/docs/ubc-doctoral-exam-welcome-dec2025.pdf) as a specimen; get the current one from the exams office.
 
@@ -128,7 +124,7 @@ This is otherwise the quiet phase: a good time to prepare the defence talk and, 
 
 ## Step 4: The final oral defence
 
-Here is the fact most candidates get wrong, straight from the exams office: **you do not wait for the external examiner's report to book the defence.** Booking opens as soon as the dissertation is transmitted; the defence lands a **minimum of 6–7 weeks** after submission and should be booked **at least 4 weeks in advance**. With the booking request goes the **University Examiner form**, nominating the two UBC examiners who join the examining committee from outside your supervisory committee; G+PS appoints the chair. The external's report becomes part of the record whether or not they attend. The [Doctoral Exam Guide and planning tools](https://www.grad.ubc.ca/current-students/final-doctoral-exam) cover the room, format, and mechanics; read them end-to-end the week you submit. <span class="mn">welcome packet (December 2025), p. 2, &ldquo;Booking the defence&rdquo;</span>
+Here is the fact most candidates get wrong, straight from the exams office: **you do not wait for the external examiner's report to book the defence.** Booking opens as soon as the dissertation is transmitted; the defence lands a **minimum of 6–7 weeks** after submission and should be booked **at least 4 weeks in advance**. With the booking request goes the **University Examiner form**, nominating the two UBC examiners who join the examining committee from outside your supervisory committee; G+PS appoints the chair. The external's report becomes part of the record whether or not they attend. The [Doctoral Exam Guide and planning tools](https://www.grad.ubc.ca/current-students/final-doctoral-exam) cover the room, format, and mechanics; read them end-to-end the week you submit.
 
 ## Step 5: Final submission to cIRcle
 
@@ -183,33 +179,3 @@ If you are navigating this at UBC (or anywhere, since most universities run an i
 <p>v1 &middot; July 5, 2026 &middot; First published.</p>
 <p>Corrections are versioned like a preprint; the <a href="https://github.com/nashid/nashid.github.io/commits/main/_writings/ubc-phd-thesis-examination-guide.md">full source history</a> of this guide is public.</p>
 </div>
-
-<script>
-(function () {
-  var KEY = "ubc-guide-stage";
-  var buttons = document.querySelectorAll(".stage-picker button");
-  var nodes = document.querySelectorAll(".exam-timeline li");
-  function apply(stage, scroll) {
-    var btn = document.querySelector('.stage-picker button[data-stage="' + stage + '"]');
-    if (!btn) { return; }
-    buttons.forEach(function (b) { b.classList.toggle("active", b === btn); });
-    nodes.forEach(function (n) { n.classList.remove("is-here"); });
-    var node = parseInt(btn.getAttribute("data-node"), 10);
-    if (node >= 0 && nodes[node]) { nodes[node].classList.add("is-here"); }
-    if (scroll) {
-      var target = document.getElementById(btn.getAttribute("data-section"));
-      if (target) { target.scrollIntoView({ behavior: "smooth", block: "start" }); }
-    }
-  }
-  buttons.forEach(function (b) {
-    b.addEventListener("click", function () {
-      try { localStorage.setItem(KEY, b.getAttribute("data-stage")); } catch (e) {}
-      apply(b.getAttribute("data-stage"), true);
-    });
-  });
-  try {
-    var saved = localStorage.getItem(KEY);
-    if (saved !== null) { apply(saved, false); }
-  } catch (e) {}
-})();
-</script>

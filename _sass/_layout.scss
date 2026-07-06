@@ -383,31 +383,6 @@
         hyphens: auto;
     }
 
-    // Book text-block: indented paragraphs, no inter-paragraph gaps
-    p {
-        margin-bottom: 0;
-        text-indent: 1.55em;
-        text-align: justify;
-    }
-
-    p + ul, p + ol, p + table, p + figure, p + div {
-        margin-top: 14px;
-    }
-
-    > p:first-of-type,
-    h2 + p, h3 + p, h4 + p,
-    figure + p, ul + p, ol + p, table + p, div + p,
-    blockquote + p {
-        text-indent: 0;
-    }
-
-    // Run-in-head paragraphs (bold lead) keep their own block spacing
-    p:has(> strong:first-child) {
-        text-indent: 0;
-        margin-top: 14px;
-        margin-bottom: 14px;
-    }
-
     // Scholarly links: ink-coloured text, quiet crimson underline
     a {
         color: inherit;
@@ -638,69 +613,6 @@
         clear: right;
         width: 180px;
         margin: 0 -210px 10px 0;
-    }
-}
-
-// Stage picker: the welcome packet's "you are here" made interactive
-.stage-picker {
-    margin: 0 0 $spacing-unit;
-    padding: 10px 0 8px;
-    border-top: 1px solid $grey-color-light;
-    border-bottom: 1px solid $grey-color-light;
-
-    .stage-picker-label {
-        display: inline-block;
-        margin-right: 8px;
-        font-family: $base-font-family;
-        font-size: $tiny-font-size;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: $grey-color-dark;
-    }
-
-    button {
-        -webkit-appearance: none;
-        appearance: none;
-        background: none;
-        border: none;
-        padding: 3px 7px;
-        cursor: pointer;
-        font-family: $base-font-family;
-        font-size: 11.5px;
-        font-weight: 600;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-        color: $grey-color;
-
-        &:hover {
-            color: $brand-color;
-        }
-
-        &.active {
-            color: $brand-color;
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 4px;
-        }
-    }
-}
-
-.exam-timeline li.is-here {
-    &:before {
-        background-color: $brand-color;
-    }
-
-    .exam-step-title:after {
-        content: "You are here";
-        margin-left: 10px;
-        vertical-align: 2px;
-        font-family: $base-font-family;
-        font-size: 10.5px;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        color: $brand-color;
     }
 }
 
