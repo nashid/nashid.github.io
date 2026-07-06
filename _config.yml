@@ -1,6 +1,6 @@
 # Site settings
+url: https://nashid.github.io # the base hostname & protocol for your site
 #baseurl: "/~nashidnoor" # the subpath of your site, e.g. /blog/
-#url: https://ece.ubc.ca # the base hostname & protocol for your site
 
 # User settings
 title: Nashid Noor
@@ -55,6 +55,7 @@ exclude:
   - README.md
   - COPYRIGHT.md
   - ADD-SERVICE-SKILL-GUIDE.md
+  - WRITING-STYLE-GUIDE.md
   - Gemfile
   - Gemfile.lock
   - vendor/

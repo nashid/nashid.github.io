@@ -141,6 +141,7 @@ Available timeline item types: `service`, `award`, `paper`, `talk`, `travel`, `p
 2. Write the body in Markdown; it renders with the `post` layout at `/writings/<slug>/`
 3. The `/writings/` listing page (`nav/writings.md`) picks it up automatically, sorted newest first
 4. Content guidelines: evergreen over timely; never include confidential details (e.g., external examiner names or committee deliberations); add a "last verified" note to process-dependent posts
+5. **Follow `WRITING-STYLE-GUIDE.md`** for voice, punctuation, and emphasis rules (notably: no em-dashes, no contractions, simple formal academic wording)
 
 **Writings nav tab visibility**: The Writings tab is hidden from the header nav until `_writings/` contains at least 3 posts (threshold check in `_includes/header.html`). Individual post URLs and `/writings/` remain live and shareable regardless — only the nav tab is affected. The tab appears automatically when the 3rd post is added; no other change is needed.
 
