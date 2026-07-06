@@ -78,7 +78,7 @@ Adopt it early and write in it from the beginning. Retrofitting a formatting-com
 In ECE, before anything goes to G+PS, you defend internally. Mechanically it looks like a smaller version of the real defence:
 
 - **Committee**: your advisor, two members of your supervisory committee, and a chair.
-- **Scheduling is the hard part.** You need a slot where four busy academics are simultaneously available. Start 4–6 weeks out, and be extra generous in summer when everyone travels. In my case scheduling started in mid-July for a late-August exam.
+- **Scheduling is the hard part.** You need a slot where four busy academics are simultaneously available. Start 4–6 weeks out, and be extra generous around the winter holidays or summer, when everyone travels. In my case scheduling started in mid-November for a January exam, straddling the winter break.
 - **The thesis goes to the committee at least one week before the exam.** In practice, aim for more; a committee member who has not read it helps nobody.
 
 Treat this exam as a genuine asset rather than a hurdle: it is the last round of substantive feedback before your dissertation is read by someone who has never met you. The revisions that come out of it are what make the external examination boring, which is what you want.
@@ -87,7 +87,7 @@ Treat this exam as a genuine asset rather than a hurdle: it is the last round of
 
 This is the step with the longest invisible lead time and the strictest rules, so it deserves the most care.
 
-**How it works.** Your supervisor and the graduate program advisor nominate **at least two, preferably three** candidates using the [Nominations for External Examiner form](https://www.grad.ubc.ca/current-students/final-doctoral-exam/selecting-external-examiner), due roughly **8 weeks before** the dissertation is submitted for external examination. In practice, you draft a shortlist together with your supervisor well before that; for me this conversation happened in mid-July, months before the form went in.
+**How it works.** Your supervisor and the graduate program advisor nominate **at least two, preferably three** candidates using the [Nominations for External Examiner form](https://www.grad.ubc.ca/current-students/final-doctoral-exam/selecting-external-examiner), due roughly **8 weeks before** the dissertation is submitted for external examination. In practice, you draft a shortlist together with your supervisor beforehand; for me this conversation happened in mid-November, a few weeks before the form went in.
 
 **Who is eligible.** An external examiner must hold the rank of full, associate, or emeritus professor at a comparable university, have an established reputation in the dissertation's research area, have prior experience supervising and examining doctoral students, and must not have acted as external examiner for a student of any of your committee members in the past three years.
 
@@ -119,7 +119,7 @@ Once your supervisory committee approves the dissertation for external examinati
 <p>Sent to you and your supervisor the moment the dissertation goes out. It names the <b>earliest date your defence can be held</b>, which means booking starts <i>now</i>, not when the external&rsquo;s report arrives.</p>
 </div>
 
-This is otherwise the quiet phase: a good time to prepare the defence talk and, frankly, to rest. In my case the dissertation went out in **early February** for an April defence; the examiner conversation still happens the previous summer, because the 8-week nomination lead time sits in front of everything.
+This is otherwise the quiet phase: a good time to prepare the defence talk and, frankly, to rest. In my case the dissertation went out in **early February** for an April defence; the examiner conversation still begins the previous autumn, because the 8-week nomination lead time sits in front of everything.
 
 ## Step 4: The final oral defence
 
@@ -137,13 +137,14 @@ Usually about a month separates defence day from being fully done. You incorpora
 
 Roughly my own calendar, as one concrete instantiation:
 
-- **Mid-July**: external examiner shortlist drafted with my supervisor; departmental exam scheduling begins
-- **Late August**: departmental exam (thesis to the committee a week or more before)
-- **September–October**: revisions from committee feedback
-- **Late fall**: Nominations for External Examiner form submitted; G+PS confirms receipt and starts inviting
+- **Mid-November**: external examiner shortlist drafted with my supervisor; departmental exam scheduling begins
+- **December**: departmental exam scheduled (thesis to the committee a week or more before)
+- **December**: Nominations for External Examiner form submitted; G+PS confirms receipt and starts inviting
+- **January**: departmental exam
 - **Early February**: dissertation submitted to the Doctoral Exams Office for external examination
+- **March**: final examination committee confirmed and the oral defence scheduled
 - **April**: final oral defence, booked weeks earlier without waiting for the external's report
-- **Late spring**: revisions incorporated, final version approved in cIRcle, program closed
+- **April**: minor revisions incorporated, final version approved in cIRcle, program closed
 
 ## Quick answers to the questions everyone asks
 
