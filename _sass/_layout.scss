@@ -376,6 +376,26 @@
     font-family: $serif-font-family;
     font-size: 17px;
     line-height: 1.7;
+    font-feature-settings: "onum" 1;
+
+    p, li {
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    // Scholarly links: ink-coloured text, quiet crimson underline
+    a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(150, 23, 46, 0.4);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+
+        &:hover {
+            color: $brand-color;
+            text-decoration-color: $brand-color;
+        }
+    }
 
     // Opening drop cap, in the manner of a typeset essay
     > p:first-of-type::first-letter {
@@ -385,6 +405,12 @@
         padding: 5px 10px 0 0;
         font-weight: 500;
         color: $brand-color;
+    }
+
+    // Small-caps first line, completing the book opening
+    > p:first-of-type::first-line {
+        font-variant-caps: small-caps;
+        letter-spacing: 0.5px;
     }
 
     // End-of-article tombstone
@@ -401,6 +427,17 @@
     h2 {
         font-size: 25px;
         font-weight: 600;
+        margin-top: 44px;
+
+        // The kicker's crimson dash, echoed at every section opening
+        &:before {
+            content: "";
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $brand-color;
+            margin-bottom: 12px;
+        }
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -438,6 +475,8 @@
         font-size: 15px;
         border-top: 2px solid $text-color;
         border-bottom: 2px solid $text-color;
+        font-feature-settings: normal;
+        font-variant-numeric: lining-nums tabular-nums;
 
         th {
             font-family: $base-font-family;
@@ -470,8 +509,17 @@
             margin-bottom: 5px;
         }
 
+        // Hand-drawn checklist squares instead of OS checkboxes
         .task-list-item-checkbox {
-            margin-right: 8px;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 11px;
+            height: 11px;
+            border: 1.5px solid $grey-color-dark;
+            border-radius: 1px;
+            margin-right: 10px;
+            position: relative;
+            top: 1px;
         }
     }
 }
@@ -481,6 +529,10 @@
 /**
  * Writings: figures, inbox callouts, and exam timeline
  */
+::selection {
+    background-color: rgba(150, 23, 46, 0.12);
+}
+
 .writing-hero,
 .writing-figure {
     margin: 0 0 $spacing-unit;
@@ -490,6 +542,15 @@
         width: 100%;
         height: auto;
         border: 1px solid $grey-color-light;
+    }
+
+    figcaption {
+        margin-top: 10px;
+        font-family: $serif-font-family;
+        font-style: italic;
+        font-size: 14px;
+        text-align: center;
+        color: $grey-color;
     }
 }
 
