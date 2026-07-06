@@ -497,6 +497,36 @@
     margin: $spacing-unit 0;
 }
 
+// Epigraph headnote: indented italic, no rules, no box
+.post-epigraph {
+    margin: ($spacing-unit * 1.2) ($spacing-unit * 1.5);
+
+    @include media-query($on-palm) {
+        margin: $spacing-unit ($spacing-unit / 2);
+    }
+
+    .post-epigraph-label {
+        display: block;
+        font-family: $base-font-family;
+        font-style: normal;
+        font-size: $tiny-font-size;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $brand-color;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-family: $serif-font-family;
+        font-style: italic;
+        font-size: 15.5px;
+        line-height: 1.7;
+        color: $grey-color-dark;
+        margin-bottom: 0;
+    }
+}
+
 // Correspondence specimens: archival transcript between hairline rules
 .inbox-note {
     margin: $spacing-unit 0;

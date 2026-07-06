@@ -13,7 +13,10 @@ Every few months a labmate or colleague asks me how the final stretch of the UBC
 
 The thesis endgame is full of the tacit knowledge that nobody writes down: unwritten lead times, forms with long processing queues, and scheduling realities that can quietly cost you a graduation cycle. Consider this guide my attempt to make those norms explicit for the last stretch of the UBC PhD, from the departmental exam to the final approved dissertation.
 
-> **Before you rely on this:** policies change and programs differ. This reflects my experience as a PhD student in **Electrical and Computer Engineering (ECE)**, checked against the [Faculty of Graduate and Postdoctoral Studies (G+PS) pages](https://www.grad.ubc.ca/current-students/final-doctoral-exam) as of **July 2026**. The G+PS pages and your program assistant are authoritative; when in doubt, trust them over this post.
+<div class="post-epigraph">
+<span class="post-epigraph-label">A note before you rely on this</span>
+<p>Policies change and programs differ. This reflects my experience as a PhD student in Electrical and Computer Engineering (ECE), checked against the <a href="https://www.grad.ubc.ca/current-students/final-doctoral-exam">Faculty of Graduate and Postdoctoral Studies (G+PS) pages</a> as of July 2026. The G+PS pages and your program assistant are authoritative; when in doubt, trust them over this post.</p>
+</div>
 
 ## The big picture
 
