@@ -30,7 +30,7 @@ Between "my thesis is mostly written" and "I am officially done" there are four 
 
 The single most useful planning fact: G+PS wants the **external examiner nomination roughly 8 weeks before** you submit the dissertation for external examination, and everything else stacks up behind that. G+PS publishes [suggested deadlines for each graduation cycle](https://www.grad.ubc.ca/current-students/final-doctoral-exam/doctoral-deadlines); find your target cycle and work backwards from it on day one.
 
-Once the nomination form is in, the exam office's own interval chain takes over. These numbers come straight from the welcome packet G+PS sends candidates: <span class="mn">G+PS welcome packet, p. 1</span>
+Once the nomination form is in, the exam office's own interval chain takes over. These numbers come straight from the welcome packet G+PS sends candidates:
 
 <ul class="exam-timeline">
 <li>
@@ -75,7 +75,7 @@ Adopt it early and write in it from the beginning. Retrofitting a formatting-com
 
 ## Step 1: The departmental exam
 
-In ECE, before anything goes to G+PS, you defend internally. Mechanically it looks like a smaller version of the real defence: <span class="mn">personal experience, ECE (2025); formats vary by program</span>
+In ECE, before anything goes to G+PS, you defend internally. Mechanically it looks like a smaller version of the real defence:
 
 - **Committee**: your advisor, two members of your supervisory committee, and a chair.
 - **Scheduling is the hard part.** You need a slot where four busy academics are simultaneously available. Start 4–6 weeks out, and be extra generous in summer when everyone travels. In my case scheduling started in mid-July for a late-August exam.
@@ -87,7 +87,7 @@ Treat this exam as a genuine asset rather than a hurdle: it is the last round of
 
 This is the step with the longest invisible lead time and the strictest rules, so it deserves the most care.
 
-**How it works.** Your supervisor and the graduate program advisor nominate **at least two, preferably three** candidates using the [Nominations for External Examiner form](https://www.grad.ubc.ca/current-students/final-doctoral-exam/selecting-external-examiner), due roughly **8 weeks before** the dissertation is submitted for external examination. In practice, you draft a shortlist together with your supervisor well before that; for me this conversation happened in mid-July, months before the form went in. <span class="mn">G+PS, &ldquo;Selecting an External Examiner&rdquo;</span>
+**How it works.** Your supervisor and the graduate program advisor nominate **at least two, preferably three** candidates using the [Nominations for External Examiner form](https://www.grad.ubc.ca/current-students/final-doctoral-exam/selecting-external-examiner), due roughly **8 weeks before** the dissertation is submitted for external examination. In practice, you draft a shortlist together with your supervisor well before that; for me this conversation happened in mid-July, months before the form went in.
 
 **Who is eligible.** An external examiner must hold the rank of full, associate, or emeritus professor at a comparable university, have an established reputation in the dissertation's research area, have prior experience supervising and examining doctoral students, and must not have acted as external examiner for a student of any of your committee members in the past three years.
 
@@ -103,7 +103,7 @@ This is the step with the longest invisible lead time and the strictest rules, s
 <p>&ldquo;Graduate and Postdoctoral Studies has received your Nominations for External Examiner (Doctoral Dissertation) form and will proceed to confirm an External Examiner for early February <b>as noted on the form</b>. Please let us know <b>immediately</b> if you will not be submitting your dissertation for external examination at that time. [&hellip;] More information about next steps will be provided once an External Examiner has been confirmed.&rdquo;</p>
 </div>
 
-Read that email the way G+PS means it: the anticipated submission date you wrote on the form is now the spine of your exam timeline. The exams office is explicit about the tolerances: **a few days late is fine; more than two weeks late** and they may have to go back to your examiner to check they are still available, and every downstream date moves with you. If you know you will slip, say so immediately rather than going quiet. <span class="mn">welcome packet, p. 2</span>
+Read that email the way G+PS means it: the anticipated submission date you wrote on the form is now the spine of your exam timeline. The exams office is explicit about the tolerances: **a few days late is fine; more than two weeks late** and they may have to go back to your examiner to check they are still available, and every downstream date moves with you. If you know you will slip, say so immediately rather than going quiet.
 
 Second, G+PS sends a **doctoral exam welcome packet**, which, in the best tradition of bureaucracies with soul, introduces the doc exams team alongside photographs of their corgis. Behind the corgis it is genuinely load-bearing: the interval chain in the timeline above is theirs, and it warns you that everything from here on arrives from **graduate.doctoral@ubc.ca** and contains instructions, not just updates. Whitelist that address and read every message carefully. I have archived [the edition I received (December 2025)](/resources/docs/ubc-doctoral-exam-welcome-dec2025.pdf) as a specimen; get the current one from the exams office.
 
@@ -130,12 +130,12 @@ Here is the fact most candidates get wrong, straight from the exams office: **yo
 Usually about a month separates defence day from being fully done. You incorporate any required revisions, collect committee approval, and upload the final PDF to cIRcle. Details that surprise people:
 
 - The PDF must be unsecured (no password protection), and **a scan is not acceptable**.
-- G+PS reviews the formatting *after* you submit: **your program is not closed and you are not eligible to graduate until they approve it**, and corrections are common. G+PS itself recommends submitting **at least 5 business days before** your deadline; the deadline is for *approval*, not submission.
-- Once accepted, **no changes are permitted**. Proofread the final version as if it is permanent, because it is. It goes online within 3–4 days. <span class="mn">G+PS, &ldquo;Final Dissertation Submission&rdquo;</span>
+- [G+PS reviews the formatting](https://www.grad.ubc.ca/current-students/final-dissertation-thesis-submission) *after* you submit: **your program is not closed and you are not eligible to graduate until they approve it**, and corrections are common. G+PS itself recommends submitting **at least 5 business days before** your deadline; the deadline is for *approval*, not submission.
+- Once accepted, **no changes are permitted**. Proofread the final version as if it is permanent, because it is. It goes online within 3–4 days.
 
 ## The cadence, end to end
 
-Roughly my own calendar, as one concrete instantiation: <span class="mn">my own timeline, 2025&ndash;2026</span>
+Roughly my own calendar, as one concrete instantiation:
 
 - **Mid-July**: external examiner shortlist drafted with my supervisor; departmental exam scheduling begins
 - **Late August**: departmental exam (thesis to the committee a week or more before)
