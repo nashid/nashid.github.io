@@ -137,7 +137,8 @@ Edit `nav/news.md` and add a new timeline item div with appropriate class (servi
 Available timeline item types: `service`, `award`, `paper`, `talk`, `travel`, `position`
 
 ### Adding a Writing (Essay/Blog Post)
-1. Create `_writings/<slug>.md` with front matter: `title`, `date` (YYYY-MM-DD), `summary` (one-two sentences, shown on the listing page and as the og:description); optional `image` (og/social card + hero) and `version` (arXiv-style integer metadata; bump it on substantive revisions and add a matching line to the post's revision-history block at the bottom — the version is not shown in the kicker)
+**Preferred: run `/add-writing`**, which handles all of the below in house style. The manual steps, for reference:
+1. Copy `.claude/skills/add-writing/references/template.md` to `_writings/<slug>.md`. Front matter: `title`, `date` (YYYY-MM-DD), `summary` (one-two sentences, shown on the listing page and as the og:description); optional `image` (og/social card + hero) and `version` (arXiv-style integer metadata; bump it on substantive revisions and add a matching line to the post's revision-history block at the bottom — the version is not shown in the kicker)
 2. Write the body in Markdown; it renders with the `post` layout at `/writings/<slug>/`
 3. The `/writings/` listing page (`nav/writings.md`) picks it up automatically, sorted newest first
 4. Content guidelines: evergreen over timely; never include confidential details (e.g., external examiner names or committee deliberations); add a "last verified" note to process-dependent posts
@@ -187,6 +188,23 @@ Streamlines adding academic service roles (PC memberships, reviewerships) to bot
 - Maintains proper ordering (prestigious venues first)
 
 **Documentation**: See `ADD-SERVICE-SKILL-GUIDE.md` for detailed usage instructions.
+
+#### `/add-writing` - Author a Writings Post in House Style
+Drafts and formats a new long-form post in `_writings/` so every piece is written and typeset identically.
+
+**Usage**: Type `/add-writing` and answer the interactive prompts.
+
+**Guarantees consistency via three artifacts** (all version-controlled):
+- `WRITING-STYLE-GUIDE.md` (repo root) - voice, punctuation, emphasis (no em-dashes, no contractions, simple formal academic wording)
+- `.claude/skills/add-writing/references/components.md` - exact copy-paste HTML for every formatting component
+- `.claude/skills/add-writing/references/template.md` - the canonical post skeleton to fill in
+
+**Features**:
+- Starts from a fixed template so section order and structure never drift
+- Enforces the journal-offprint page style (Plex Serif body, kicker title, drop cap, booktabs tables, correspondence specimens, revision history)
+- Verifies process facts against primary sources and links them inline
+- Optimizes the hero image and wires it as the social-card image
+- Builds, checks for style violations, and opens a PR
 
 ### Creating New Skills
 To add a new automation skill:
