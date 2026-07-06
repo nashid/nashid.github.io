@@ -137,7 +137,7 @@ Edit `nav/news.md` and add a new timeline item div with appropriate class (servi
 Available timeline item types: `service`, `award`, `paper`, `talk`, `travel`, `position`
 
 ### Adding a Writing (Essay/Blog Post)
-1. Create `_writings/<slug>.md` with front matter: `title`, `date` (YYYY-MM-DD), `summary` (one-two sentences, shown on the listing page)
+1. Create `_writings/<slug>.md` with front matter: `title`, `date` (YYYY-MM-DD), `summary` (one-two sentences, shown on the listing page and as the og:description); optional `image` (og/social card + hero) and `version` (arXiv-style integer, shown in the kicker; bump it on substantive revisions and add a line to the post's revision-history block)
 2. Write the body in Markdown; it renders with the `post` layout at `/writings/<slug>/`
 3. The `/writings/` listing page (`nav/writings.md`) picks it up automatically, sorted newest first
 4. Content guidelines: evergreen over timely; never include confidential details (e.g., external examiner names or committee deliberations); add a "last verified" note to process-dependent posts

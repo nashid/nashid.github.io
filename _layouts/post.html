@@ -4,7 +4,7 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <p class="post-kicker">Writings &middot; {{ page.date | date: "%B %Y" }}</p>
+    <p class="post-kicker">Writings &middot; {{ page.date | date: "%B %Y" }}{% if page.version %} &middot; v{{ page.version }}{% endif %}</p>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
