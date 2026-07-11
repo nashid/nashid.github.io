@@ -138,11 +138,12 @@ Available timeline item types: `service`, `award`, `paper`, `talk`, `travel`, `p
 
 ### Adding a Writing (Essay/Blog Post)
 **Preferred: run `/add-writing`**, which handles all of the below in house style. The manual steps, for reference:
-1. Copy `.claude/skills/add-writing/references/template.md` to `_writings/<slug>.md`. Front matter: `title`, `date` (YYYY-MM-DD), `summary` (one-two sentences, shown on the listing page and as the og:description); optional `image` (og/social card + hero) and `version` (arXiv-style integer metadata; bump it on substantive revisions and add a matching line to the post's revision-history block at the bottom — the version is not shown in the kicker)
+1. Copy `.claude/skills/add-writing/references/template.md` to `_writings/<slug>.md`. Front matter: `title`, `date` (YYYY-MM-DD), `summary` (one-two sentences, shown on the listing page and as the og:description); optional `image` (og/social card + hero) and `version` (arXiv-style integer metadata; bump it on substantive revisions and add a matching line to the post's revision-history block at the bottom; the version is not shown in the kicker)
 2. Write the body in Markdown; it renders with the `post` layout at `/writings/<slug>/`
 3. The `/writings/` listing page (`nav/writings.md`) picks it up automatically, sorted newest first
 4. Content guidelines: evergreen over timely; never include confidential details (e.g., external examiner names or committee deliberations); add a "last verified" note to process-dependent posts
 5. **Follow `WRITING-STYLE-GUIDE.md`** for voice, punctuation, and emphasis rules (notably: no em-dashes, no contractions, simple formal academic wording)
+6. **Scope rule (hard requirement)**: Writings styling lives exclusively in `_sass/_writings.scss`, compiled to `/css/writings.css` and loaded only on `/writings/` pages (conditional in `_includes/head.html`). Never style Writings work in `css/main.scss` or `_sass/_layout.scss`, and never let Writings changes affect any other page of the site
 
 **Writings nav tab visibility**: The Writings tab is hidden from the header nav until `_writings/` contains at least 3 posts (threshold check in `_includes/header.html`). Individual post URLs and `/writings/` remain live and shareable regardless — only the nav tab is affected. The tab appears automatically when the 3rd post is added; no other change is needed.
 
@@ -201,7 +202,7 @@ Drafts and formats a new long-form post in `_writings/` so every piece is writte
 
 **Features**:
 - Starts from a fixed template so section order and structure never drift
-- Enforces the journal-offprint page style (Plex Serif body, kicker title, drop cap, booktabs tables, correspondence specimens, revision history)
+- Enforces the modernized journal-offprint page style (Plex Serif body in a 640px column, kicker row with reading time, standfirst, author chip, numbered step headings, booktabs tables, correspondence specimens, revision history)
 - Verifies process facts against primary sources and links them inline
 - Optimizes the hero image and wires it as the social-card image
 - Builds, checks for style violations, and opens a PR

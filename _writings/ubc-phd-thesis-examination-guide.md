@@ -65,7 +65,7 @@ And the wider logistics around that chain:
 | Final oral defence | minimum 6–7 weeks after the dissertation goes to G+PS | You + G+PS |
 | Final acceptance in cIRcle | ~1 month after the defence; submit ≥5 business days before your deadline | You |
 
-## Step 0: Write in the right template from the start
+## <span class="step-num">Step 0</span> Write in the right template from the start
 
 UBC does **not** provide an official thesis template, only [formatting requirements](https://www.grad.ubc.ca/current-students/dissertation-thesis-preparation), which are checked strictly at final submission.
 
@@ -73,7 +73,7 @@ UBC does **not** provide an official thesis template, only [formatting requireme
 
 Adopt it early and write in it from the beginning. Retrofitting a formatting-compliant document in the final month, while also handling committee revisions, is avoidable misery. You will also need a style guide (APA, Chicago, or another approved guide); that choice is made **with your supervisor**, not unilaterally.
 
-## Step 1: The departmental exam
+## <span class="step-num">Step 1</span> The departmental exam
 
 In ECE, before anything goes to G+PS, you defend internally. Mechanically it looks like a smaller version of the real defence:
 
@@ -83,7 +83,7 @@ In ECE, before anything goes to G+PS, you defend internally. Mechanically it loo
 
 Treat this exam as a genuine asset rather than a hurdle: it is the last round of substantive feedback before your dissertation is read by someone who has never met you. The revisions that come out of it are what make the external examination boring, which is what you want.
 
-## Step 2: The external examiner (start earlier than feels necessary)
+## <span class="step-num">Step 2</span> The external examiner: start earlier than feels necessary
 
 This is the step with the longest invisible lead time and the strictest rules, so it deserves the most care.
 
@@ -98,8 +98,7 @@ This is the step with the longest invisible lead time and the strictest rules, s
 **After you press send.** Two things arrive. First, a short confirmation; here is the one I received, condensed and with the sender anonymized:
 
 <div class="inbox-note">
-<span class="inbox-note-eyebrow">What lands in your inbox</span>
-<span class="inbox-note-from">From: the Doctoral Exams team, G+PS, after the nomination form goes in</span>
+<span class="inbox-note-meta"><b>What lands in your inbox</b> &middot; from the Doctoral Exams team, G+PS, after the nomination form goes in</span>
 <p>&ldquo;Graduate and Postdoctoral Studies has received your Nominations for External Examiner (Doctoral Dissertation) form and will proceed to confirm an External Examiner for early February <b>as noted on the form</b>. Please let us know <b>immediately</b> if you will not be submitting your dissertation for external examination at that time. [&hellip;] More information about next steps will be provided once an External Examiner has been confirmed.&rdquo;</p>
 </div>
 
@@ -109,23 +108,22 @@ Second, G+PS sends a **doctoral exam welcome packet**, which, in the best tradit
 
 Then, usually: silence, while invitations go out. Do not panic; the next email is the one confirming an external has accepted.
 
-## Step 3: The dissertation goes out
+## <span class="step-num">Step 3</span> The dissertation goes out
 
 Once your supervisory committee approves the dissertation for external examination, you submit it to the G+PS Doctoral Exams Office, which transmits it to the examiner, who then has **about a month** to read it and write the report.
 
 <div class="inbox-note">
-<span class="inbox-note-eyebrow">What lands in your inbox</span>
-<span class="inbox-note-from">From: the Doctoral Exams team, the &ldquo;Dissertation Transmit&rdquo; email</span>
+<span class="inbox-note-meta"><b>What lands in your inbox</b> &middot; from the Doctoral Exams team, the &ldquo;Dissertation Transmit&rdquo; email</span>
 <p>Sent to you and your supervisor the moment the dissertation goes out. It names the <b>earliest date your defence can be held</b>, which means booking starts <i>now</i>, not when the external&rsquo;s report arrives.</p>
 </div>
 
 This is otherwise the quiet phase: a good time to prepare the defence talk and, frankly, to rest. In my case the dissertation went out in **early February** for an April defence; the examiner conversation still begins the previous autumn, because the 8-week nomination lead time sits in front of everything.
 
-## Step 4: The final oral defence
+## <span class="step-num">Step 4</span> The final oral defence
 
 Here is the fact most candidates get wrong, straight from the exams office: **you do not wait for the external examiner's report to book the defence.** Booking opens as soon as the dissertation is transmitted; the defence lands a **minimum of 6–7 weeks** after submission and should be booked **at least 4 weeks in advance**. With the booking request goes the **University Examiner form**, nominating the two UBC examiners who join the examining committee from outside your supervisory committee; G+PS appoints the chair. The external's report becomes part of the record whether or not they attend. The [Doctoral Exam Guide and planning tools](https://www.grad.ubc.ca/current-students/final-doctoral-exam) cover the room, format, and mechanics; read them end-to-end the week you submit.
 
-## Step 5: Final submission to cIRcle
+## <span class="step-num">Step 5</span> Final submission to cIRcle
 
 Usually about a month separates defence day from being fully done. You incorporate any required revisions, collect committee approval, and upload the final PDF to cIRcle. Details that surprise people:
 

@@ -1,0 +1,350 @@
+/**
+ * Writings section stylesheet: the single source of truth for
+ * /writings/ and /writings/<slug>/ styling.
+ *
+ * Compiled BY HAND into the committed static file /css/writings.css
+ * (kept out of Jekyll's page graph so no other page changes by a byte):
+ *
+ *   bundle exec ruby -e 'require "sass"; File.write("css/writings.css",
+ *     Sass::Engine.new(File.read("_sass/_writings.scss"),
+ *     syntax: :scss, load_paths: ["_sass"], style: :nested).render)'
+ *
+ * writings.css loads ONLY on Writings pages, after main.css, so it owns
+ * the cascade there and cannot affect any other page. The design system:
+ * an 18.5px serif body in a 640px column flush left with the site header,
+ * media breaking out to the full wrapper width, one crimson accent with a
+ * small set of fixed jobs (link underlines, kicker marks, step numerals,
+ * timeline marks, aside rules, specimen labels), and hierarchy from scale
+ * and space rather than ornament.
+ *
+ * Rules below either restyle Writings selectors or explicitly neutralize
+ * the legacy offprint ornaments that main.css still ships.
+ */
+/**
+ * Listing page (/writings/)
+ */
+.post-list {
+  margin-left: 0;
+  margin-top: 39px;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: 39px;
+    padding-bottom: 0;
+    border-bottom: none; }
+    .post-list > li h2 {
+      margin: 0 0 8px; }
+    .post-list > li > p {
+      font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+      font-size: 16.5px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 0; }
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px; }
+  .post-meta .kicker-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #96172E; }
+
+.post-link {
+  display: block;
+  font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.3;
+  color: #111111; }
+  .post-link:hover {
+    color: #96172E;
+    text-decoration: none; }
+
+/**
+ * Post page: shell and header stack
+ */
+.post {
+  position: relative;
+  max-width: 640px;
+  margin: 0; }
+
+.post-header {
+  margin-bottom: 30px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.6); }
+
+.post-kicker {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 16px; }
+  .post-kicker:before {
+    content: none; }
+  .post-kicker .kicker-section {
+    color: #96172E; }
+  .post-kicker .kicker-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #96172E; }
+
+.post-title {
+  font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 1.16;
+  color: #111111;
+  margin-bottom: 14px; }
+
+@media screen and (max-width: 600px) {
+  .post-title {
+    font-size: 30px;
+    line-height: 1.2; } }
+.post-standfirst {
+  font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 19.5px;
+  line-height: 1.55;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px; }
+
+.post-toc {
+  display: none; }
+
+@media screen and (min-width: 1240px) {
+  .post-toc {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 130px);
+    width: 220px;
+    height: 100%; }
+
+  .post-toc-sticky {
+    position: sticky;
+    top: 28px;
+    border-left: 1px solid rgba(102, 102, 102, 0.6);
+    padding-left: 18px; }
+
+  .post-toc-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 12px; }
+
+  .post-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+  .post-toc li {
+    margin-bottom: 9px; }
+
+  .post-toc a {
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none; }
+    .post-toc a:hover {
+      color: #96172E; } }
+/**
+ * Post page: reading column
+ */
+.post-content {
+  margin-bottom: 30px;
+  font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  font-size: 18.5px;
+  line-height: 1.62;
+  font-feature-settings: normal; }
+  .post-content p {
+    margin-bottom: 19px; }
+  .post-content p, .post-content li {
+    -webkit-hyphens: manual;
+    hyphens: manual; }
+  .post-content a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(150, 23, 46, 0.42);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3.5px; }
+    .post-content a:hover {
+      color: #96172E;
+      text-decoration-color: #96172E; }
+  .post-content > p:first-of-type::first-letter {
+    float: none;
+    font-size: 1em;
+    line-height: inherit;
+    padding: 0;
+    font-weight: inherit;
+    color: inherit; }
+  .post-content > p:last-of-type::after {
+    content: none; }
+  .post-content h2, .post-content h3, .post-content h4 {
+    font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    color: #111111; }
+  .post-content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 56px 0 12px; }
+    .post-content h2:before {
+      content: none; }
+    .post-content h2 .step-num {
+      display: block;
+      font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #96172E;
+      margin-bottom: 8px; }
+  .post-content h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 40px 0 10px; }
+  .post-content h4 {
+    font-size: 18.5px;
+    font-weight: 600; }
+  .post-content blockquote {
+    font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: rgba(0, 0, 0, 0.6);
+    border-left: 2px solid #96172E; }
+  .post-content table {
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 1.5;
+    border-top: 2px solid #111111;
+    border-bottom: 2px solid #111111;
+    font-variant-numeric: lining-nums tabular-nums; }
+    .post-content table th {
+      font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: normal;
+      text-transform: none;
+      text-align: left;
+      padding: 10px 12px 8px;
+      border-bottom: 1px solid #111111; }
+    .post-content table td {
+      padding: 9px 12px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: none; }
+
+@media screen and (max-width: 600px) {
+  .post-content h2 {
+    font-size: 23px;
+    margin-top: 44px; } }
+/**
+ * Writings components
+ */
+.writing-hero img,
+.writing-figure img {
+  border: none;
+  border-radius: 6px; }
+
+@media screen and (min-width: 801px) {
+  .post .writing-hero,
+  .post .writing-figure,
+  .post .post-content table {
+    width: calc(100% + 100px); } }
+.post-epigraph {
+  margin: 26px 0;
+  padding: 2px 0 2px 20px;
+  border-left: 2px solid #96172E; }
+  .post-epigraph .post-epigraph-label {
+    display: block;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-style: normal;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    color: #111111;
+    margin-bottom: 4px; }
+  .post-epigraph p {
+    font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    font-style: normal;
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: #3f3f3f;
+    margin-bottom: 0; }
+
+.post-content .post-revisions .post-revisions-label {
+  letter-spacing: 1.5px;
+  color: rgba(0, 0, 0, 0.6); }
+
+.inbox-note {
+  padding: 14px 2px 16px; }
+  .inbox-note .inbox-note-meta {
+    display: block;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 8px; }
+    .inbox-note .inbox-note-meta b {
+      color: #96172E; }
+  .inbox-note p {
+    font-family: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    font-size: 16.5px;
+    line-height: 1.6;
+    color: #303030; }
+
+.exam-timeline {
+  margin: 28px 0;
+  padding-left: 26px;
+  border-left: 1.5px solid rgba(150, 23, 46, 0.25); }
+  .exam-timeline li {
+    margin-left: 0;
+    padding: 0 0 22px;
+    border-left: none; }
+    .exam-timeline li:before {
+      left: -31px;
+      top: 7px;
+      width: 9px;
+      height: 9px;
+      background-color: #96172E;
+      border: none; }
+    .exam-timeline li:last-child {
+      padding-bottom: 0; }
+    .exam-timeline li .exam-step-title {
+      font-weight: 600;
+      font-size: 16.5px;
+      color: #111111; }
+    .exam-timeline li .exam-step-note {
+      font-size: 15.5px;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 2px; }
+    .exam-timeline li .exam-interval {
+      display: inline-block;
+      margin: 10px 0 0;
+      font-size: 11.5px;
+      letter-spacing: 1px;
+      color: #96172E; }

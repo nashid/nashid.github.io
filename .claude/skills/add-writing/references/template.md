@@ -17,7 +17,8 @@ version: 1                                  # optional; shown only in the revisi
 <img src="{{ "/resources/images/<slug>-hero.jpg" | prepend: site.baseurl }}" alt="Concrete description of the illustration." />
 </figure>
 
-<!-- OPENING: a normal paragraph. The drop cap is automatic. State what this is and why it exists. -->
+<!-- OPENING: a normal paragraph. State what this is and why it exists.
+     The layout already renders the kicker, title, standfirst (from summary), and author chip. -->
 Opening paragraph.
 
 Second paragraph, setting up the piece.
@@ -32,8 +33,12 @@ Second paragraph, setting up the piece.
 
 Body prose. Verify any factual claim against a primary source and link it inline. Use `**bold**` only for load-bearing facts, and `*italics*` for a stressed word or a term used as a term.
 
+<!-- For a genuine sequence of steps, number the section headings with the overline label:
+     ## <span class="step-num">Step 1</span> Heading text
+     Essays and non-sequential sections take a plain ## heading. -->
+
 <!-- Optional components, used where they fit (see references/components.md for exact markup):
-     - div.inbox-note        quote an email or document verbatim, in mono, no emoji
+     - div.inbox-note        quote an email or document verbatim, one source line, no emoji
      - ul.exam-timeline      a step chain with intervals between steps
      - a Markdown table      auto-styled as booktabs
 -->
