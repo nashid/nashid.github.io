@@ -36,3 +36,6 @@ _site/
 vendor/bundle/
 .bundle/
 Gemfile.lock
+
+# dont version control
+interviews/
