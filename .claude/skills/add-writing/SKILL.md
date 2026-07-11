@@ -22,18 +22,18 @@ Three companion documents are authoritative and must be followed:
 - **`references/components.md`** (in this skill folder) holds the exact copy-paste HTML for every formatting component. Read it before formatting.
 - **`references/template.md`** (in this skill folder) is the canonical post skeleton. Copy it into `_writings/<slug>.md` and fill it in; keep the section order so every post is consistent.
 
-The supporting CSS already lives in `_sass/_layout.scss`; do not add new styles. Reuse the existing classes so a new post looks identical to the first.
+The supporting CSS already lives in `_sass/_writings.scss` (compiled to `/css/writings.css`, loaded only on Writings pages); do not add new styles. Reuse the existing classes so a new post looks identical to the first. Never style Writings work in `css/main.scss` or `_sass/_layout.scss`: Writings changes must not touch any other part of the website.
 
 ## The Page Style (why every post looks the same)
 
-Consistency is not optional; it is the point. Every Writings post is typeset as a **journal offprint** and shares one fixed visual system. Do not redesign per post. The system is:
+Consistency is not optional; it is the point. Every Writings post is typeset as a **modernized journal offprint** (redesigned July 2026: an 18.5px serif body in a 640px column, hierarchy from scale and space rather than ornament) and shares one fixed visual system. Do not redesign per post. The system is:
 
-- **Family**: IBM Plex Serif body, IBM Plex Sans for labels/kickers, IBM Plex Mono for transcripts. One accent colour, deep crimson `#96172E`, used sparingly. Warm off-white page.
-- **Fixed page furniture** (applied by the `post` layout and stylesheet, never hand-coded): the "Writings · <Month Year>" kicker, the serif title over a hairline rule, the crimson drop cap on the first paragraph, a crimson rule above every `##`, ink-coloured links with a quiet crimson underline, and the end-of-article mark ∎.
-- **A fixed component palette** for everything else (epigraph, correspondence specimen, step/interval timeline, booktabs table, drawn-square checklist, revision history). Use these and only these; see `references/components.md`.
-- **What is banned**, because it reads as generic: emoji in the prose or components, coloured callout cards, left-bar blockquotes, sidebars, rounded image corners, margin-note "Source" apparatus, and any new bespoke styling. These were each tried and removed.
+- **Family**: IBM Plex Serif body, IBM Plex Sans for labels/kickers. One accent colour, deep crimson `#96172E`, restricted to a small set of fixed jobs (link underlines, kicker marks, step numerals, timeline marks, aside rules, specimen labels). Warm off-white page.
+- **Fixed page furniture** (applied by the `post` layout and stylesheet, never hand-coded): the header stack (kicker row "Writings · <Month D, YYYY> · <N> min read", the serif title, an italic standfirst rendered from `summary`, closed by a hairline rule; no byline, since the site header identifies the author), a sticky "On this page" contents rail on wide screens, ink-coloured links with a quiet crimson underline, and heading rhythm from space alone.
+- **A fixed component palette** for everything else (numbered step headings, caveat aside, correspondence specimen, step/interval timeline, booktabs table, drawn-square checklist, revision history). Use these and only these; see `references/components.md`.
+- **What is banned**, because it reads as generic or ornamental: emoji in the prose or components, coloured callout cards, sidebars, margin-note "Source" apparatus, drop caps, rules above headings, end-of-article marks, monospace transcripts, and any new bespoke styling. These were each tried and removed; do not reintroduce them.
 
-If a post seems to need a component that does not exist, prefer restraint (plain prose) over inventing one. Raise it with the user before adding any new style to `_sass/_layout.scss`.
+If a post seems to need a component that does not exist, prefer restraint (plain prose) over inventing one. Raise it with the user before adding any new style to `_sass/_writings.scss`.
 
 ## Task Overview
 
@@ -77,7 +77,7 @@ version: 1                                  # optional; arXiv-style, shown only 
 ---
 ```
 
-The `post` layout is applied automatically (via `_config.yml` defaults), which renders the kicker, serif title, drop cap, and end-of-article mark. You do not add those.
+The `post` layout is applied automatically (via `_config.yml` defaults), which renders the kicker row (date, reading time), the serif title, the standfirst from `summary`, and the "On this page" rail. You do not add those.
 
 ## Step 4: Write in the House Style
 
@@ -94,11 +94,11 @@ Read `WRITING-STYLE-GUIDE.md` and follow it exactly. The non-negotiables:
 
 Read `references/components.md` for exact, copy-paste HTML. The palette, in the order it typically appears:
 
-1. **Hero figure** (`figure.writing-hero`) right after the front matter, before the first paragraph.
-2. **Opening paragraph** in plain prose. The drop cap and small-caps are automatic; write normally.
-3. **Caveat epigraph** (`div.post-epigraph`) for process posts: an indented italic headnote under a small-caps label. Replaces any "disclaimer" blockquote.
-4. **Body** in `##`/`###` sections. Each `##` automatically gets a crimson rule above it.
-5. **Correspondence specimen** (`div.inbox-note`) to quote an email or document verbatim: small-caps label, a "From:" line, and the transcript in mono. No emoji.
+1. **Hero figure** (`figure.writing-hero`) right after the front matter, before the first paragraph. Corners are rounded by the stylesheet.
+2. **Opening paragraph** in plain prose; the header stack and contents rail above it are automatic. Write normally.
+3. **Caveat aside** (`div.post-epigraph`) for process posts: a roman aside behind a thin crimson left rule, styled to be read. Replaces any "disclaimer" blockquote.
+4. **Body** in `##`/`###` sections. Plain headings; for a genuine sequence, use the numbered step overline (`## <span class="step-num">Step 1</span> Heading text`, note the space after `</span>`).
+5. **Correspondence specimen** (`div.inbox-note`) to quote an email or document verbatim: one uppercase source line (`span.inbox-note-meta`), then the transcript in the body serif. No emoji.
 6. **Step/interval timeline** (`ul.exam-timeline`) for a sequential chain with intervals between steps. (The class name is historical; reuse it for any timeline.)
 7. **Tables**: plain Markdown tables, automatically styled as booktabs (horizontal rules only).
 8. **Checklist**: plain Markdown task list (`- [ ]`), automatically rendered with drawn squares.

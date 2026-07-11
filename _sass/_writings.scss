@@ -1,0 +1,500 @@
+/**
+ * Writings section stylesheet: the single source of truth for
+ * /writings/ and /writings/<slug>/ styling.
+ *
+ * Compiled BY HAND into the committed static file /css/writings.css
+ * (kept out of Jekyll's page graph so no other page changes by a byte):
+ *
+ *   bundle exec ruby -e 'require "sass"; File.write("css/writings.css",
+ *     Sass::Engine.new(File.read("_sass/_writings.scss"),
+ *     syntax: :scss, load_paths: ["_sass"], style: :nested).render)'
+ *
+ * writings.css loads ONLY on Writings pages, after main.css, so it owns
+ * the cascade there and cannot affect any other page. The design system:
+ * an 18.5px serif body in a 640px column flush left with the site header,
+ * media breaking out to the full wrapper width, one crimson accent with a
+ * small set of fixed jobs (link underlines, kicker marks, step numerals,
+ * timeline marks, aside rules, specimen labels), and hierarchy from scale
+ * and space rather than ornament.
+ *
+ * Rules below either restyle Writings selectors or explicitly neutralize
+ * the legacy offprint ornaments that main.css still ships.
+ */
+
+// Variables mirrored from css/main.scss so this stylesheet never has to
+// touch the main site's CSS. Keep in sync if main.scss ever changes.
+$base-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$serif-font-family: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+$base-font-size:   16px;
+
+$spacing-unit:     30px;
+
+$text-color:       #111111;
+$background-color: #FDFDFD;
+$brand-color:      #96172E;
+
+$grey-color:       rgba(0, 0, 0, 0.6);
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+
+/**
+ * Listing page (/writings/)
+ */
+.post-list {
+    margin-left: 0;
+    margin-top: $spacing-unit * 1.3;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit * 1.3;
+        padding-bottom: 0;
+        border-bottom: none;
+
+        h2 {
+            margin: 0 0 8px;
+        }
+
+        > p {
+            font-family: $serif-font-family;
+            font-size: 16.5px;
+            line-height: 1.6;
+            color: $grey-color-dark;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $grey-color-dark;
+    margin-bottom: 10px;
+
+    .kicker-dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $brand-color;
+    }
+}
+
+.post-link {
+    display: block;
+    font-family: $serif-font-family;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.3;
+    color: $text-color;
+
+    &:hover {
+        color: $brand-color;
+        text-decoration: none;
+    }
+}
+
+
+
+/**
+ * Post page: shell and header stack
+ */
+// Text keeps a 640px reading measure, flush left with the site header;
+// media (hero, figures, tables) breaks out to the full wrapper width.
+.post {
+    position: relative;
+    max-width: 640px;
+    margin: 0;
+}
+
+.post-header {
+    margin-bottom: $spacing-unit;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $grey-color-light;
+}
+
+.post-kicker {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $grey-color-dark;
+    margin-bottom: 16px;
+
+    // The legacy kicker dash is retired
+    &:before {
+        content: none;
+    }
+
+    .kicker-section {
+        color: $brand-color;
+    }
+
+    .kicker-dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $brand-color;
+    }
+}
+
+.post-title {
+    font-family: $serif-font-family;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 1.16;
+    color: $text-color;
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .post-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+.post-standfirst {
+    font-family: $serif-font-family;
+    font-style: italic;
+    font-size: 19.5px;
+    line-height: 1.55;
+    color: $grey-color-dark;
+    margin-bottom: 20px;
+}
+
+// "On this page" rail: hangs in the viewport margin right of the wrapper,
+// sticky while reading. Wide screens only; narrower viewports lose nothing.
+.post-toc {
+    display: none;
+}
+
+@media screen and (min-width: 1240px) {
+    .post-toc {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: calc(100% + 130px);
+        width: 220px;
+        height: 100%;
+    }
+
+    .post-toc-sticky {
+        position: sticky;
+        top: 28px;
+        border-left: 1px solid $grey-color-light;
+        padding-left: 18px;
+    }
+
+    .post-toc-label {
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $grey-color;
+        margin-bottom: 12px;
+    }
+
+    .post-toc ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .post-toc li {
+        margin-bottom: 9px;
+    }
+
+    .post-toc a {
+        font-family: $base-font-family;
+        font-size: 12.5px;
+        line-height: 1.45;
+        color: $grey-color-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $brand-color;
+        }
+    }
+}
+
+
+
+/**
+ * Post page: reading column
+ */
+.post-content {
+    margin-bottom: $spacing-unit;
+    font-family: $serif-font-family;
+    font-size: 18.5px;
+    line-height: 1.62;
+    font-feature-settings: normal;
+
+    p {
+        margin-bottom: 19px;
+    }
+
+    // Legacy hyphenation is retired
+    p, li {
+        -webkit-hyphens: manual;
+        hyphens: manual;
+    }
+
+    // Scholarly links: ink-coloured text, quiet crimson underline
+    a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(150, 23, 46, 0.42);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3.5px;
+
+        &:hover {
+            color: $brand-color;
+            text-decoration-color: $brand-color;
+        }
+    }
+
+    // The legacy drop cap is retired
+    > p:first-of-type::first-letter {
+        float: none;
+        font-size: 1em;
+        line-height: inherit;
+        padding: 0;
+        font-weight: inherit;
+        color: inherit;
+    }
+
+    // The legacy end-of-article tombstone is retired
+    > p:last-of-type::after {
+        content: none;
+    }
+
+    h2, h3, h4 {
+        font-family: $serif-font-family;
+        color: $text-color;
+    }
+
+    // Space before, hug after: air does the sectioning work
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.25;
+        margin: 56px 0 12px;
+
+        // The legacy crimson dash above headings is retired
+        &:before {
+            content: none;
+        }
+
+        // Numbered step overline for process posts
+        .step-num {
+            display: block;
+            font-family: $base-font-family;
+            font-size: 12.5px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: $brand-color;
+            margin-bottom: 8px;
+        }
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: 600;
+        margin: 40px 0 10px;
+    }
+
+    h4 {
+        font-size: 18.5px;
+        font-weight: 600;
+    }
+
+    blockquote {
+        font-family: $serif-font-family;
+        font-style: italic;
+        font-size: 17px;
+        letter-spacing: 0;
+        color: $grey-color-dark;
+        border-left: 2px solid $brand-color;
+    }
+
+    // Booktabs tables: heavy top and bottom rules, no internal rules
+    table {
+        width: 100%;
+        margin-bottom: $spacing-unit / 2;
+        border-collapse: collapse;
+        font-size: 15px;
+        line-height: 1.5;
+        border-top: 2px solid $text-color;
+        border-bottom: 2px solid $text-color;
+        font-variant-numeric: lining-nums tabular-nums;
+
+        th {
+            font-family: $base-font-family;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: normal;
+            text-transform: none;
+            text-align: left;
+            padding: 10px 12px 8px;
+            border-bottom: 1px solid $text-color;
+        }
+
+        td {
+            padding: 9px 12px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: none;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .post-content h2 {
+        font-size: 23px;
+        margin-top: 44px;
+    }
+}
+
+
+
+/**
+ * Writings components
+ */
+.writing-hero,
+.writing-figure {
+    img {
+        border: none;
+        border-radius: 6px;
+    }
+}
+
+// Media breakout: hero, figures, and tables use the full wrapper width
+// (the 100px the 640px text measure leaves free) on wide viewports.
+@media screen and (min-width: 801px) {
+    .post .writing-hero,
+    .post .writing-figure,
+    .post .post-content table {
+        width: calc(100% + 100px);
+    }
+}
+
+// Aside headnote: a load-bearing caveat, styled to be read rather than skipped
+.post-epigraph {
+    margin: 26px 0;
+    padding: 2px 0 2px 20px;
+    border-left: 2px solid $brand-color;
+
+    .post-epigraph-label {
+        display: block;
+        font-family: $base-font-family;
+        font-style: normal;
+        font-size: 12.5px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: none;
+        color: $text-color;
+        margin-bottom: 4px;
+    }
+
+    p {
+        font-family: $serif-font-family;
+        font-style: normal;
+        font-size: 16.5px;
+        line-height: 1.6;
+        color: lighten($text-color, 18%);
+        margin-bottom: 0;
+    }
+}
+
+// Revision history: quieter label than the legacy crimson
+.post-content .post-revisions .post-revisions-label {
+    letter-spacing: 1.5px;
+    color: $grey-color-dark;
+}
+
+// Correspondence specimen: one uppercase source line, serif transcript
+.inbox-note {
+    padding: 14px 2px 16px;
+
+    .inbox-note-meta {
+        display: block;
+        font-family: $base-font-family;
+        font-size: 11.5px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $grey-color-dark;
+        margin-bottom: 8px;
+
+        b {
+            color: $brand-color;
+        }
+    }
+
+    p {
+        font-family: $serif-font-family;
+        font-size: 16.5px;
+        line-height: 1.6;
+        color: lighten($text-color, 12%);
+    }
+}
+
+// Step/interval timeline on a crimson rail
+.exam-timeline {
+    margin: 28px 0;
+    padding-left: 26px;
+    border-left: 1.5px solid rgba(150, 23, 46, 0.25);
+
+    li {
+        margin-left: 0;
+        padding: 0 0 22px;
+        border-left: none;
+
+        &:before {
+            left: -31px;
+            top: 7px;
+            width: 9px;
+            height: 9px;
+            background-color: $brand-color;
+            border: none;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        .exam-step-title {
+            font-weight: 600;
+            font-size: 16.5px;
+            color: $text-color;
+        }
+
+        .exam-step-note {
+            font-size: 15.5px;
+            color: $grey-color-dark;
+            margin-top: 2px;
+        }
+
+        .exam-interval {
+            display: inline-block;
+            margin: 10px 0 0;
+            font-size: 11.5px;
+            letter-spacing: 1px;
+            color: $brand-color;
+        }
+    }
+}
