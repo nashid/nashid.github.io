@@ -69,8 +69,6 @@ Pick the option everyone can make. Email the committee the confirmed time at onc
 - [ ] One short email with the poll link, advisor copied
 - [ ] Confirmed time emailed to all, final invite sent, other holds cancelled
 
-This method cut my own scheduling to one poll and one email. If your department differs, or you find a better sequence, [email me](mailto:nashid@ece.ubc.ca) and I will update this.
-
 <div class="post-revisions">
 <span class="post-revisions-label">Revision history</span>
 <p>v1 &middot; July 12, 2026 &middot; First published.</p>
