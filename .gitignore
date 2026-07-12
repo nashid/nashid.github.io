@@ -39,3 +39,5 @@ Gemfile.lock
 
 # dont version control
 interviews/
+# Local reference material for Writings drafts; contains committee emails, never publish
+schedule-departmental-exam/
