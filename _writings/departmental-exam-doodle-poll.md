@@ -2,8 +2,13 @@
 title: "Scheduling a PhD committee meeting"
 date: 2026-07-12
 summary: "A guide for scheduling a PhD committee meeting: agree a time with your advisor, remove the impossible options, and let the poll lead to a decision."
+image: /resources/images/departmental-exam-doodle-poll-hero.jpg
 version: 1
 ---
+
+<figure class="writing-hero">
+<img src="{{ "/resources/images/departmental-exam-doodle-poll-hero.jpg" | prepend: site.baseurl }}" alt="Flat, muted editorial illustration of a doctoral thesis defence: a graduate student presents projected charts to five seated professors, a ceiling projector casting light on the screen and a crimson-bound dissertation on the table." />
+</figure>
 
 A colleague recently asked how I scheduled my PhD committee meeting. 
 
