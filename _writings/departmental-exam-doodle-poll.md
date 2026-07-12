@@ -7,9 +7,9 @@ version: 1
 
 A colleague recently asked how I scheduled my PhD committee meeting. 
 
-In my case, it was challenging to bring multiple committee members into the same room at the same time. Since   scheduling committee meetings is such an important part of graduate education, I thought I might write it up as a guide to help, because poor scheduling can delay a meeting by weeks. 
+In my case, it was challenging to bring multiple committee members into the same room at the same time. I think this is a challenge most PhD students face. Since   scheduling committee meetings is such an important part of graduate education, I thought I might write it up as a guide to help, because poor scheduling can delay a meeting by weeks. 
 
-Now the challenge is that a committee meeting needs four or five busy academics in one room. Most people offer every possible time and ask each member to mark what works. This rarely finds a common slot. Claus Wilke [advises against polls with 120 options](https://clauswilke.com/blog/2014/10/14/how-to-schedule-a-committee-meeting/). Eva Lefkowitz found that a [56-option poll](https://www.evalefkowitz.com/blog/how-to-set-up-a-doodle-poll) made her answer without care. A long poll gives worse information, not better. So use the poll to confirm a time, not to find one.
+Now the challenge is that a committee meeting needs four or five busy academics in one room. Most people offer every possible time slot and ask each member to mark what works. This rarely finds a common slot. Claus Wilke [advises against polls with 120 options](https://clauswilke.com/blog/2014/10/14/how-to-schedule-a-committee-meeting/). Eva Lefkowitz found that a [56-option poll](https://www.evalefkowitz.com/blog/how-to-set-up-a-doodle-poll) made her answer without care. A long poll gives worse information, not better. So use the poll to confirm a time, not to find one.
 
 ## Decide the time first and keep the options few
 
@@ -17,7 +17,7 @@ For a PhD dissertation, both the internal departmental exam and the final exam n
 
 How many options? Opinions differ. Wilke says three to five, and calls more than ten a mistake, because a short poll gets a fast reply. Lefkowitz says 10 to 20: too few find no common time, too many invite careless answers. Both agree on the basics. Fix a time with your advisor first. Remove the impossible times before you send the poll. Never show a full calendar.
 
-I prefer the smaller number. The more you settle first, the fewer options you need. So eliminate first, poll last. Do the groundwork and a few times are enough. Skip it and Lefkowitz's larger set is safer. Either way, every option should be one you have already checked.
+I prefer the smaller number of at most 10. The more you settle first, the fewer options you need. So eliminate first, poll last. Do the groundwork and a few times are enough. Either way, every option should be one you have already checked.
 
 ## <span class="step-num">Step 1</span> Agree with your advisor and remove the impossible times
 
@@ -29,7 +29,7 @@ Then remove options, do not add them. Drop the times your advisor cannot make. I
 
 You and your advisor now have a preferred time and one or two backups. Put a tentative hold on those slots in both calendars before you send the poll. This keeps the advisor's slot from being taken while the committee replies. It also gives you an event to confirm later. Keep it tentative. You are reserving the time, not announcing it.
 
-## <span class="step-num">Step 3</span> Build a short poll in one-hour blocks
+## <span class="step-num">Step 3</span> Build a short poll
 
 Build the Doodle with only the options that survived Step 1. Give it a clear title, set the duration, and set your timezone. The rest of my setup was this:
 
@@ -57,7 +57,7 @@ Send the poll link in one short email. Thank the committee, ask for their availa
 
 ## Once the poll closes
 
-Pick the option everyone can make. Prefer your held time if it survives. Email the committee the confirmed time at once, before the slot is taken. Turn the tentative hold into the final invite with the room and video link. Cancel the other holds. If someone did not reply, ask them directly rather than send more reminders. If no time works, send one more short poll. A second round is normal, and better than one large poll.
+Pick the option everyone can make. Email the committee the confirmed time at once, before the slot is taken. Turn the tentative hold into the final invite. If someone did not reply, send them reminders. If no time works for everyone, send one more short poll. A second round may be needed, and is better than one large poll.
 
 ## Checklist
 
