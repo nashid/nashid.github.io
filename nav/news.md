@@ -22,6 +22,16 @@ group: news
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
+  <div class="timeline-date">July 2026</div>
+  <div class="timeline-content">
+    Delighted to join the program committee of the <a href="https://conf.researchr.org/track/splash-issta-2026/splash-issta-2026-student-research-competition">SPLASH/ISSTA 2026 Student Research Competition</a>.
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
   <div class="timeline-date">June 2026</div>
   <div class="timeline-content">
     Excited to serve on the program committee for the <a href="https://dl4c.github.io/">5th Deep Learning for Code (DL4C) Workshop</a> at ICML 2026.
