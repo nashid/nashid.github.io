@@ -24,6 +24,7 @@
   authors: Sijia Gu, Noor Nashid, Ali Mesbah
   venue: IEEE/ACM International Conference on Software Engineering (ICSE), 13 pages
   year: 2026
+  arxiv: https://arxiv.org/abs/2503.13580
   
 - id: hunk-divergence-ase25
   title: "Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair Challenges"
@@ -55,41 +56,35 @@
   authors: Noor Nashid, Taha Shabani, Parsa Alian, and Ali Mesbah
   venue: Under Submission
   year: 2024
-  # code: https://github.com/apicarve/apicarver
 
 - id: formnexus-issta24
   title: "Semantic Constraint Inference for Web Form Test Generation"
   authors: Parsa Alian, Noor Nashid, Mobina Shahbandeh, Ali Mesbah
   venue: ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), 13 pages
   year: 2024
-  # code: https://github.com/apicarve/apicarver
 
 - id: cedar-icse23
   title: "Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning"
-  authors: Noor Nashid, Mifta Santaha, and Ali Mesbah
+  authors: Noor Nashid, Mifta Sintaha, and Ali Mesbah
   venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
   year: 2023
   featured: Featured by IBM on few-shot prompting
   featured_url: https://www.ibm.com/think/topics/few-shot-prompting#1003835713
-  # code: https://github.com/apicarve/apicarver
 
 - id: katana-tosem23
   title: "Katana: Dual Slicing-Based Context for Learning Bug Fixes"
   authors: Mifta Sintaha, Noor Nashid, and Ali Mesbah
   venue: ACM Transactions on Software Engineering and Methodology (TOSEM)   [ICSE 2024 - Journal-First Track]
   year: 2023
-  # code: https://doi.org/10.5281/zenodo.4007539
 
 - id: glance-icst23
   title: "Embedding Context as Code Dependencies for Neural Program Repair"
-  authors: Noor Nashid, Mifta Santaha, and Ali Mesbah
+  authors: Noor Nashid, Mifta Sintaha, and Ali Mesbah
   venue: IEEE International Conference on Software Testing, Verification and Validation (ICST), 12 pages
   year: 2023
-  # code: https://github.com/NDStudyICSE2019
 
 - id: reptory-emse22
   title: "A Controlled Experiment of Different Code Representations for Learning-Based Program Repair"
-  authors: Namavar Marjane, Noor Nashid, and Ali Mesbah (Both authors contributed equally)
+  authors: Marjane Namavar, Noor Nashid, and Ali Mesbah (Both authors contributed equally)
   venue: Empirical Software Engineering Journal (EMSE)    [ICSE 2023 - Journal-First Track]
   year: 2022
-  # code: https://github.com/saltlab/vista
