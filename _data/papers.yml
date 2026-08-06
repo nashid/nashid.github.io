@@ -39,7 +39,7 @@
   year: 2025
 
 - id: autoe2e-arxiv24
-  title: "A Feature-Based Approach to Generating Comprehensive End-to-End Tests"
+  title: "Feature-Driven End-to-End Test Generation"
   authors: Parsa Alian, Noor Nashid, Mobina Shahbandeh, Taha Shabani, Ali Mesbah
   venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
   year: 2025
