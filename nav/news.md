@@ -48,6 +48,16 @@ group: news
   </div>
 </div>
 
+<div class="timeline-item award">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-rocket.svg" | prepend: site.baseurl }}" alt="Position">
+  </div>
+  <div class="timeline-date">May 2026</div>
+  <div class="timeline-content">
+    I started as a Postdoctoral Fellow in Software Engineering at the University of British Columbia, continuing my research with the <a href="https://people.ece.ubc.ca/amesbah/salt/">SALT lab</a>.
+  </div>
+</div>
+
 <div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
