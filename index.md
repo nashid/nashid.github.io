@@ -30,7 +30,7 @@ pre-doctoral fellows through the [Fatima Fellowship](https://fatima.institute/).
 
 <img src="./resources/images/icon-gem.svg" width="20" height="20"> FLAKIDOCK: Dockerfile Flakiness Characterization and Repair, ICSE 2025
 
-<img src="./resources/images/icon-gem.svg" width="20" height="20"> AUTOE2E: A Feature-Based Approach to Generating Comprehensive End-to-End Tests, ICSE 2025
+<img src="./resources/images/icon-gem.svg" width="20" height="20"> AUTOE2E: Feature-Driven End-to-End Test Generation, ICSE 2025
 
 <img src="./resources/images/icon-fire-new.svg" width="20" height="20"> CEDAR: Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning, ICSE 2023
 
