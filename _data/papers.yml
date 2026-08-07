@@ -5,6 +5,13 @@
   year: 2026
   doi: https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0452246
 
+- id: scate-arxiv26
+  title: "SCATE: Learning to Supervise Coding Agents for Cost-Effective Test Generation"
+  authors: Sijia Gu, Noor Nashid, Ali Mesbah
+  venue: Under Submission
+  year: 2026
+  arxiv: https://arxiv.org/abs/2607.08983
+
 - id: agentic-repair-arxiv24
   title: "Beyond Accuracy: Behavioral Dynamics of Agentic Multi-Hunk Repair"
   authors: Noor Nashid, Daniel Ding, Keheliya Gallaba, Ahmed E. Hassan, Ali Mesbah

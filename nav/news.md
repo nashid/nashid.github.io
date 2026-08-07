@@ -18,6 +18,16 @@ group: news
 
 <div class="timeline-year" id="year-2026">2026</div>
 
+<div class="timeline-item paper">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-pushpin-modern.svg" | prepend: site.baseurl }}" alt="Paper">
+  </div>
+  <div class="timeline-date">July 2026</div>
+  <div class="timeline-content">
+    Our new preprint <a href="https://arxiv.org/abs/2607.08983">SCATE: Learning to Supervise Coding Agents for Cost-Effective Test Generation</a> is now on arXiv.
+  </div>
+</div>
+
 <div class="timeline-item service">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
