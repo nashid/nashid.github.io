@@ -18,6 +18,16 @@ group: news
 
 <div class="timeline-year" id="year-2026">2026</div>
 
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
+  <div class="timeline-date">August 2026</div>
+  <div class="timeline-content">
+    I served as a PC member for <a href="https://resaise.github.io/2026/html/committee.html">ReSAISE 2026</a>, the 4th IEEE International Workshop on Reliable and Secure AI for Software Engineering, co-located with ISSRE 2026 in Limassol, Cyprus.
+  </div>
+</div>
+
 <div class="timeline-item paper">
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-pushpin-modern.svg" | prepend: site.baseurl }}" alt="Paper">
