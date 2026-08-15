@@ -24,16 +24,6 @@ group: news
   </div>
   <div class="timeline-date">August 2026</div>
   <div class="timeline-content">
-    Honored to serve on the program committee of the inaugural <a href="https://aisummit.acm.org/">ACM AI Leadership Summit</a>, held in Atlanta, Georgia from August 30 to September 2, 2026.
-  </div>
-</div>
-
-<div class="timeline-item service">
-  <div class="timeline-icon">
-    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
-  </div>
-  <div class="timeline-date">August 2026</div>
-  <div class="timeline-content">
     I served as a PC member for <a href="https://resaise.github.io/2026/html/committee.html">ReSAISE 2026</a>, the 4th IEEE International Workshop on Reliable and Secure AI for Software Engineering, co-located with ISSRE 2026 in Limassol, Cyprus.
   </div>
 </div>
