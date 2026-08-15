@@ -378,7 +378,7 @@ group: news
   </div>
   <div class="timeline-date">November 2024</div>
   <div class="timeline-content">
-    Our paper <a href="https://nashid.github.io/resources/papers/autoe2e-arxiv24.pdf">AUTOE2E</a> is accepted at <a href="https://conf.researchr.org/home/icse-2025">ICSE 2025</a>.
+    Our paper <a href="https://arxiv.org/abs/2408.01894">AUTOE2E</a> is accepted at <a href="https://conf.researchr.org/home/icse-2025">ICSE 2025</a>.
   </div>
 </div>
 

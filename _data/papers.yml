@@ -51,6 +51,7 @@
   authors: Parsa Alian, Noor Nashid, Mobina Shahbandeh, Taha Shabani, Ali Mesbah
   venue: ACM/IEEE International Conference on Software Engineering (ICSE), 13 pages
   year: 2025
+  arxiv: https://arxiv.org/abs/2408.01894
 
 - id: naviqate-arxiv24
   title: "NaviQAte: Functionality-Guided Web Application Navigation"
