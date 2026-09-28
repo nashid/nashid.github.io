@@ -42,6 +42,16 @@ group: news
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
+  <div class="timeline-date">September 2026</div>
+  <div class="timeline-content">
+    I am serving as a PC member for <a href="https://conf.researchr.org/home/icse-2027/agent-2027">AGENT 2027</a>, the workshop on agentic engineering, co-located with ICSE 2027 in Dublin, Ireland.
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
   <div class="timeline-date">August 2026</div>
   <div class="timeline-content">
     I served as a PC member for <a href="https://resaise.github.io/2026/html/committee.html">ReSAISE 2026</a>, the 4th IEEE International Workshop on Reliable and Secure AI for Software Engineering, co-located with ISSRE 2026 in Limassol, Cyprus.
