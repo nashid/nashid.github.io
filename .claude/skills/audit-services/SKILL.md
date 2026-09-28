@@ -12,6 +12,13 @@ allowed-tools:
 
 Find the committee roles that the researchr profile lists and `_data/services.yml` does not, confirm each one on its committee page, and report them. The audit edits nothing. Each confirmed role is then added as its own PR under the `add-service` conventions.
 
+## When to run
+
+The audit runs only when it is invoked. Nothing runs it on a schedule.
+
+- After a committee invitation is accepted and the committee page is public. The news month is then still known, and the role reaches the site while it is current.
+- Once a month otherwise. Chairs add members to a committee page without notice, and the service news items of 2023 to 2026 fall in eleven of the twelve months, so no season is safe to skip. A run with nothing missing takes about one second.
+
 ## Workflow
 
 ### 1. Run the script
