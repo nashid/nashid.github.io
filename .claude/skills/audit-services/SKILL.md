@@ -14,10 +14,12 @@ Find the committee roles that the researchr profile lists and `_data/services.ym
 
 ## When to run
 
-The audit runs only when it is invoked. Nothing runs it on a schedule.
+The workflow `.github/workflows/service-audit.yml` runs the script on the first day of each month. It opens an issue when a role has no entry or when the audit cannot run. The workflow edits nothing, so the roles are added by invoking the skill.
+
+Invoke the skill on two occasions.
 
 - After a committee invitation is accepted and the committee page is public. The news month is then still known, and the role reaches the site while it is current.
-- Once a month otherwise. Chairs add members to a committee page without notice, and the service news items of 2023 to 2026 fall in eleven of the twelve months, so no season is safe to skip. A run with nothing missing takes about one second.
+- When the monthly workflow opens an issue. Chairs add members to a committee page without notice, and the service news items of 2023 to 2026 fall in eleven of the twelve months.
 
 ## Workflow
 

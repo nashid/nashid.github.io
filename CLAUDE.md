@@ -215,7 +215,7 @@ Reports the committee roles that the [researchr profile](https://conf.researchr.
 python3 .claude/skills/audit-services/scripts/audit_researchr.py
 ```
 
-**When to run**: After a committee invitation is accepted and the committee page is public, and once a month otherwise. The audit runs only when it is invoked.
+**When to run**: After a committee invitation is accepted and the committee page is public, and when the monthly workflow opens an issue. The workflow `.github/workflows/service-audit.yml` runs the script on the first day of each month and edits nothing.
 
 **Features**:
 - Reads committee roles only and skips authorships
