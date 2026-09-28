@@ -64,6 +64,16 @@ group: news
   </div>
   <div class="timeline-date">August 2026</div>
   <div class="timeline-content">
+    <a href="https://conf.researchr.org/home/ase-2026/aism-2026">AISM 2026</a>, the 2nd International Workshop on AI for Software Modernization, addresses the use of AI to understand and transform legacy systems, for example the migration of COBOL applications to Java. I served on its program committee. The workshop takes place at ASE 2026 in Munich, Germany.
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
+  <div class="timeline-date">August 2026</div>
+  <div class="timeline-content">
     I served as a PC member for <a href="https://resaise.github.io/2026/html/committee.html">ReSAISE 2026</a>, the 4th IEEE International Workshop on Reliable and Secure AI for Software Engineering, co-located with ISSRE 2026 in Limassol, Cyprus.
   </div>
 </div>
