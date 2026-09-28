@@ -9,6 +9,11 @@
   year: 2027
   website: https://conf.researchr.org/track/icst-2027/icst-2027-challenge-competition-track
 
+- name: Agentic Engineering (AGENT), Co-located with ICSE
+  role: PC Member
+  year: 2027
+  website: https://conf.researchr.org/home/icse-2027/agent-2027
+
 # 2026
 - name: Automated Software Engineering (ASE) Tools and Datasets Track
   role: PC Member
