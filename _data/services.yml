@@ -14,6 +14,11 @@
   year: 2027
   website: https://conf.researchr.org/home/icse-2027/agent-2027
 
+- name: Infrastructure for Trustworthy Software Agents (AGENTVERIFY), Co-located with ICSE
+  role: PC Member
+  year: 2027
+  website: https://agentverify2027.github.io/
+
 # 2026
 - name: Automated Software Engineering (ASE) Tools and Datasets Track
   role: PC Member
