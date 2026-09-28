@@ -760,6 +760,35 @@
   float: right;
 }
 
+// Rows of the Service page. The name wraps inside its own column and the
+// year stays on the first line at the right, at every width.
+.row.service-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+
+  // The clearfix pseudo-elements of .row would become flex items.
+  &:before, &:after {
+    content: none;
+  }
+
+  .left {
+    float: none;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .right {
+    float: none;
+    flex: none;
+  }
+
+  // Most names wrap at this width, so a small space separates the entries.
+  @include media-query($on-palm) {
+    margin-bottom: 0.5em;
+  }
+}
+
 /**
  * Row layout
  */
