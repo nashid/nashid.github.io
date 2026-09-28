@@ -4,6 +4,11 @@
   year: 2027
   website: https://2027.msrconf.org/track/msr-2027-technical-papers
 
+- name: International Conference on Software Testing, Verification and Validation (ICST) Challenge Competition Track
+  role: PC Member
+  year: 2027
+  website: https://conf.researchr.org/track/icst-2027/icst-2027-challenge-competition-track
+
 # 2026
 - name: Automated Software Engineering (ASE) Tools and Datasets Track
   role: PC Member
