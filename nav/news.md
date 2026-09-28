@@ -32,6 +32,16 @@ group: news
   <div class="timeline-icon">
     <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
   </div>
+  <div class="timeline-date">September 2026</div>
+  <div class="timeline-content">
+    I am serving as a PC member for <a href="https://conf.researchr.org/track/icst-2027/icst-2027-challenge-competition-track">ICST 2027 Challenge Competition Track</a>.
+  </div>
+</div>
+
+<div class="timeline-item service">
+  <div class="timeline-icon">
+    <img src="{{ "/resources/images/icon-memo.svg" | prepend: site.baseurl }}" alt="PC">
+  </div>
   <div class="timeline-date">August 2026</div>
   <div class="timeline-content">
     I served as a PC member for <a href="https://resaise.github.io/2026/html/committee.html">ReSAISE 2026</a>, the 4th IEEE International Workshop on Reliable and Secure AI for Software Engineering, co-located with ISSRE 2026 in Limassol, Cyprus.
