@@ -71,9 +71,12 @@ The entries of 2026 and 2027 give the forms to follow.
 
 | Case | Name | Link |
 | --- | --- | --- |
-| Track of a conference | `International Conference on Software Engineering (ICSE) Artifact Evaluation Track` | The track page |
+| Track of a conference | `Automated Software Engineering (ASE) Tools and Datasets Track` | The track page |
+| Track of a conference with a long name | `ICST Challenge Competition Track` | The track page |
 | Workshop | `Agentic Engineering (AGENT), Co-located with ICSE` | The workshop home page |
-| Workshop with its own site | `Infrastructure for Trustworthy Software Agents (AGENTVERIFY), Co-located with ICSE` | The site that the researchr home page redirects to |
+| Workshop with a long name | `AGENTVERIFY 2027, Co-located with ICSE` | The workshop home page, or the site it redirects to |
+
+The name and the role must fit on one line of the Service page with the year beside them. At desktop width the line holds about 90 characters for the name, the comma, and the role together. A longer entry wraps and pushes the year to a line of its own, so use the abbreviation alone when the full name does not fit.
 
 The `year` is the year of the conference. A role of a later year than any entry starts a new `# <year>` block at the top of the file.
 
