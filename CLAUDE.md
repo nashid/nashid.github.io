@@ -207,6 +207,23 @@ Drafts and formats a new long-form post in `_writings/` so every piece is writte
 - Optimizes the hero image and wires it as the social-card image
 - Builds, checks for style violations, and opens a PR
 
+#### `/audit-services` - Audit the Researchr Profile Against the Service Page
+Reports the committee roles that the [researchr profile](https://conf.researchr.org/profile/noornashid) lists and `_data/services.yml` does not.
+
+**Usage**: Type `/audit-services`. The script also runs on its own:
+```bash
+python3 .claude/skills/audit-services/scripts/audit_researchr.py
+```
+
+**Features**:
+- Reads committee roles only and skips authorships
+- Matches each role to one service entry by link, then by venue and year
+- Confirms each missing role on its committee page and prints the dates, place, and venue pages
+- Edits nothing; each confirmed role is added afterwards as its own PR under the `/add-service` conventions
+- Asks for the news month of each role and never infers it
+
+**Limits**: Journal roles are not on researchr, so the audit cannot find a missing journal role.
+
 ### Creating New Skills
 To add a new automation skill:
 1. Create a directory in `.claude/skills/` (e.g., `skill-name/`)
