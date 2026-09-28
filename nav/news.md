@@ -24,7 +24,7 @@ group: news
   </div>
   <div class="timeline-date">September 2026</div>
   <div class="timeline-content">
-    I am serving as a PC member for <a href="https://2027.msrconf.org/track/msr-2027-technical-papers">Mining Software Repositories (MSR) Technical Papers 2027</a>, the premier conference for data science, machine learning, and AI in software engineering. Looking forward to reviewing the papers!
+    I am serving as a PC member for <a href="https://2027.msrconf.org/track/msr-2027-technical-papers">Mining Software Repositories (MSR) Technical Papers 2027</a>, the main research track of the conference. Looking forward to reviewing the papers!
   </div>
 </div>
 
