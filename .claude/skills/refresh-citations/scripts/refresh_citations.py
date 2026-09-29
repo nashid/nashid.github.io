@@ -149,9 +149,10 @@ def main():
 
     # A number on the site is never lowered by the script. A lower number
     # points to an error in the source or in its reading, and a person decides.
+    labels = ("over {} citations", "h-index: {}", "more than {} times")
     lower = [
-        "{} is {} on the site and {} by the source".format(label, now, new)
-        for label, now, new in zip(("the total", "the h-index", "the count of CEDAR"), current, proposed)
+        "the site has \"{}\" and the source counts {}".format(label.format(now), count)
+        for label, now, new, count in zip(labels, current, proposed, (total, h_index, paper))
         if new < now
     ]
     if lower:
@@ -160,7 +161,6 @@ def main():
     if proposed == current:
         print("The sentence is current.")
         sys.exit(0)
-    labels = ("over {} citations", "h-index: {}", "more than {} times")
     for label, now, new in zip(labels, current, proposed):
         if now != new:
             print("Change: \"{}\" becomes \"{}\".".format(label.format(now), label.format(new)))
