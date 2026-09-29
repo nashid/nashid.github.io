@@ -13,7 +13,7 @@ My goal as a mentor is to make these tacit norms explicit. I help students ident
 
 ### Research Mentoring
 
-**Ding Daniel** (Undergraduate Researcher, 2024 - ongoing), Advisor: [Ali Mesbah](https://people.ece.ubc.ca/~amesbah/)
+**Daniel Ding** (Undergraduate Researcher, 2024 - ongoing), Advisor: [Ali Mesbah](https://people.ece.ubc.ca/~amesbah/)
 
 **Mobina Shahbandeh** (MASc 2024), Advisor: [Ali Mesbah](https://people.ece.ubc.ca/~amesbah/)
 
