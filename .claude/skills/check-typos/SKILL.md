@@ -74,6 +74,16 @@ Give the user one table with the file and line, the text as it stands, the propo
 
 Add a correct word under the matching heading, in the PR that brings the word to the site. Add a name only after it has been checked against a source. Each added word is a review item for the user.
 
+## Decided differences
+
+The script lists these items on every run. The user has decided each one, so report them as decided and do not ask again.
+
+| Entry | Difference | Decision |
+| --- | --- | --- |
+| `reptory-emse22` in `_data/papers.yml` | The site ends the title in "Learning-Based Program Repair", and the arXiv record 2110.14081 ends it in "Learning-Based Bug Repair". | The site keeps the published title. Empirical Software Engineering published the paper under it, DOI 10.1007/s10664-022-10223-5. Decided on September 28, 2026. |
+
+Three publications have no record on arXiv, which is correct: the dissertation, the ICSE 2023 paper on prompt selection, and the ICST 2023 paper.
+
 ## Limits
 
 - The PDF files under `resources/` are not read.
