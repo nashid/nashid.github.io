@@ -35,11 +35,11 @@ The skill will:
 - **Conference PCs** get both service entry and news announcement
 
 ### 🎨 Creative Variations
-Each news item differs in form from the five most recent service items, and its interest comes from facts on the venue page:
+Each news item opens differently from the five nearest service items, and its interest comes from facts on the venue pages:
 - "I joined the program committee of ..., the International Workshop on ... Full papers are due on ..."
 - "..., the 2nd International Workshop on ..., addresses ... I served on its program committee."
 - "I am serving as a PC member for ..., the main research track of the conference."
-- Thirteen forms in total, listed in the "News Wording" section of the skill
+- Ten forms in total, listed in the "News Wording" section of the skill
 
 ### 🏆 Special Recognition
 For distinguished roles, it uses special wording and trophy icons
