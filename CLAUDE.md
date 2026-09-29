@@ -226,6 +226,25 @@ python3 .claude/skills/audit-services/scripts/audit_researchr.py
 
 **Limits**: Journal roles are not on researchr, so the audit cannot find a missing journal role.
 
+#### `/check-typos` - Check Spelling and Names Across the Site
+Reports spelling errors and errors in names, with the file and line of each.
+
+**Usage**: Type `/check-typos`. The script also runs on its own:
+```bash
+python3 .claude/skills/check-typos/scripts/check_typos.py --arxiv
+```
+
+**When to run**: Before a PR that adds or changes text on a page, and after a publication is added to `_data/papers.yml`.
+
+**Features**:
+- Checks every word of the pages and of the prose fields of `_data/` against the system dictionary and `.claude/skills/check-typos/references/words.txt`
+- Checks the name of the site owner, in both orders in use, "Nashid Noor" and "Noor Nashid"
+- Reports an author list without the site owner, and author names that may be variants of one name
+- Compares the author list of each publication with its arXiv record
+- Edits nothing; each correction is made after approval, as a small PR
+
+**Limits**: The PDF files under `resources/` are not read. A wrong word that exists, such as "form" for "from", passes the script and is found by reading the page.
+
 ### Creating New Skills
 To add a new automation skill:
 1. Create a directory in `.claude/skills/` (e.g., `skill-name/`)
