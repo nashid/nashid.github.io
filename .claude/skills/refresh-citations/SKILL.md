@@ -16,7 +16,8 @@ The sentence reads: "My research has received over 700 citations (h-index: 12), 
 
 ## When to run
 
-- When the quarterly workflow `.github/workflows/citation-refresh.yml` opens an issue. Google Scholar refuses requests from the runners of GitHub, so the workflow can seldom read the counts itself. It then opens a reminder, and the skill does the work from a personal machine.
+- When the quarterly workflow `.github/workflows/citation-refresh.yml` opens a reminder issue. Google Scholar refuses some requests from the runners of GitHub. A refused run opens the reminder, and the skill then does the work from a personal machine.
+- When the workflow opens a PR or an issue with a prepared branch. Review the numbers against the profile before the merge.
 - On request.
 
 ## Rules of the sentence

@@ -2,14 +2,14 @@ name: Citation refresh
 
 # Keeps the citation sentence on the home page current, every three months.
 #
-# Google Scholar refuses requests from the runners of GitHub. The usual result
-# of a run is therefore a reminder issue, and the counts are then read by the
-# refresh-citations skill from a personal machine.
+# When the numbers differ, the workflow pushes a branch with the new sentence
+# and opens a PR for review. Where the repository does not let a workflow open
+# a PR, it opens an issue that links the branch. The workflow never commits to
+# main.
 #
-# When Google Scholar does answer and the numbers differ, the workflow pushes
-# a branch with the new sentence and opens a PR for review. Where the
-# repository does not let a workflow open a PR, it opens an issue that links
-# the branch. The workflow never commits to main.
+# Google Scholar refuses some requests from the runners of GitHub. A refused
+# run opens a reminder issue, and the counts are then read by the
+# refresh-citations skill from a personal machine.
 
 on:
   schedule:
@@ -136,7 +136,7 @@ jobs:
           # shellcheck disable=SC2016
           if [ "$OUTCOME" = "refused" ]; then
             issue="Citation refresh: due this quarter"
-            intro='The quarterly refresh of the citation sentence is due. Google Scholar refused the request of the workflow, as it does for the runners of GitHub, so the counts are read from a personal machine. Run `/refresh-citations` in Claude Code, or run `python3 .claude/skills/refresh-citations/scripts/refresh_citations.py` from the repository root.'
+            intro='The quarterly refresh of the citation sentence is due. Google Scholar refused the request of the workflow, as it does for some requests from data centers, so the counts are read from a personal machine. Run `/refresh-citations` in Claude Code, or run `python3 .claude/skills/refresh-citations/scripts/refresh_citations.py` from the repository root.'
           else
             issue="Citation refresh: the comparison could not run"
             intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error that lies in the site or in the script. The wording of the sentence or the layout of the profile page may have changed.'

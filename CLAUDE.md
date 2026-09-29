@@ -215,7 +215,7 @@ Compares the citation sentence on the home page with Google Scholar and changes 
 python3 .claude/skills/refresh-citations/scripts/refresh_citations.py
 ```
 
-**When to run**: When the workflow `.github/workflows/citation-refresh.yml` opens its reminder issue, and on request. The workflow runs on the first day of January, April, July, and October and never commits to main. Google Scholar refuses requests from the runners of GitHub, so the workflow reminds, and the skill reads the counts from a personal machine.
+**When to run**: When the workflow `.github/workflows/citation-refresh.yml` opens a reminder issue, and on request. The workflow runs on the first day of January, April, July, and October and never commits to main. It prepares the change as a branch for review when Google Scholar answers, and it opens a reminder when Google Scholar refuses the request.
 
 **Features**:
 - Rounds the total and the count of CEDAR down to a multiple of 50 and keeps the h-index exact, as PRs #99 and #109 did
@@ -223,7 +223,7 @@ python3 .claude/skills/refresh-citations/scripts/refresh_citations.py
 - Changes the three numbers only and keeps the line endings of `index.md`
 - Stops without an edit when Google Scholar returns a captcha or the sentence is not found
 
-**Limits**: Google Scholar is the only source, since other indexes report far lower counts. It offers no interface for programs and refuses requests from data centers.
+**Limits**: Google Scholar is the only source, since other indexes report far lower counts. It offers no interface for programs and refuses some requests from data centers.
 
 #### `/audit-services` - Audit the Researchr Profile Against the Service Page
 Reports the committee roles that the [researchr profile](https://conf.researchr.org/profile/noornashid) lists and `_data/services.yml` does not.
