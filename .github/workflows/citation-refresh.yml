@@ -1,0 +1,151 @@
+name: Citation refresh
+
+# Compares the citation sentence on the home page with Google Scholar every
+# three months. When the numbers differ, the workflow pushes a branch with the
+# new sentence and opens a PR for review. Where the repository does not let a
+# workflow open a PR, it opens an issue that links the branch. It never
+# commits to main.
+
+on:
+  schedule:
+    # 16:00 UTC on the first day of January, April, July, and October
+    - cron: "0 16 1 1,4,7,10 *"
+  workflow_dispatch:
+  # A change to the workflow or to the script runs the comparison on the PR,
+  # with the steps that push or report skipped.
+  pull_request:
+    paths:
+      - ".github/workflows/citation-refresh.yml"
+      - ".claude/skills/refresh-citations/scripts/**"
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Compare the sentence with Google Scholar
+        id: compare
+        run: |
+          set +e
+          python3 .claude/skills/refresh-citations/scripts/refresh_citations.py --write > report.txt 2> error.txt
+          status=$?
+          set -e
+          cat report.txt
+          cat error.txt >&2
+          case "$status" in
+            0) outcome=current ;;
+            1) outcome=changed ;;
+            *) outcome=failed ;;
+          esac
+          # A changed outcome must come with a changed page, and no other
+          # outcome may change it.
+          if [ "$outcome" = "changed" ] && git diff --quiet -- index.md; then
+            outcome=failed
+          fi
+          if [ "$outcome" != "changed" ] && ! git diff --quiet -- index.md; then
+            outcome=failed
+          fi
+          echo "Outcome: $outcome"
+          echo "outcome=$outcome" >> "$GITHUB_OUTPUT"
+
+      - name: Push the branch and open the PR
+        if: steps.compare.outputs.outcome == 'changed' && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          branch="refresh-citation-stats-$(date -u +%Y-%m)"
+          title="Refresh citation statistics on the home page"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add index.md
+          git commit -m "$title"
+          # The branch belongs to this workflow, so a second run in one month replaces it.
+          git push --force origin "$branch"
+          {
+            echo "Updates the numbers of the citation sentence on the home page. The quarterly workflow made this change, and nothing else in the file differs."
+            echo
+            echo "## Evidence"
+            echo
+            echo '```'
+            cat report.txt
+            echo '```'
+            echo
+            echo "The total and the count of CEDAR are rounded down to a multiple of 50, and the h-index is exact, as in PRs #99 and #109."
+            echo
+            echo "## Verification"
+            echo
+            echo "Not built by the workflow. The diff is one line of \`index.md\`."
+            echo
+            echo "Workflow run: $RUN_URL"
+          } > body.md
+          if [ -n "$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')" ]; then
+            echo "A PR for $branch is already open and now holds the new commit."
+            exit 0
+          fi
+          if gh pr create --base main --head "$branch" --title "$title" --body-file body.md; then
+            exit 0
+          fi
+          # The repository setting that lets a workflow open a PR is off.
+          issue="Citation refresh: a branch is ready for a PR"
+          {
+            echo "The quarterly workflow prepared a new citation sentence on the branch \`$branch\`. The repository does not let a workflow open a PR, so this issue stands in its place."
+            echo
+            echo "Open the PR here: $REPO_URL/compare/main...$branch?expand=1"
+            echo
+            cat body.md
+          } > issue.md
+          number=$(gh issue list --state open --search "in:title \"$issue\"" --json number,title \
+            --jq "map(select(.title == \"$issue\")) | .[0].number // empty")
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body-file issue.md
+          else
+            gh issue create --title "$issue" --body-file issue.md
+          fi
+
+      - name: Report in an issue when the comparison could not run
+        if: steps.compare.outputs.outcome == 'failed' && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          issue="Citation refresh: the comparison could not run"
+          # The backticks in the text are Markdown and must not expand.
+          # shellcheck disable=SC2016
+          intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error, so this quarter has no result. Run `/refresh-citations` in Claude Code from a personal machine, where Google Scholar answers.'
+          {
+            echo "$intro"
+            echo
+            echo '```'
+            cat report.txt error.txt
+            echo '```'
+            echo
+            echo "Workflow run: $RUN_URL"
+          } > issue.md
+          number=$(gh issue list --state open --search "in:title \"$issue\"" --json number,title \
+            --jq "map(select(.title == \"$issue\")) | .[0].number // empty")
+          if [ -n "$number" ]; then
+            gh issue comment "$number" --body-file issue.md
+          else
+            gh issue create --title "$issue" --body-file issue.md
+          fi
+
+      - name: Fail the run when the comparison could not run
+        if: steps.compare.outputs.outcome == 'failed'
+        run: exit 1

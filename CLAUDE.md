@@ -207,6 +207,24 @@ Drafts and formats a new long-form post in `_writings/` so every piece is writte
 - Optimizes the hero image and wires it as the social-card image
 - Builds, checks for style violations, and opens a PR
 
+#### `/refresh-citations` - Keep the Citation Sentence Current
+Compares the citation sentence on the home page with Google Scholar and changes its three numbers: the total citations, the h-index, and the citations of CEDAR.
+
+**Usage**: Type `/refresh-citations`. The script also runs on its own:
+```bash
+python3 .claude/skills/refresh-citations/scripts/refresh_citations.py
+```
+
+**When to run**: When the workflow `.github/workflows/citation-refresh.yml` opens a PR or an issue, and on request. The workflow runs on the first day of January, April, July, and October and never commits to main.
+
+**Features**:
+- Rounds the total and the count of CEDAR down to a multiple of 50 and keeps the h-index exact, as PRs #99 and #109 did
+- Never lowers a number on the site
+- Changes the three numbers only and keeps the line endings of `index.md`
+- Stops without an edit when Google Scholar returns a captcha or the sentence is not found
+
+**Limits**: Google Scholar is the only source, since other indexes report far lower counts. It offers no interface for programs and may refuse a request.
+
 #### `/audit-services` - Audit the Researchr Profile Against the Service Page
 Reports the committee roles that the [researchr profile](https://conf.researchr.org/profile/noornashid) lists and `_data/services.yml` does not.
 
