@@ -16,24 +16,46 @@ on:
     # 16:00 UTC on the first day of January, April, July, and October
     - cron: "0 16 1 1,4,7,10 *"
   workflow_dispatch:
-  # A change to the workflow or to the script runs the comparison on the PR,
-  # with the steps that push or report skipped.
+  # A PR that changes the workflow or the script runs the tests. They use
+  # saved pages, so a PR sends no request to Google Scholar.
   pull_request:
     paths:
       - ".github/workflows/citation-refresh.yml"
       - ".claude/skills/refresh-citations/scripts/**"
 
 permissions:
-  contents: write
-  pull-requests: write
-  issues: write
+  contents: read
 
 jobs:
-  refresh:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
         uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Run the tests of the script
+        run: python3 -m unittest discover -v -s .claude/skills/refresh-citations/scripts -p "test_*.py"
+
+  refresh:
+    if: github.event_name != 'pull_request'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      # The branch of the change starts from main, also when the run was
+      # started by hand from another branch.
+      - name: Check out main
+        uses: actions/checkout@v7
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v7
@@ -55,19 +77,22 @@ jobs:
             3) outcome=refused ;;
             *) outcome=failed ;;
           esac
-          # A changed outcome must come with a changed page, and no other
-          # outcome may change it.
-          if [ "$outcome" = "changed" ] && git diff --quiet -- index.md; then
+          # A changed outcome must change one line of the page, and no other
+          # outcome may change the page.
+          changed_lines=$(git diff --numstat -- index.md | awk '{print $1 "+" $2}')
+          if [ "$outcome" = "changed" ] && [ "$changed_lines" != "1+1" ]; then
+            echo "The page differs by \"$changed_lines\" lines, and one line was expected." >> error.txt
             outcome=failed
           fi
-          if [ "$outcome" != "changed" ] && ! git diff --quiet -- index.md; then
+          if [ "$outcome" != "changed" ] && [ -n "$changed_lines" ]; then
+            echo "The page changed although the outcome was $outcome." >> error.txt
             outcome=failed
           fi
           echo "Outcome: $outcome"
           echo "outcome=$outcome" >> "$GITHUB_OUTPUT"
 
       - name: Push the branch and open the PR
-        if: steps.compare.outputs.outcome == 'changed' && github.event_name != 'pull_request'
+        if: steps.compare.outputs.outcome == 'changed'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -76,13 +101,18 @@ jobs:
         run: |
           branch="refresh-citation-stats-$(date -u +%Y-%m)"
           title="Refresh citation statistics on the home page"
+          # A branch of this month may hold edits made in review, so the
+          # workflow leaves an existing branch as it is.
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            echo "The branch $branch exists already, and the workflow did not change it."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
           git add index.md
           git commit -m "$title"
-          # The branch belongs to this workflow, so a second run in one month replaces it.
-          git push --force origin "$branch"
+          git push origin "$branch"
           {
             echo "Updates the numbers of the citation sentence on the home page. The quarterly workflow made this change, and nothing else in the file differs."
             echo
@@ -92,18 +122,14 @@ jobs:
             cat report.txt
             echo '```'
             echo
-            echo "The total and the count of CEDAR are rounded down to a multiple of 50, and the h-index is exact, as in PRs #99 and #109."
+            echo "The total and the count of CEDAR are rounded down to the multiple of 50 below the count, and the h-index is exact, as in PRs #99 and #109."
             echo
             echo "## Verification"
             echo
-            echo "Not built by the workflow. The diff is one line of \`index.md\`."
+            echo "The diff is one line of \`index.md\`. The workflow did not build the site, and GitHub starts no other workflow for a branch that a workflow pushed. Build the site before the merge."
             echo
             echo "Workflow run: $RUN_URL"
           } > body.md
-          if [ -n "$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')" ]; then
-            echo "A PR for $branch is already open and now holds the new commit."
-            exit 0
-          fi
           if gh pr create --base main --head "$branch" --title "$title" --body-file body.md; then
             exit 0
           fi
@@ -125,7 +151,7 @@ jobs:
           fi
 
       - name: Open a reminder or report an error
-        if: (steps.compare.outputs.outcome == 'refused' || steps.compare.outputs.outcome == 'failed') && github.event_name != 'pull_request'
+        if: steps.compare.outputs.outcome == 'refused' || steps.compare.outputs.outcome == 'failed'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -139,7 +165,7 @@ jobs:
             intro='The quarterly refresh of the citation sentence is due. Google Scholar refused the request of the workflow, as it does for some requests from data centers, so the counts are read from a personal machine. Run `/refresh-citations` in Claude Code, or run `python3 .claude/skills/refresh-citations/scripts/refresh_citations.py` from the repository root.'
           else
             issue="Citation refresh: the comparison could not run"
-            intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error that lies in the site or in the script. The wording of the sentence or the layout of the profile page may have changed.'
+            intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error. The wording of the sentence or the layout of the profile page may have changed, or Google Scholar gives a lower number than the site.'
           fi
           {
             echo "$intro"
@@ -147,7 +173,7 @@ jobs:
             echo "The sentence now:"
             echo
             echo '```'
-            grep -o "over [0-9]* citations (h-index: [0-9]*), including CEDAR which has been cited more than [0-9]* times" index.md || echo "The sentence was not found in index.md."
+            git show HEAD:index.md | grep -o "over [0-9]* citations (h-index: [0-9]*), including CEDAR which has been cited more than [0-9]* times" || echo "The sentence was not found in index.md."
             echo '```'
             echo
             echo "Output of the run:"

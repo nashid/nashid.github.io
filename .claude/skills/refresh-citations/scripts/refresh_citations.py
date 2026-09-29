@@ -36,10 +36,8 @@ SENTENCE = re.compile(
 # The total and the count of the paper are rounded down to a multiple of 50,
 # so the sentence stays true while the counts grow. The h-index is exact.
 STEP = 50
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-)
+# The request names the script and does not pose as a browser.
+USER_AGENT = "refresh-citations (script of nashid.github.io)"
 
 
 def stop(message):
@@ -82,10 +80,20 @@ def number(text):
     return int(text.replace(",", ""))
 
 
+def statistic(page, label):
+    """Return the value of a row of the statistics table, from its column for all years."""
+    found = re.search(
+        r'>{}</a>\s*</td>\s*<td class="gsc_rsb_std">([\d,]+)</td>'.format(re.escape(label)), page
+    )
+    return number(found.group(1)) if found else None
+
+
 def read_profile(page):
     """Return the total citations, the h-index, and the citations of the paper."""
-    cells = re.findall(r'<td class="gsc_rsb_std">([\d,]+)</td>', page)
-    if len(cells) != 6:
+    # Each statistic is found by the label of its row, so a change in the
+    # number of rows or columns cannot shift one value into the place of another.
+    total, h_index = statistic(page, "Citations"), statistic(page, "h-index")
+    if total is None or h_index is None:
         if re.search(r"unusual traffic|not a robot|captcha", page, re.I):
             refused("Google Scholar asked for a captcha, so it treats this machine as automated traffic.")
         if re.search(r"consent\.google|before you continue", page, re.I):
@@ -93,8 +101,6 @@ def read_profile(page):
         if re.search(r"accounts\.google\.com", page, re.I) and "gsc_prf_in" not in page:
             refused("Google Scholar returned a sign-in page in place of the profile.")
         stop("The statistics were not found on the profile page. Its layout may have changed.")
-    # The cells come in pairs of all time and recent years. The first of each pair is all time.
-    total, h_index = number(cells[0]), number(cells[2])
     for row in re.findall(r'(?s)<tr class="gsc_a_tr">(.*?)</tr>', page):
         title = re.search(r'(?s)class="gsc_a_at"[^>]*>(.*?)</a>', row)
         cited = re.search(r'class="gsc_a_ac[^"]*"[^>]*>([\d,]+)</a>', row)
@@ -103,8 +109,13 @@ def read_profile(page):
     stop("The paper \"{}\" was not found on the profile page.".format(PAPER))
 
 
-def floor(value):
-    return value - value % STEP
+def round_down(value):
+    """Return the largest multiple of STEP that lies below the value.
+
+    The sentence says "over" and "more than", so a count of exactly 700 gives
+    650, and a count of 701 gives 700.
+    """
+    return (value - 1) - (value - 1) % STEP
 
 
 def main():
@@ -127,10 +138,7 @@ def main():
     current = tuple(int(value) for value in found.groups())
 
     total, h_index, paper = read_profile(fetch(source))
-    computed = (floor(total), h_index, floor(paper))
-    # A number on the site is never lowered. A lower count points to an error
-    # in the source, and the sentence states a floor that stays true.
-    proposed = tuple(max(now, new) for now, new in zip(current, computed))
+    proposed = (round_down(total), h_index, round_down(paper))
 
     form = "over {} citations, h-index {}, CEDAR cited more than {} times"
     print("Google Scholar on {}: {} citations, h-index {}, CEDAR cited {} times.".format(
@@ -138,10 +146,16 @@ def main():
     print("Source: {}".format(source))
     print("Sentence now:      " + form.format(*current))
     print("Sentence proposed: " + form.format(*proposed))
-    counts = (total, h_index, paper)
-    for label, now, new, count in zip(("total citations", "h-index", "CEDAR citations"), current, computed, counts):
-        if new < now:
-            print("Kept as it is: {} stays at {}, although Google Scholar gives {}.".format(label, now, count))
+
+    # A number on the site is never lowered by the script. A lower number
+    # points to an error in the source or in its reading, and a person decides.
+    lower = [
+        "{} is {} on the site and {} by the source".format(label, now, new)
+        for label, now, new in zip(("the total", "the h-index", "the count of CEDAR"), current, proposed)
+        if new < now
+    ]
+    if lower:
+        stop("The source gives a lower number than the site, so no edit was made: {}.".format("; ".join(lower)))
 
     if proposed == current:
         print("The sentence is current.")

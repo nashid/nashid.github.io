@@ -37,6 +37,9 @@ vendor/bundle/
 .bundle/
 Gemfile.lock
 
+# Python, from the tests of the skill scripts
+__pycache__/
+
 # dont version control
 interviews/
 # Local reference material for Writings drafts; contains committee emails, never publish

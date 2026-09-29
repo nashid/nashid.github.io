@@ -218,8 +218,8 @@ python3 .claude/skills/refresh-citations/scripts/refresh_citations.py
 **When to run**: When the workflow `.github/workflows/citation-refresh.yml` opens a reminder issue, and on request. The workflow runs on the first day of January, April, July, and October and never commits to main. It prepares the change as a branch for review when Google Scholar answers, and it opens a reminder when Google Scholar refuses the request.
 
 **Features**:
-- Rounds the total and the count of CEDAR down to a multiple of 50 and keeps the h-index exact, as PRs #99 and #109 did
-- Never lowers a number on the site
+- Rounds the total and the count of CEDAR down to the multiple of 50 below the count and keeps the h-index exact, as PRs #99 and #109 did
+- Never lowers a number on the site, and stops when the source gives a lower number
 - Changes the three numbers only and keeps the line endings of `index.md`
 - Stops without an edit when Google Scholar returns a captcha or the sentence is not found
 
