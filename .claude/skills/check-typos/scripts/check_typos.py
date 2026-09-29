@@ -206,6 +206,10 @@ def names_in(value):
     return [name.strip() for name in re.split(r",|\band\b", value) if name.strip()]
 
 
+def lists(count):
+    return "1 author list" if count == 1 else "{} author lists".format(count)
+
+
 def same_but_for_initials(first, second):
     strip = lambda name: [part for part in name.split() if not re.fullmatch(r"[A-Z]\.?", part)]
     return first != second and strip(first) == strip(second)
@@ -313,12 +317,13 @@ def main():
     if not lines:
         stop("No source file was found under {}. Run the script from the repository root.".format(args.root))
 
+    # Each author name, with the place of every author list that holds it.
     authors = {}
     papers = os.path.join(args.root, PAPERS)
     for path, number, key, text in lines:
         if key == "authors":
             for name in names_in(text):
-                authors.setdefault(name, (path, number))
+                authors.setdefault(name, []).append((path, number))
 
     spelling, owner, prose_names, repeated = [], [], [], []
     for path, number, key, text in lines:
@@ -381,8 +386,14 @@ def main():
             elif 0 < distance(first.lower(), second.lower()) <= 2:
                 reason = "they differ by one or two letters"
             if reason:
-                path, number = authors[second]
-                variants.append((shown(path), number, "\"{}\" and \"{}\": {}".format(first, second, reason)))
+                # The finding stands at the rarer form, which is the likely error,
+                # and it names the place of the other form as well.
+                rare, common = sorted((first, second), key=lambda name: len(authors[name]))
+                path, number = authors[rare][0]
+                other_path, other_number = authors[common][0]
+                variants.append((shown(path), number, "\"{}\" in {} and \"{}\" in {}, first at {}:{}: {}".format(
+                    rare, lists(len(authors[rare])), common, lists(len(authors[common])),
+                    shown(other_path), other_number, reason)))
 
     if args.list_unknown:
         for word in sorted({item[2] for item in spelling}):
