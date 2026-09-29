@@ -8,7 +8,8 @@ difference. With --write it replaces the three numbers in the sentence and
 changes nothing else.
 
 Exit codes: 0 when the sentence is current, 1 when it needs a change or was
-changed, and 2 when the script cannot run. An error never edits the page.
+changed, 2 when the script cannot run, and 3 when Google Scholar refuses the
+request or cannot be reached. Neither error edits the page.
 
 Usage, from the repository root:
     python3 .claude/skills/refresh-citations/scripts/refresh_citations.py
@@ -46,6 +47,12 @@ def stop(message):
     sys.exit(2)
 
 
+def refused(message):
+    """End the run because the source gave no profile. The cause lies outside the site."""
+    print(message, file=sys.stderr)
+    sys.exit(3)
+
+
 def scholar_user(config):
     with open(config, encoding="utf-8", errors="replace") as handle:
         found = re.search(r"(?m)^gscholar:\s*(\S+)", handle.read())
@@ -59,12 +66,16 @@ def fetch(source):
         with open(source, encoding="utf-8", errors="replace") as handle:
             return handle.read()
     fetched = subprocess.run(
-        ["curl", "-sL", "--fail", "--max-time", "30", "-A", USER_AGENT, "-H", "Accept-Language: en-US,en;q=0.9", source],
+        ["curl", "-sL", "--max-time", "30", "-A", USER_AGENT, "-H", "Accept-Language: en-US,en;q=0.9",
+         "-w", "\n%{http_code}", source],
         capture_output=True,
     )
     if fetched.returncode != 0:
-        stop("Google Scholar could not be fetched (curl exit {}).".format(fetched.returncode))
-    return fetched.stdout.decode("utf-8", errors="replace")
+        refused("Google Scholar could not be reached (curl exit {}).".format(fetched.returncode))
+    page, _, status = fetched.stdout.decode("utf-8", errors="replace").rpartition("\n")
+    if status != "200":
+        refused("Google Scholar answered with HTTP status {}.".format(status))
+    return page
 
 
 def number(text):
@@ -76,11 +87,11 @@ def read_profile(page):
     cells = re.findall(r'<td class="gsc_rsb_std">([\d,]+)</td>', page)
     if len(cells) != 6:
         if re.search(r"unusual traffic|not a robot|captcha", page, re.I):
-            stop("Google Scholar asked for a captcha, so it treats this machine as automated traffic.")
+            refused("Google Scholar asked for a captcha, so it treats this machine as automated traffic.")
         if re.search(r"consent\.google|before you continue", page, re.I):
-            stop("Google Scholar returned a consent page in place of the profile.")
+            refused("Google Scholar returned a consent page in place of the profile.")
         if re.search(r"accounts\.google\.com", page, re.I) and "gsc_prf_in" not in page:
-            stop("Google Scholar returned a sign-in page in place of the profile.")
+            refused("Google Scholar returned a sign-in page in place of the profile.")
         stop("The statistics were not found on the profile page. Its layout may have changed.")
     # The cells come in pairs of all time and recent years. The first of each pair is all time.
     total, h_index = number(cells[0]), number(cells[2])

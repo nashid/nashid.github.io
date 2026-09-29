@@ -1,10 +1,15 @@
 name: Citation refresh
 
-# Compares the citation sentence on the home page with Google Scholar every
-# three months. When the numbers differ, the workflow pushes a branch with the
-# new sentence and opens a PR for review. Where the repository does not let a
-# workflow open a PR, it opens an issue that links the branch. It never
-# commits to main.
+# Keeps the citation sentence on the home page current, every three months.
+#
+# Google Scholar refuses requests from the runners of GitHub. The usual result
+# of a run is therefore a reminder issue, and the counts are then read by the
+# refresh-citations skill from a personal machine.
+#
+# When Google Scholar does answer and the numbers differ, the workflow pushes
+# a branch with the new sentence and opens a PR for review. Where the
+# repository does not let a workflow open a PR, it opens an issue that links
+# the branch. The workflow never commits to main.
 
 on:
   schedule:
@@ -47,6 +52,7 @@ jobs:
           case "$status" in
             0) outcome=current ;;
             1) outcome=changed ;;
+            3) outcome=refused ;;
             *) outcome=failed ;;
           esac
           # A changed outcome must come with a changed page, and no other
@@ -118,19 +124,33 @@ jobs:
             gh issue create --title "$issue" --body-file issue.md
           fi
 
-      - name: Report in an issue when the comparison could not run
-        if: steps.compare.outputs.outcome == 'failed' && github.event_name != 'pull_request'
+      - name: Open a reminder or report an error
+        if: (steps.compare.outputs.outcome == 'refused' || steps.compare.outputs.outcome == 'failed') && github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
+          OUTCOME: ${{ steps.compare.outputs.outcome }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          issue="Citation refresh: the comparison could not run"
-          # The backticks in the text are Markdown and must not expand.
+          # The backticks in the texts are Markdown and must not expand.
           # shellcheck disable=SC2016
-          intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error, so this quarter has no result. Run `/refresh-citations` in Claude Code from a personal machine, where Google Scholar answers.'
+          if [ "$OUTCOME" = "refused" ]; then
+            issue="Citation refresh: due this quarter"
+            intro='The quarterly refresh of the citation sentence is due. Google Scholar refused the request of the workflow, as it does for the runners of GitHub, so the counts are read from a personal machine. Run `/refresh-citations` in Claude Code, or run `python3 .claude/skills/refresh-citations/scripts/refresh_citations.py` from the repository root.'
+          else
+            issue="Citation refresh: the comparison could not run"
+            intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error that lies in the site or in the script. The wording of the sentence or the layout of the profile page may have changed.'
+          fi
           {
             echo "$intro"
+            echo
+            echo "The sentence now:"
+            echo
+            echo '```'
+            grep -o "over [0-9]* citations (h-index: [0-9]*), including CEDAR which has been cited more than [0-9]* times" index.md || echo "The sentence was not found in index.md."
+            echo '```'
+            echo
+            echo "Output of the run:"
             echo
             echo '```'
             cat report.txt error.txt

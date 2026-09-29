@@ -16,7 +16,7 @@ The sentence reads: "My research has received over 700 citations (h-index: 12), 
 
 ## When to run
 
-- When the quarterly workflow `.github/workflows/citation-refresh.yml` opens a PR or an issue.
+- When the quarterly workflow `.github/workflows/citation-refresh.yml` opens an issue. Google Scholar refuses requests from the runners of GitHub, so the workflow can seldom read the counts itself. It then opens a reminder, and the skill does the work from a personal machine.
 - On request.
 
 ## Rules of the sentence
@@ -41,9 +41,16 @@ From the repository root:
 python3 .claude/skills/refresh-citations/scripts/refresh_citations.py
 ```
 
-The script prints the counts on Google Scholar with the date, the sentence as it stands, the sentence it proposes, and each change. It exits with 0 when the sentence is current, with 1 when it needs a change, and with 2 when it cannot run.
+The script prints the counts on Google Scholar with the date, the sentence as it stands, the sentence it proposes, and each change.
 
-On exit 2, report the cause to the user and stop. A captcha or a consent page means that Google Scholar refused the request. Do not take the numbers from another source, and do not estimate them.
+| Exit code | Meaning |
+| --- | --- |
+| 0 | The sentence is current |
+| 1 | The sentence needs a change, or was changed with `--write` |
+| 2 | The script cannot run: the sentence was not found, or the layout of the profile page changed |
+| 3 | Google Scholar refused the request or could not be reached |
+
+On exit 2 or 3, report the cause to the user and stop. Do not take the numbers from another source, and do not estimate them.
 
 ### 2. Confirm with the user
 
