@@ -50,10 +50,11 @@ The script prints the counts on Google Scholar with the date, the sentence as it
 | --- | --- |
 | 0 | The sentence is current |
 | 1 | The sentence needs a change, or was changed with `--write` |
-| 2 | The script cannot run: the sentence was not found, the layout of the profile page changed, or the source gives a lower number than the site |
+| 2 | The script cannot run: the sentence was not found, or the layout of the profile page changed |
 | 3 | Google Scholar refused the request or could not be reached |
+| 4 | Google Scholar gives a lower number than the site |
 
-On exit 2 or 3, report the cause to the user and stop. Do not take the numbers from another source, and do not estimate them.
+On exit 2, 3, or 4, report the cause to the user and stop. Do not take the numbers from another source, and do not estimate them. On exit 4, the user decides whether the number on the site is lowered by hand. A lower count can be real, for example after Google Scholar merges two entries.
 
 ### 2. Confirm with the user
 
@@ -90,5 +91,5 @@ The workflow runs them on every PR that changes the script or the workflow.
 
 ## Limits
 
-- Google Scholar offers no interface for programs. The script reads the public profile page, in the form that the robots rules of Google Scholar allow. Its request names the script and does not pose as a browser. It stops when the page is not the profile.
+- Google Scholar offers no interface for programs, and its terms limit automated access. The script reads the public profile page, in the form that the robots rules of Google Scholar allow, with one request for each run. Its request names the script and does not pose as a browser. It stops when the page is not the profile.
 - The first page of the profile lists the twenty most cited papers. The script finds CEDAR by its title, so CEDAR must be among them.

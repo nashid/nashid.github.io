@@ -75,6 +75,7 @@ jobs:
             0) outcome=current ;;
             1) outcome=changed ;;
             3) outcome=refused ;;
+            4) outcome=lower ;;
             *) outcome=failed ;;
           esac
           # A changed outcome must change one line of the page, and no other
@@ -101,10 +102,40 @@ jobs:
         run: |
           branch="refresh-citation-stats-$(date -u +%Y-%m)"
           title="Refresh citation statistics on the home page"
+          ready="Citation refresh: a branch is ready for a PR"
+          link="Open the PR here: $REPO_URL/compare/main...$branch?expand=1"
+          # Opens the issue on the branch, or adds a comment to the open one.
+          report_branch() {
+            number=$(gh issue list --state open --search "in:title \"$ready\"" --json number,title \
+              --jq "map(select(.title == \"$ready\")) | .[0].number // empty")
+            if [ -n "$number" ]; then
+              gh issue comment "$number" --body-file issue.md
+            else
+              gh issue create --title "$ready" --body-file issue.md
+            fi
+          }
           # A branch of this month may hold edits made in review, so the
           # workflow leaves an existing branch as it is.
           if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
-            echo "The branch $branch exists already, and the workflow did not change it."
+            if [ -n "$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')" ]; then
+              echo "A PR for the branch $branch is open, and the workflow did not change the branch."
+              exit 0
+            fi
+            echo "::warning::The branch $branch exists without an open PR, and the workflow did not change it."
+            {
+              echo "The citation sentence differs from Google Scholar. The branch \`$branch\` exists from an earlier run and has no open PR, so the workflow did not change it."
+              echo
+              echo "$link"
+              echo
+              echo "Delete the branch to let the next run prepare a new one."
+              echo
+              echo '```'
+              cat report.txt
+              echo '```'
+              echo
+              echo "Workflow run: $RUN_URL"
+            } > issue.md
+            report_branch
             exit 0
           fi
           git config user.name "github-actions[bot]"
@@ -130,28 +161,28 @@ jobs:
             echo
             echo "Workflow run: $RUN_URL"
           } > body.md
-          if gh pr create --base main --head "$branch" --title "$title" --body-file body.md; then
+          if answer=$(gh pr create --base main --head "$branch" --title "$title" --body-file body.md 2>&1); then
+            echo "$answer"
             exit 0
           fi
-          # The repository setting that lets a workflow open a PR is off.
-          issue="Citation refresh: a branch is ready for a PR"
+          echo "$answer"
+          # Only the repository setting that stops a workflow from opening a PR
+          # leads to the issue. Any other failure fails the run.
+          if ! echo "$answer" | grep -qi "not permitted to create"; then
+            echo "::error::The PR could not be opened, and the cause is not the repository setting."
+            exit 1
+          fi
           {
             echo "The quarterly workflow prepared a new citation sentence on the branch \`$branch\`. The repository does not let a workflow open a PR, so this issue stands in its place."
             echo
-            echo "Open the PR here: $REPO_URL/compare/main...$branch?expand=1"
+            echo "$link"
             echo
             cat body.md
           } > issue.md
-          number=$(gh issue list --state open --search "in:title \"$issue\"" --json number,title \
-            --jq "map(select(.title == \"$issue\")) | .[0].number // empty")
-          if [ -n "$number" ]; then
-            gh issue comment "$number" --body-file issue.md
-          else
-            gh issue create --title "$issue" --body-file issue.md
-          fi
+          report_branch
 
       - name: Open a reminder or report an error
-        if: steps.compare.outputs.outcome == 'refused' || steps.compare.outputs.outcome == 'failed'
+        if: steps.compare.outputs.outcome == 'refused' || steps.compare.outputs.outcome == 'lower' || steps.compare.outputs.outcome == 'failed'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -163,9 +194,12 @@ jobs:
           if [ "$OUTCOME" = "refused" ]; then
             issue="Citation refresh: due this quarter"
             intro='The quarterly refresh of the citation sentence is due. Google Scholar refused the request of the workflow, as it does for some requests from data centers, so the counts are read from a personal machine. Run `/refresh-citations` in Claude Code, or run `python3 .claude/skills/refresh-citations/scripts/refresh_citations.py` from the repository root.'
+          elif [ "$OUTCOME" = "lower" ]; then
+            issue="Citation refresh: Google Scholar gives a lower number"
+            intro='Google Scholar gives a lower number than the site, so the workflow made no change. A lower count can be real, for example after Google Scholar merges two entries, or it can come from a wrong reading of the page. Compare the numbers with the profile, and lower the number on the site by hand if the count is real.'
           else
             issue="Citation refresh: the comparison could not run"
-            intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error. The wording of the sentence or the layout of the profile page may have changed, or Google Scholar gives a lower number than the site.'
+            intro='The quarterly comparison of the citation sentence with Google Scholar stopped with an error. The wording of the sentence or the layout of the profile page may have changed.'
           fi
           {
             echo "$intro"
@@ -192,6 +226,6 @@ jobs:
             gh issue create --title "$issue" --body-file issue.md
           fi
 
-      - name: Fail the run when the comparison could not run
-        if: steps.compare.outputs.outcome == 'failed'
+      - name: Fail the run when a person must act
+        if: steps.compare.outputs.outcome == 'lower' || steps.compare.outputs.outcome == 'failed'
         run: exit 1

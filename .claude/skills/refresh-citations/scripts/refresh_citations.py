@@ -8,8 +8,9 @@ difference. With --write it replaces the three numbers in the sentence and
 changes nothing else.
 
 Exit codes: 0 when the sentence is current, 1 when it needs a change or was
-changed, 2 when the script cannot run, and 3 when Google Scholar refuses the
-request or cannot be reached. Neither error edits the page.
+changed, 2 when the script cannot run, 3 when Google Scholar refuses the
+request or cannot be reached, and 4 when Google Scholar gives a lower number
+than the site. The codes 2, 3, and 4 never edit the page.
 
 Usage, from the repository root:
     python3 .claude/skills/refresh-citations/scripts/refresh_citations.py
@@ -22,6 +23,7 @@ import html
 import re
 import subprocess
 import sys
+import tempfile
 
 CONFIG = "_config.yml"
 PAGE = "index.md"
@@ -51,6 +53,12 @@ def refused(message):
     sys.exit(3)
 
 
+def lowered(message):
+    """End the run because the source gives a lower number than the site. A person decides."""
+    print(message, file=sys.stderr)
+    sys.exit(4)
+
+
 def scholar_user(config):
     with open(config, encoding="utf-8", errors="replace") as handle:
         found = re.search(r"(?m)^gscholar:\s*(\S+)", handle.read())
@@ -63,17 +71,20 @@ def fetch(source):
     if not re.match(r"https?://", source):
         with open(source, encoding="utf-8", errors="replace") as handle:
             return handle.read()
-    fetched = subprocess.run(
-        ["curl", "-sL", "--max-time", "30", "-A", USER_AGENT, "-H", "Accept-Language: en-US,en;q=0.9",
-         "-w", "\n%{http_code}", source],
-        capture_output=True,
-    )
-    if fetched.returncode != 0:
-        refused("Google Scholar could not be reached (curl exit {}).".format(fetched.returncode))
-    page, _, status = fetched.stdout.decode("utf-8", errors="replace").rpartition("\n")
-    if status != "200":
-        refused("Google Scholar answered with HTTP status {}.".format(status))
-    return page
+    # The page goes to a file and the status to the output, so the two cannot mix.
+    with tempfile.NamedTemporaryFile() as saved:
+        fetched = subprocess.run(
+            ["curl", "-sL", "--max-time", "30", "-A", USER_AGENT, "-H", "Accept-Language: en-US,en;q=0.9",
+             "-o", saved.name, "-w", "%{http_code}", source],
+            capture_output=True,
+        )
+        if fetched.returncode != 0:
+            refused("Google Scholar could not be reached (curl exit {}).".format(fetched.returncode))
+        status = fetched.stdout.decode("ascii", errors="replace").strip()
+        if status != "200":
+            refused("Google Scholar answered with HTTP status {}.".format(status))
+        with open(saved.name, encoding="utf-8", errors="replace") as handle:
+            return handle.read()
 
 
 def number(text):
@@ -156,7 +167,7 @@ def main():
         if new < now
     ]
     if lower:
-        stop("The source gives a lower number than the site, so no edit was made: {}.".format("; ".join(lower)))
+        lowered("The source gives a lower number than the site, so no edit was made: {}.".format("; ".join(lower)))
 
     if proposed == current:
         print("The sentence is current.")

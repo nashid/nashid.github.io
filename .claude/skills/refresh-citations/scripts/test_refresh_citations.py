@@ -95,13 +95,13 @@ class RefreshCitations(unittest.TestCase):
 
     def test_a_lower_source_is_an_error(self):
         code, output, page = self.run_script((700, 12, 350), profile(640, 13, 366), write=True)
-        self.assertEqual(code, 2)
+        self.assertEqual(code, 4)
         self.assertIn("lower number", output)
         self.assertEqual(page, self.original((700, 12, 350)))
 
     def test_a_lower_h_index_is_an_error(self):
         code, _, page = self.run_script((700, 13, 350), profile(736, 12, 366), write=True)
-        self.assertEqual(code, 2)
+        self.assertEqual(code, 4)
         self.assertEqual(page, self.original((700, 13, 350)))
 
     def test_pages_that_are_not_the_profile(self):
