@@ -35,11 +35,11 @@ The skill will:
 - **Conference PCs** get both service entry and news announcement
 
 ### 🎨 Creative Variations
-The skill uses varied templates to keep announcements fresh:
-- "I am honored to join the PC of..."
-- "Excited to serve as a PC member for..."
-- "Looking forward to reviewing submissions for..."
-- And many more!
+Each news item opens differently from the five nearest service items, and its interest comes from facts on the venue pages:
+- "I joined the program committee of ..., the International Workshop on ... Full papers are due on ..."
+- "..., the 2nd International Workshop on ..., addresses ... I served on its program committee."
+- "I am serving as a PC member for ..., the main research track of the conference."
+- Ten forms in total, listed in the "News Wording" section of the skill
 
 ### 🏆 Special Recognition
 For distinguished roles, it uses special wording and trophy icons
@@ -62,7 +62,7 @@ The skill will ALWAYS ask you for the news date - never assumes
 
 Result:
 - Services.yml: Added at top (prestigious venue)
-- News: "I am honored to serve as a PC member for ASE 2026 Tools and Datasets Track, one of the premier venues in software engineering."
+- News: "I am serving as a PC member for ASE 2026 Tools and Datasets Track, one of the premier venues in software engineering."
 
 ### Example 2: Journal Review
 ```
@@ -93,7 +93,7 @@ nashid.github.io/
 ## Customization
 
 To modify the skill behavior, edit `.claude/skills/add-service/SKILL.md`:
-- Add new templates in the "News Entry Templates" section
+- Add new forms in the "News Wording" section
 - Add venues to the "Prestigious Venue Detection" list
 - Modify icons in the "Icon Selection" section
 

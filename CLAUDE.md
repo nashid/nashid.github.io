@@ -184,7 +184,7 @@ Streamlines adding academic service roles (PC memberships, reviewerships) to bot
 - Automatically updates both `_data/services.yml` and `nav/news.md`
 - Smart filtering: Adds news for conferences only, skips journals
 - Prestigious venue detection: Special emphasis for ASE, ICSE, FSE
-- Creative variations: 10+ templates to keep announcements fresh
+- Varied wording: ten sentence forms; each news item opens differently from the five nearest service items and draws its interest from facts on the venue pages
 - Never guesses dates: Always asks for confirmation
 - Maintains proper ordering (prestigious venues first)
 
