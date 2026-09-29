@@ -35,7 +35,7 @@
   
 - id: hunk-divergence-ase25
   title: "Characterizing Multi-Hunk Patches: Divergence, Proximity, and LLM Repair Challenges"
-  authors: Noor Nashid, Daniel Ding, Keheliya Gallaba, Ahmed E Hassan, Ali Mesbah
+  authors: Noor Nashid, Daniel Ding, Keheliya Gallaba, Ahmed E. Hassan, Ali Mesbah
   venue: IEEE/ACM International Conference on Automated Software Engineering (ASE), 13 pages
   year: 2025
   award: ACM SIGSOFT Distinguished Paper Award
